@@ -1,0 +1,2512 @@
+video_id,text,start_frame,end_frame,type
+0006,Nice!,461,502,feedback
+0006,Love the high knees!,503,567,feedback
+0006,I really like the speed here. Keep it up!,574,638,feedback
+0006,Awesome! Keep going!,664,727,feedback
+0006,"We're almost there with the high knees. Work it, work it.",781,843,feedback
+0006,That was really good! keep it up for the next one!,957,1021,feedback
+0006,That's a good one!,1140,1203,feedback
+0006,We are at 5 reps!,1204,1266,feedback
+0006,10,1323,1382,feedback
+0006,15,1428,1485,feedback
+0006,Love your energy! Let's keep it coming!,1494,1514,feedback
+0006,20,1515,1574,feedback
+0006,Excellent! You smashed it! Keep it up for the next one!,1663,1729,feedback
+0006,Let's squat!,1843,1918,feedback
+0006,Your stance is too narrow and your squats are too shallow!,1927,2000,feedback
+0006,"Good! That's a deeper squat! But your stance is too narrow, widen out!",2067,2143,feedback
+0006,Yes! That's it! Good stance! Now try going even deeper into your squat!,2150,2223,feedback
+0006,Yes! That's it!,2376,2445,feedback
+0006,Yes! Stretch out that quad.,3309,3363,feedback
+0006,Tighten your core to maintain your balance!,3364,3421,feedback
+0006,"Great! Now that you're set, let's stretch the front of that leg out.",3428,3485,feedback
+0006,Looking good! Keep it up!,3525,3582,feedback
+0006,Awesome work!,3811,3842,feedback
+0006,Wrong leg pal!,3952,4026,feedback
+0006,Yes! Now stretch the front of the leg out!,4043,4114,feedback
+0006,Looking good! Can you feel the burn?,4151,4225,feedback
+0006,Keep it going!,4389,4459,feedback
+0006,You crushed it!,4531,4594,feedback
+0006,First up are high knees!,397,460,transition
+0006,Moving on to jumping jacks!,1063,1127,transition
+0006,Moving on to squats!,1730,1807,transition
+0006,Moving on to pushups!,2532,2594,transition
+0006,Moving on to quad stretch left!,3193,3256,transition
+0006,Moving on to quad stretch right!,3843,3917,transition
+0006,That's the end of the session.,4616,4680,transition
+0009,Let's get started!,477,548,feedback
+0009,"Come on! Jumping Jack, Jumping Jack, that's what I gotta do now!",595,658,feedback
+0009,There is still time! Come on!,700,763,feedback
+0009,Yes! That's it!,764,815,feedback
+0009,Wow! I love the range of motion you have here!,816,879,feedback
+0009,That is awesome! Keep it up!,914,977,feedback
+0009,That's it!,1134,1177,feedback
+0009,Try to keep your hands straight in front or at your sides!,1178,1240,feedback
+0009,Try to get those knees higher! Mind your hands!,1276,1339,feedback
+0009,Your knees are still too low!,1499,1562,feedback
+0009,Aim higher next time and try to keep your hands straight in front or at your sides!,1655,1716,feedback
+0009,Yes! That's it!,1837,1897,feedback
+0009,Love your form! Nice deep squats!,1915,1972,feedback
+0009,5 reps! Keep it up!,2012,2069,feedback
+0009,Keep going!,2105,2162,feedback
+0009,Keep up the pace! Don't slow down!,2167,2243,feedback
+0009,10,2321,2395,feedback
+0009,Moving on to pushups!,2439,2507,feedback
+0009,Yes! That's it!,2538,2608,feedback
+0009,3,2661,2730,feedback
+0009,4,2731,2794,feedback
+0009,5,2795,2853,feedback
+0009,6,2854,2916,feedback
+0009,7,2932,3006,feedback
+0009,Moving on to quad stretch left!,3197,3268,feedback
+0009,"Great, now that you're set, let's stretch the front of that leg out.",3269,3331,feedback
+0009,Looks good. Now focus on keeping your balance!,3507,3570,feedback
+0009,Love it! Keep it going!,3635,3698,feedback
+0009,Amazing work!,3792,3842,feedback
+0009,Moving on to quad stretch right!,3843,3904,feedback
+0009,Keep your core tight to maintain your balance!,4009,4071,feedback
+0009,Looking great! Keep going!,4167,4229,feedback
+0009,Good job!,4292,4354,feedback
+0009,That's the end of the session.,4513,4570,feedback
+0009,First up are jumping jacks!,349,425,transition
+0009,Moving on to high knees!,1066,1129,transition
+0009,Moving on to squats!,1729,1790,transition
+0009,2,2609,2660,transition
+0009,Yes! Stretch out that quad.,3367,3430,transition
+0009,Yes! Stretch out that quad.,3930,3993,transition
+0009,Yes! That it! Do you feel the burn?,4080,4145,transition
+0010,"Nice, nice.",433,509,feedback
+0010,5 resp! Keep going! You're doing great!,544,619,feedback
+0010,10 reps!,662,738,feedback
+0010,Looking good! Awesome range of motion.,744,819,feedback
+0010,15,820,892,feedback
+0010,20,940,1013,feedback
+0010,25,1071,1113,feedback
+0010,You really crushed it this time!,1114,1160,feedback
+0010,Nice! Try to get those knees to waist height!,1236,1298,feedback
+0010,Let's try to get the knees up higher!,1358,1421,feedback
+0010,Your knees are still too low! Aim for waist height!,1483,1547,feedback
+0010,Not bad! But try to get those knees higher next time.,1735,1799,feedback
+0010,Yes! Now try to go deeper with your squats!,1926,1988,feedback
+0010,That's better! Now widen out the space between your feet!,2002,2061,feedback
+0010,Hmm your stance is still too narrow! Widen out champ!,2092,2154,feedback
+0010,I am waiting! Widen out!,2199,2257,feedback
+0010,Good effort! But try to widen your stance next time.,2356,2416,feedback
+0010,Let's get started!,2603,2677,feedback
+0010,You can start that push-up any time now.,2705,2778,feedback
+0010,Still waiting for you to start!,2837,2912,feedback
+0010,Let's put in more effort next time!,3045,3120,feedback
+0010,"All right, we've got the leg up!",3361,3427,feedback
+0010,Stretch out that quad.,3492,3536,feedback
+0010,Looking good! Keep it up!,3537,3601,feedback
+0010,You did really well! Keep it up for the next one!,3908,3922,feedback
+0010,Careful you're stretching the wrong leg right now.,4015,4078,feedback
+0010,Yes! That's the correct leg!,4097,4162,feedback
+0010,Stretch out that leg! Do you feel the burn?,4219,4281,feedback
+0010,Looking good! Keep going!,4314,4375,feedback
+0010,That was excellent!,4450,4508,feedback
+0010,First up are jumping jacks!,357,430,transition
+0010,Moving on to high knees!,1161,1224,transition
+0010,Moving on to squats!,1829,1891,transition
+0010,Moving on to pushups!,2475,2548,transition
+0010,Moving on to quad stretch left!,3303,3360,transition
+0010,Moving on to quad stretch right!,3923,3986,transition
+0010,That's the end of the session.,4588,4645,transition
+0011,Yes! That's a jumping jack! Excellent.,443,518,feedback
+0011,5 reps! Love your speed!,556,625,feedback
+0011,Excellent! You're really getting it!,626,695,feedback
+0011,We are at 10 reps!,696,768,feedback
+0011,15,821,890,feedback
+0011,20,952,1015,feedback
+0011,25,1045,1080,feedback
+0011,Wow! You're did great!,1081,1145,feedback
+0011,High knees yes please!,1213,1276,feedback
+0011,Try to get those knees up to waist height!,1329,1392,feedback
+0011,Come on! Higher knees!,1419,1482,feedback
+0011,Still waiting for higher knees!,1537,1599,feedback
+0011,Good effort! But try to get those knees higher next time.,1762,1822,feedback
+0011,Let's squat!,1894,1949,feedback
+0011,"Give me a nice wide stance, knees further apart.",1950,2009,feedback
+0011,I like the depth of the squat! But your stance is still too narrow..,2066,2123,feedback
+0011,Come on! Wider stance! You still have time!,2190,2249,feedback
+0011,"Alright, we've got the leg up.",3399,3463,feedback
+0011,Stretch out that quad!,3502,3557,feedback
+0011,Balance can be a challenge with this stretch. Try placing your fingers in your belly button to center yourself.,3558,3621,feedback
+0011,Looking good! Keep going!,3704,3767,feedback
+0011,That was really good!,3877,3890,feedback
+0011,"This is your right leg, we're stretching the left right now.",3982,4042,feedback
+0011,Yes! That's it! Stretch out that quad.,4117,4180,feedback
+0011,Stretch the front of that leg out!,4222,4286,feedback
+0011,Excellent! Keep it up!,4335,4393,feedback
+0011,Amazing!,4458,4515,feedback
+0011,First up are jumping jacks!,364,437,transition
+0011,Moving on to high knees!,1146,1209,transition
+0011,Moving on to squats!,1834,1893,transition
+0011,Moving on to pushups!,2548,2620,transition
+0011,Moving on to quad stretch right!,3297,3360,transition
+0011,Moving on to quad stretch left!,3891,3952,transition
+0011,That's the end of the session.,4545,4611,transition
+0012,"Pump it up now, more bounce!",477,553,feedback
+0012,"Come on, let's get some juice in those legs. Pick it up!",628,702,feedback
+0012,I am still waiting! Let's get the heart and knees pumping!,752,827,feedback
+0012,There is still time! Pick up the pace!,874,946,feedback
+0012,Let's put in more effort next time.,1091,1155,feedback
+0012,It's time for jumping jacks!,1248,1311,feedback
+0012,You are only moving your arms! It's time to start jumping!,1321,1384,feedback
+0012,You're still only moving your arms. Come on! Let's get jumping!,1432,1496,feedback
+0012,Yes! Now don't forget your arms!,1524,1587,feedback
+0012,I love your jumps! But put the arms up!,1622,1686,feedback
+0012,Jump and move your arms together! It's one fluid motion.,1718,1782,feedback
+0012,Let's try harder next time.,1845,1889,feedback
+0012,"Hey, why aren't you doing the exercise? No free pass here!",1979,2040,feedback
+0012,Ok! Try to keep your hands out in front or to your sides!,2071,2133,feedback
+0012,"Yes! Now give me a nice wide stance, knees further apart.",2144,2201,feedback
+0012,Don't stop! Keep it coming!,2256,2304,feedback
+0012,Try to go deeper into the squat with a nice wide stance!,2305,2362,feedback
+0012,Let's get started with the pushups!,2696,2772,feedback
+0012,You can start that push-up anytime now!,2817,2892,feedback
+0012,You've got time! Let's get started!,2914,2989,feedback
+0012,I know pushups can be hard but let's try to do some push ups next time!,3058,3133,feedback
+0012,"Don't play favorites, make sure both legs get a stretch.",3420,3484,feedback
+0012,Stretch both legs out.,3501,3545,feedback
+0012,Make sure you stretch both legs for an equal amount of time.,3546,3608,feedback
+0012,Careful you're not stretching the wrong leg now. We want to stretch both legs.,3669,3733,feedback
+0012,Wow... you're crushing it! Let's keep it going,3918,3981,feedback
+0012,"This is your right leg, we're stretching the left right now.",4079,4141,feedback
+0012,Nice! That's it! Keep your core tight to maintain your balance!,4209,4271,feedback
+0012,Don't give up so soon! Loads to time to go!,4272,4335,feedback
+0012,That's not right! Stretch your leg towards your back! The other way!,4336,4399,feedback
+0012,Yes! That's it!,4430,4492,feedback
+0012,First up are high knees!,417,476,transition
+0012,Moving on to jumping jacks!,1203,1247,transition
+0012,Moving on to squats!,1890,1952,transition
+0012,Moving on to pushups!,2568,2644,transition
+0012,Moving on to quad stretch right!,3347,3417,transition
+0012,Moving on to quad stretch left!,3987,4050,transition
+0012,That's the end of the session.,4648,4705,transition
+0013,"Alright, champ, let's move it! Chop chop!",444,519,feedback
+0013,"Hey now,  speed it up!",575,649,feedback
+0013,Pick up the speed! Will you?,711,776,feedback
+0013,There is still time! Pick up the speed!,777,850,feedback
+0013,Next time let's go faster.,980,1045,feedback
+0013,"Let's go legs, arms, legs, arms.",1171,1234,feedback
+0013,"Okay, that's fine, but I want to see you moving your legs too.",1296,1360,feedback
+0013,"Come on! Legs, legs, legs!",1407,1471,feedback
+0013,Move your legs and arms together! It's one fluid motion.,1538,1601,feedback
+0013,Next time! Try to move your arms and legs together.,1695,1756,feedback
+0013,Let's get going!,1852,1916,feedback
+0013,Make sure the space between your legs isn't too narrow. Try to go deeper with the squats.,1945,2004,feedback
+0013,Your stance is still too narrow! The squats are too shallow.,2067,2124,feedback
+0013,"More space between your knees and deeper squats, please.",2170,2229,feedback
+0013,Try harder next time.,2309,2385,feedback
+0013,"Wrong leg, pal.",3375,3437,feedback
+0013,Come on! Let's stretch the right quad.,3471,3533,feedback
+0013,"Looks good, now focus on pulling that foot back.",3577,3641,feedback
+0013,Looking good! Keep it up!,3685,3747,feedback
+0013,Don't leave! There is still time.,3791,3855,feedback
+0013,Keep your core tight so you don't lose your balance.,4064,4126,feedback
+0013,Yes! That's better! Now stretch out that leg.,4131,4192,feedback
+0013,First up are high knees!,325,402,transition
+0013,Moving on to jumping jacks!,1096,1160,transition
+0013,Moving on to squats!,1787,1850,transition
+0013,Moving on to pushups!,2536,2610,transition
+0013,Moving on to quad stretch left!,3298,3362,transition
+0013,Moving on to quad stretch right!,3895,3959,transition
+0013,That's the end of the session.,4549,4623,transition
+0014,Keep your knees straight as you pull them up!,442,518,feedback
+0014,Keep your knees straight and pick up the pace!,558,632,feedback
+0014,Ok! Now speed it up! Let's bounce!,705,777,feedback
+0014,Don't stop! You are too slow as it is.,859,926,feedback
+0014,Put in more effort next time!,1049,1110,feedback
+0014,Let's get up and bounce!,1211,1275,feedback
+0014,It's time to get jumping! You are only moving your arms.,1337,1401,feedback
+0014,I wanna see you jumping! Let's go!,1415,1478,feedback
+0014,Hey! Don' leave! Let's do some jumping jacks!,1580,1639,feedback
+0014,Welcome back!,1757,1816,feedback
+0014,It's time for squats!,1881,1943,feedback
+0014,Let's squat!,1976,2033,feedback
+0014,Hey! Your stance is too narrow and squats are too shallow!,2040,2097,feedback
+0014,Let's get your stance wider!,2121,2178,feedback
+0014,Let's pick up the pace!,2216,2292,feedback
+0014,Try harder next time!,2441,2516,feedback
+0014,Wrong leg! It's your other left.,3310,3373,feedback
+0014,"This is your right leg, we're stretching the left right now.",3374,3437,feedback
+0014,Yep! Now stretch out that quad!,3445,3508,feedback
+0014,Balance! First try to maintain your balance! Don't want you getting hurt.,3545,3609,feedback
+0014,Don't stop! Keep going!,3703,3764,feedback
+0014,You still have time! Get back at it!,3776,3838,feedback
+0014,That's it!,3977,4039,feedback
+0014,Keep your core tight so you don't lose your balance.,4040,4103,feedback
+0014,First up are high knees!,401,441,transition
+0014,Moving on to jumping jacks!,1154,1210,transition
+0014,Moving on to squats!,1838,1880,transition
+0014,Moving on to pushups!,2532,2597,transition
+0014,Moving on to quad stretch left!,3275,3309,transition
+0014,Moving on to quad stretch right!,3860,3923,transition
+0014,That's the end of the session.,4516,4590,transition
+0015,Looking good!,395,471,feedback
+0015,Love your form and speed!,484,560,feedback
+0015,10,635,710,feedback
+0015,15 reps! Keep going!,748,822,feedback
+0015,Twenty! Amazing!,908,980,feedback
+0015,Don't slow down! Keep up the pace!,1002,1075,feedback
+0015,Yes! That's it!,1117,1166,feedback
+0015,Good start!,1217,1279,feedback
+0015,"There's more in there! Come on, knees! Up, up, up!",1291,1354,feedback
+0015,Pick up those knees! There's crocodiles everywhere and they're hungry for ankles!,1428,1491,feedback
+0015,Come on! Waiting for you to bring those knees all the way up to your chest.,1556,1620,feedback
+0015,Next time try to get those knees up higher!,1755,1818,feedback
+0015,Let's squat!,1906,1969,feedback
+0015,Let's increase the gap between your feet and try squat deeper!,2013,2077,feedback
+0015,Your stance is still too narrow! Try and increase the gap between your feet!,2108,2170,feedback
+0015,Still waiting for you to improve your stance!,2228,2285,feedback
+0015,Good effort! But try to improve your stance next time.,2434,2494,feedback
+0015,Yes! That's it!,2649,2690,feedback
+0015,Try to go lower with the push ups! Keep your back straight!,2691,2767,feedback
+0015,Try to go a bit lower! You can do it!,2789,2862,feedback
+0015,Don't stop! You still have loads of time!,2877,2950,feedback
+0015,Good effort! You can try knee push ups if regular push ups are too hard.,3064,3139,feedback
+0015,Moving on to quad stretch left!,3302,3374,feedback
+0015,Nice work! Keep going!,3559,3621,feedback
+0015,Love it! That's a good stretch!,3640,3702,feedback
+0015,Awesome work! Keep it up for the next one!,3908,3918,feedback
+0015,Moving on to quad stretch right!,3919,3981,feedback
+0015,Looks good. Now focus on pulling that foot back.,4103,4166,feedback
+0015,That's it! Feel the burn!,4241,4304,feedback
+0015,Wow... you're crushing it! Let's keep it going,4382,4445,feedback
+0015,Awesome! Keep up the energy for the next one!,4554,4588,feedback
+0015,That's the end of the session.,4589,4646,feedback
+0015,First up are jumping jacks!,343,394,transition
+0015,Moving on to high knees!,1167,1216,transition
+0015,Moving on to squats!,1853,1905,transition
+0015,Moving on to pushups!,2495,2571,transition
+0015,"Great, now that you're set, let's stretch the front of that leg out.",3439,3505,transition
+0015,Careful you're not stretching the wrong leg now.,4009,4070,transition
+0016,Yes! I love jumping jacks.,481,552,feedback
+0016,Love your form and pace!,627,702,feedback
+0016,"Nice, you’re at ten reps, keep it going",722,795,feedback
+0016,15,859,924,feedback
+0016,20,963,1027,feedback
+0016,25,1064,1117,feedback
+0016,You smashed it out of the park!,1118,1148,feedback
+0016,"High knees, yes please!",1202,1265,feedback
+0016,I know you can go higher! I wanna see you put in the work!,1266,1330,feedback
+0016,Lift those knees and keep it up!,1385,1449,feedback
+0016,Knees up way higher! There is still time!,1490,1552,feedback
+0016,I know you can get those knees higher!,1572,1634,feedback
+0016,Amazing effort! But try to get those knees higher next time.,1728,1792,feedback
+0016,Amazing! Now try to widen your stance a bit!,1904,1963,feedback
+0016,Wow that's a deep squat!,1994,2050,feedback
+0016,"I love your form here. Work it, work it.",2139,2199,feedback
+0016,5 reps! Good work!,2232,2306,feedback
+0016,You squatted me away! Keep it up for the next one!,2425,2502,feedback
+0016,Looks good. Now focus on pulling that foot back.,3408,3471,feedback
+0016,Nice and stable! Love your form!,3527,3590,feedback
+0016,Wow... you're crushing it! Let's keep it going,3621,3684,feedback
+0016,Good job!,3876,3893,feedback
+0016,"Wrong leg, pal.",3984,4047,feedback
+0016,Yes! That's the correct leg! Stretch out that quad.,4086,4148,feedback
+0016,Looking good! Keep it up!,4220,4280,feedback
+0016,I am impressed! Keep it up!,4333,4390,feedback
+0016,First up are jumping jacks!,426,480,transition
+0016,Moving on to high knees!,1149,1201,transition
+0016,Moving on to squats!,1814,1878,transition
+0016,Moving on to pushups!,2543,2618,transition
+0016,Moving on to quad stretch right!,3305,3370,transition
+0016,Moving on to quad stretch left!,3894,3957,transition
+0016,That's the end of the session.,4554,4629,transition
+0017,It's time for jumping jacks!,1107,1169,feedback
+0017,Let's get started with jumping jacks!,1178,1241,feedback
+0017,Hey! Let's get jumping! Move your legs!,1330,1389,feedback
+0017,Come on! Get those legs moving!,1440,1497,feedback
+0017,Yes! That's it! You go it right!,1543,1601,feedback
+0017,Let's get started with the lunge jumps!,1844,1897,feedback
+0017,That it! Don't stop! You got it!,1898,1974,feedback
+0017,First focus on your balance! Don't want you to get hurt!,2061,2134,feedback
+0017,It's called lunge jumps not lunge walk!,2142,2218,feedback
+0017,Come on! Let's get jumping!,2272,2345,feedback
+0017,Try harder next time!,2447,2515,feedback
+0017,Let's get started with the deltoid stretch!,3929,4003,feedback
+0017,Still waiting for you to start!,4049,4128,feedback
+0017,That's does not seem right! Let's get started with the deltoid stretch!,4155,4226,feedback
+0017,I don't know what you are doing! But I am still waiting for you to start!,4268,4340,feedback
+0017,Put in more effort next week!,4392,4468,feedback
+0017,First up are butt kickers!,399,461,transition
+0017,Moving on to jumping jacks!,1064,1106,transition
+0017,Moving on to lunge jumps!,1713,1787,transition
+0017,Moving on to pushups!,2516,2585,transition
+0017,Moving on to armcrosschest left!,3181,3242,transition
+0017,Moving on to armcrosschest right!,3749,3807,transition
+0017,That's the end of the session.,4527,4603,transition
+0018,"Nice, good butt kicking!",385,449,feedback
+0018,Try to get your heels closer to your butt!,475,537,feedback
+0018,"When the heels are super close and hitting the butt, we're getting the burn!",581,644,feedback
+0018,Yes! That's it! Hit that butt!,720,780,feedback
+0018,Not bad!,889,946,feedback
+0018,"Yeah, yeah! That's it!",1073,1148,feedback
+0018,Pay attention to the range of motion in your arms!,1155,1219,feedback
+0018,Yes! That's it! Love your range of motion.,1220,1294,feedback
+0018,Don't stop! Keep up the pace!,1334,1407,feedback
+0018,You still have time! Come on!,1482,1544,feedback
+0018,Yup! That's it! Keep going!,1545,1618,feedback
+0018,Nice job!,1625,1700,feedback
+0018,All Right! Let's see those lunges.,1843,1916,feedback
+0018,Take your time and go down a bit deeper.,1917,1987,feedback
+0018,"Good, that was nice and deep",1988,2031,feedback
+0018,Don't rush. Try to keep your balance,2032,2095,feedback
+0018,"Try to take a smooth step back, then smooth step forward.",2096,2159,feedback
+0018,Keep more of your weight on the front foot,2180,2243,feedback
+0018,Keep that head held high.,2319,2382,feedback
+0018,That's it! Try to keep your back as straight as possible.,2566,2627,feedback
+0018,You are really bringing your knees closer to your chest! Good work!,2650,2715,feedback
+0018,Don't stop! You still have time!,2716,2779,feedback
+0018,Come on! Get back at it!,2844,2906,feedback
+0018,That's the wrong leg! Stretch your right leg. ,3176,3234,feedback
+0018,Yes! That's the correct one! Now stretch it out!,3323,3398,feedback
+0018,Looking good! Keep it up!,3511,3584,feedback
+0018,Awesome! Good job!,3747,3774,feedback
+0018,"Looks good, now focus on pulling that foot back.",3962,4032,feedback
+0018,Love your pose! Keep it up!,4062,4135,feedback
+0018,Wow... you're crushing it! Keep it going.,4213,4284,feedback
+0018,Good work!,4336,4400,feedback
+0018,First up are butt kickers!,328,384,transition
+0018,Moving on to jumping jacks!,966,1026,transition
+0018,Moving on to walking lunges!,1767,1838,transition
+0018,Moving on to mountain climbers!,2460,2523,transition
+0018,Moving on to quad stretch right!,3113,3169,transition
+0018,Moving on to quad stretch left!,3775,3850,transition
+0018,That's the end of the session.,4529,4593,transition
+0019,Let me know when you're ready.,374,430,feedback
+0019,Ok! Move your hands in sync too!,431,487,feedback
+0019,Pick up the pace and keep your motion fluid!,523,580,feedback
+0019,Let's try to go faster with fluid motion!,770,843,feedback
+0019,Let's try harder next time!,873,946,feedback
+0019,Speed it up to running pace! Try to kick your feet up to your butt.,1050,1126,feedback
+0019,Keep those legs straight up and down while you're kicking it.,1197,1271,feedback
+0019,Don't stop! Keep going!,1308,1381,feedback
+0019,I am sure you can do a few more butt kickers! I am waiting.,1443,1514,feedback
+0019,"Yup, good hand placement.",1917,1980,feedback
+0019,Time to go!,1994,2054,feedback
+0019,We're on push-ups right now not planks!,2055,2117,feedback
+0019,"Can you feel the cold air? Swish, swish, swish!",2501,2561,feedback
+0019,Give me some nice controlled jumps. ,2574,2638,feedback
+0019,"Starting from one side, you want to leap across to the side and land on the opposite foot. Bend down into that foot as you land and jump back to the other side.",2726,2784,feedback
+0019,Put some energy into those jumps!,2947,3023,feedback
+0019,Great! Now stretch out that leg.,3281,3356,feedback
+0019,Give it a nice big pull.,3466,3529,feedback
+0019,Stare at a fixed spot ahead of you and engage your core to help balance.,3530,3603,feedback
+0019,Jump back in! It's important to get your stretches in.,3656,3729,feedback
+0019,Engage your core to help you balance.,3940,4004,feedback
+0019,"Looks good, now focus on pulling that foot back.",4013,4077,feedback
+0019,Careful not to lose your balance.,4139,4202,feedback
+0019,First up are jumping jacks!,290,351,transition
+0019,Moving on to butt kickers!,987,1049,transition
+0019,Moving on to pushups!,1767,1829,transition
+0019,Moving on to puddle jumps!,2431,2494,transition
+0019,Moving on to quad stretch right!,3103,3176,transition
+0019,Moving on to quad stretch left!,3792,3860,transition
+0019,That's the end of the session.,4480,4544,transition
+0023,Great! Great!,488,560,feedback
+0023,This is awesome! Let's keep the intensity high!,587,660,feedback
+0023,Great form! I am loving it!,689,759,feedback
+0023,10,760,834,feedback
+0023,I bet you can see your whole house from here.,858,916,feedback
+0023,15! Keep up that awesome range of motion.,917,980,feedback
+0023,20! Keep it going! You're doing great!,1008,1073,feedback
+0023,Nice job! Keep it up for the next one!,1093,1150,feedback
+0023,Let's get started!,1940,1994,feedback
+0023,Let's go deeper with the lunges!,1995,2053,feedback
+0023,Yes! That's it! Nice deep lunges.,2080,2108,feedback
+0023,5 reps! Love your speed!,2109,2165,feedback
+0023,We are at 10 reps!,2209,2239,feedback
+0023,"Nice, you’re at ten reps, keep it going",2240,2300,feedback
+0023,15 reps! Wow!,2388,2461,feedback
+0023,Hmm that's not your right arm!,3345,3408,feedback
+0023,Other arm to start!,3443,3506,feedback
+0023,Start with your other arm please.,3513,3577,feedback
+0023,Yes! That's the correct arm! Stretch it out now!,3632,3695,feedback
+0023,Do you feel the pull in your shoulders?,3735,3798,feedback
+0023,Good work!,3812,3827,feedback
+0023,"There we go, really stretch that deltoid out.",3984,4047,feedback
+0023,Can you feel the pull in your shoulder blade?,4085,4147,feedback
+0023,Looking good! Keep stretching!,4203,4264,feedback
+0023,Awesome work!,4292,4352,feedback
+0023,First up are jumping jacks!,406,479,transition
+0023,Moving on to butt kickers!,1151,1214,transition
+0023,Moving on to lunge jumps!,1846,1909,transition
+0023,Moving on to pushups!,2518,2592,transition
+0023,Moving on to armcrosschest right!,3273,3341,transition
+0023,Moving on to armcrosschest left!,3828,3890,transition
+0023,That's the end of the session.,4493,4550,transition
+0024,You're only moving your arms?,443,506,feedback
+0024,Move your arms and legs together!,544,606,feedback
+0024,Don't stop with the jumps! I wanna see you jumping and moving those arms.,653,716,feedback
+0024,I am still waiting for you to start jumping!,757,819,feedback
+0024,Are you sure that's the right exercise?,1075,1138,feedback
+0024,It's time for butt kickers!,1190,1251,feedback
+0024,Let's get started with butt kickers!,1273,1331,feedback
+0024,You still have time! Let's go!,1382,1439,feedback
+0024,Let's try harder next time!,1504,1577,feedback
+0024,"Yes, that's it. Keep it coming.",1753,1826,feedback
+0024,Don't stop after just one rep! Keep going!,1841,1916,feedback
+0024,Let's do some lunges! Come on!,1927,2002,feedback
+0024,Still waiting for you to start!,2074,2145,feedback
+0024,First up are jumping jacks!,337,400,transition
+0024,Moving on to butt kickers!,998,1058,transition
+0024,Moving on to walking lunges!,1651,1723,transition
+0024,Moving on to mountain climbers!,2429,2501,transition
+0024,Moving on to quad stretch left!,3090,3153,transition
+0024,Moving on to quad stretch right!,3667,3724,transition
+0024,That's the end of the session.,4422,4496,transition
+0025,"You wanna be kicking your own butt, not kneeing yourself in the face.",349,410,feedback
+0025,That's not how you do butt kickers!,452,514,feedback
+0025,That's not correct either!,569,631,feedback
+0025,You still have time for butt kickers!,677,740,feedback
+0025,Yes! Now move your arms too!,1012,1070,feedback
+0025,What are you doing? It's time for jumping jacks!,1137,1216,feedback
+0025,Let's do some jumping jacks! I am waiting!,1249,1299,feedback
+0025,Now put those legs together and move them!,1300,1375,feedback
+0025,"Come on, leg action!",1418,1491,feedback
+0025,Not just your legs move your arms in sync too!,1539,1613,feedback
+0025,You need to jump from side to side! Not up and down.,2502,2566,feedback
+0025,What are you doing? That's not how you do puddle jumps!,2614,2676,feedback
+0025,"Hey c'mon, don't leave me hangin'! Jump from side to side!",2722,2783,feedback
+0025,You still have time to complete a few reps!,2812,2875,feedback
+0025,First up are butt kickers!,264,326,transition
+0025,Moving on to jumping jacks!,951,1008,transition
+0025,Moving on to pushups!,1711,1787,transition
+0025,Moving on to puddle jumps!,2417,2481,transition
+0025,Moving on to quad stretch right!,3073,3137,transition
+0025,Moving on to quad stretch left!,3680,3755,transition
+0025,That's the end of the session.,4461,4525,transition
+0026,Nice. Keep it up with the jumps!,374,445,feedback
+0026,Love your form! Keep it up!,493,566,feedback
+0026,Love it. Love it.,611,655,feedback
+0026,We are at 10 reps! Love your speed!,656,731,feedback
+0026,Don't stop! The key to these is to keep moving. Let the rhythm help you burn.,754,838,feedback
+0026,You still have time! Get back to it!,869,949,feedback
+0026,Hey! Where did you go?,1155,1219,feedback
+0026,Come back! It's time for butt kickers!,1290,1351,feedback
+0026,Keep bouncing right underneath yourself.,1412,1428,feedback
+0026,Yeah! You are back! ,1429,1471,feedback
+0026,"Yes! When the heels are super close and hitting the butt, we're getting the burn!",1472,1534,feedback
+0026,"Yes, yes, yes! Kick that butt!",1580,1643,feedback
+0026,Yeah! That's it!,1916,1980,feedback
+0026,Love your form! Keep it going!,2015,2077,feedback
+0026,We are at 5 reps!,2124,2176,feedback
+0026,Don't leave! Let's go a few more reps!,2177,2236,feedback
+0026,Hey! Come back! Let's do some more plank taps!,2292,2351,feedback
+0026,Where are you? It's time for mountain climbers.,2504,2564,feedback
+0026,Yeah! That's it!,2569,2628,feedback
+0026,Looking good! Keep bringing your knee closer to your chest!,2671,2739,feedback
+0026,Keep going! Excellent work!,2791,2860,feedback
+0026,Don't leave! You still have time!,2918,2988,feedback
+0026,Moving on to quad stretch right!,3188,3230,feedback
+0026,That's the wrong leg! Stretch your right leg!,3323,3397,feedback
+0026,Yes! That's the correct leg! Stretch it out!,3459,3503,feedback
+0026,Try to tighten your core! It will help you maintain your balance.,3504,3578,feedback
+0026,Yes! That's it! You are crushing it.,3644,3707,feedback
+0026,Good job!,3813,3827,feedback
+0026,Moving on to quad stretch left!,3828,3891,feedback
+0026,It's time for quad stretches!,4053,4116,feedback
+0026,Yes! You are back! Stretch out that quad.,4117,4181,feedback
+0026,Tighten your core to maintain your balance!,4186,4248,feedback
+0026,"Great! Now that you're set, let's stretch the front of that leg out.",4289,4350,feedback
+0026,Don't stop! You still have time!,4395,4458,feedback
+0026,That's the end of the session.,4502,4565,feedback
+0026,First up are jumping jacks!,326,373,transition
+0026,Moving on to butt kickers!,1095,1154,transition
+0026,Moving on to plank taps!,1821,1882,transition
+0026,Moving on to mountain climbers!,2462,2503,transition
+0026,Hey! Let's do some quad stretches!,3231,3301,transition
+0026,Hey! Where are you?,3960,4022,transition
+0027,"Great, now let's add some bounce.",369,432,feedback
+0027,Let's get hopping!,464,525,feedback
+0027,"Don't just stand there and march, put some zip into it!",581,645,feedback
+0027,"Come on, I want to see you jumping! Lift your feet off the ground!",730,792,feedback
+0027,Yes but keep stepping the knees up!,877,940,feedback
+0027,Only waving your arms won't cut it. Bring those legs in!,1105,1162,feedback
+0027,"Legs, legs, legs.",1266,1327,feedback
+0027,Let me see you jump!,1387,1461,feedback
+0027,I'll wait.,1471,1547,feedback
+0027,Ok! That it! Now let's do some plank taps!,1864,1926,feedback
+0027,"Hmm keep tapping the opposite shoulder! Right hand left shoulder, left hand right shoulder.",1927,2000,feedback
+0027,Come on! Try to tap your shoulders.,2046,2119,feedback
+0027,I am waiting for you to tap your shoulders.,2130,2213,feedback
+0027,Let's try harder next time!,2388,2451,feedback
+0027,Let's get started with the deltoid stretches!,3230,3292,feedback
+0027,Wrong arm! Stretch your other arm!,3303,3360,feedback
+0027,Switch your arms!,3394,3451,feedback
+0027,That's the correct arm! Now stretch it out! Use your right hand to help with that!,3458,3515,feedback
+0027,Yes! Use your right hand to help you stretch the right deltoid.,3548,3623,feedback
+0027,That's not right!,3661,3713,feedback
+0027,Stretch out that arm!,3924,3998,feedback
+0027,Use your left arm to support your right at the upper arm level.,4011,4086,feedback
+0027,That does not seem right! Use your left arm  to support the stretch.,4118,4191,feedback
+0027,Yes! That's better!,4266,4340,feedback
+0027,First up are high knees!,305,368,transition
+0027,Moving on to jumping jacks!,1001,1066,transition
+0027,Moving on to plank taps!,1713,1789,transition
+0027,Moving on to mountain climbers!,2474,2537,transition
+0027,Moving on to armcrosschest left!,3134,3197,transition
+0027,Moving on to armcrosschest right!,3714,3789,transition
+0027,That's the end of the session.,4515,4580,transition
+0028,Focus on the heels lifting higher and higher.,1168,1245,feedback
+0028,You can do it! Jump right back in and get those heels nice and high.,1433,1507,feedback
+0028,Yes! Try to get those heels even higher.,1571,1641,feedback
+0028,Good job!,1658,1685,feedback
+0028,Great stuff! Try to go all the way to the end.,1686,1750,feedback
+0028,"Yes, let's make it happen.",1940,2003,feedback
+0028,Try to go deeper! All the way down!,2006,2070,feedback
+0028,Try to go faster! You can get more reps in!,2109,2172,feedback
+0028,Your lunges are too shallow! Try to go deeper with the lunges!,2228,2290,feedback
+0028,That looks better! Keep going!,2376,2440,feedback
+0028,"We're going left arm, that's your right.",3314,3389,feedback
+0028,Go on and give that arm a pull from the elbow.,3462,3537,feedback
+0028,Looks good. Now stretch out that shoulder.,3566,3628,feedback
+0028,Keep that arms pointed straight out.,3629,3700,feedback
+0028,Try to keep still and give it a steady pull.,3799,3872,feedback
+0028,Let's get started with the deltoid stretch!,4009,4073,feedback
+0028,That's not right! ,4121,4184,feedback
+0028,First up are jumping jacks!,293,355,transition
+0028,Moving on to butt kickers!,1027,1100,transition
+0028,Moving on to walking lunges!,1844,1907,transition
+0028,Moving on to mountain climbers!,2520,2582,transition
+0028,Moving on to armcrosschest left!,3199,3274,transition
+0028,Moving on to armcrosschest right!,3884,3950,transition
+0028,That's the end of the session.,4569,4631,transition
+0029,Yeah! Now try to bend down lower while keeping your back straight.,463,539,feedback
+0029,"Widen out our elbows, champ. Keep your back straight!",574,648,feedback
+0029,Come on! Widen out our elbows and keep your back straight!,737,811,feedback
+0029,Hmm keep trying!,824,897,feedback
+0029,Good effort! But try to widen out our elbows and keep your back straight next time!,1046,1113,feedback
+0029,Yes! That's it! Try to keep your arms further away from your body.,1260,1324,feedback
+0029,Come on! Arms a bit further away from your body!,1349,1411,feedback
+0029,Yes! Yes! Yes! That's it!,1463,1526,feedback
+0029,Wow! Love your form and speed!,1547,1611,feedback
+0029,Good job!,1654,1716,feedback
+0029,Try to go a plank position to begin!,1963,2003,feedback
+0029,Hey! Plank position to start!,2004,2067,feedback
+0029,Come on! Let's try to do some mountain climbers!,2092,2130,feedback
+0029,There is still time!,2131,2194,feedback
+0029,That's it! Keep it up!,2553,2628,feedback
+0029,"Great floor touching, keep it up!",2681,2755,feedback
+0029,5 reps! You can try to speed up a little!,2756,2828,feedback
+0029,Yeah! That's a nice speed!,2882,2910,feedback
+0029,We are now at 10 reps!,2911,2921,feedback
+0029,"Yeah, this is looking really great!",2922,2997,feedback
+0029,Wow! You completed 15 reps! Awesome!,3258,3301,feedback
+0029,Yes! That's it! Amazing!,3441,3476,feedback
+0029,Keep your neck relaxed and really try to touch those toes.,3477,3545,feedback
+0029,Loving your flexibility! Keep touching your toes.,3554,3617,feedback
+0029,Yes! That's it! Keep it up!,3631,3695,feedback
+0029,Always try to keep your neck relaxed!,3754,3817,feedback
+0029,Awesome! That was impressive.,3900,3963,feedback
+0029,It's time for shoulder gators!,4041,4104,feedback
+0029,Let's get started with shoulder gators!,4105,4168,feedback
+0029,Come on! Let's do some shoulder gators.,4200,4260,feedback
+0029,That's it! But try to slow down a bit!,4298,4349,feedback
+0029,"Slow it down, champ! Feel the burn!",4350,4413,feedback
+0029,First up are good morning beginner!,372,448,transition
+0029,Moving on to air jump rope!,1139,1202,transition
+0029,Moving on to mountain climbers!,1843,1907,transition
+0029,Moving on to floor touches!,2486,2552,transition
+0029,Moving on to toe touchers!,3302,3373,transition
+0029,Moving on to shoulder gators!,3998,4040,transition
+0029,That's the end of the session.,4669,4727,transition
+0030,Good! Try to keep those elbows straight!,420,494,feedback
+0030,Come on! Elbows back like you're about to give me a big elbow we hug,534,609,feedback
+0030,Remember to also keep your back straight!,648,723,feedback
+0030,Your elbows are still not straight!,821,883,feedback
+0030,Yeah! Those elbows looks straighter now!,884,946,feedback
+0030,That's not bad at all!,995,1058,feedback
+0030,Okay! Skip it out!,1197,1260,feedback
+0030,Wow... you're crushing it! Let's keep it going!,1297,1361,feedback
+0030,Love your form and speed!,1387,1451,feedback
+0030,Keep up the form and speed!,1521,1583,feedback
+0030,That was excellent! Keep it up for the next one!,1644,1705,feedback
+0030,Nice kick! I'm impressed.,1844,1899,feedback
+0030,"Whoa, that's a high kick!",1900,1958,feedback
+0030,Those are really good kicks! Keep it up!,1980,2037,feedback
+0030,10 kicks already! Awesome speed!,2044,2110,feedback
+0030,Hey! Don't slow down! Keep up the pace!,2139,2213,feedback
+0030,You can go faster than that!,2265,2342,feedback
+0030,Let's get working. Drop it low and get those punches in.,2621,2698,feedback
+0030,Yeah! That looks better! Keep trying to do deep squats. ,2719,2794,feedback
+0030,Good job! That's a deep squat!,2826,2900,feedback
+0030,"5 reps, keep it up!",2906,2979,feedback
+0030,Looking good! Keep going!,3074,3140,feedback
+0030,Wow! You did 10 squats! Good job!,3197,3259,feedback
+0030,Looks good. Now stretch out that shoulder.,3379,3444,feedback
+0030,"Mmm, feel that pull in your shoulder? That's good stuff.",3461,3526,feedback
+0030,Keep up the stretch! Looking good!,3577,3641,feedback
+0030,Awesome! That was amazing!,3805,3851,feedback
+0030,"There we go, really stretched that deltoid out.",4038,4101,feedback
+0030,Do you feel the pull in your shoulder?,4117,4178,feedback
+0030,First up are good morning beginner!,333,406,transition
+0030,Moving on to air jump rope!,1077,1139,transition
+0030,Moving on to standing kicks!,1739,1799,transition
+0030,Moving on to boxing squat punches!,2485,2560,transition
+0030,Moving on to armcrosschest left!,3275,3339,transition
+0030,Moving on to armcrosschest right!,3852,3914,transition
+0030,That's the end of the session.,4525,4601,transition
+0031,"Yes, that's it. Now try to bend down a bit lower!",459,528,feedback
+0031,Keep those elbows wide and out!,570,634,feedback
+0031,Hey! Remember to widen out those elbows! Also keep your back straight!,676,739,feedback
+0031,Mind your elbows and back!,784,848,feedback
+0031,Let's put in more effort next time!,988,1052,feedback
+0031,Let's get started with air jump rope!,1108,1169,feedback
+0031,"That's it! Skip, skip, skip!",1194,1256,feedback
+0031,Love the speed!,1278,1342,feedback
+0031,This is looking great. Keep it up.,1389,1452,feedback
+0031,Keep that speed up!,1474,1536,feedback
+0031,Excellent work! Keep it up for the next one!,1651,1709,feedback
+0031,Good. Try to go deeper with the squats.,1825,1897,feedback
+0031,Speed up your transition from squats to punches. Make it nice and smooth.,1927,2001,feedback
+0031,Yeah! That looks smoother!,2002,2077,feedback
+0031,5,2117,2190,feedback
+0031,Try to speed it up a little bit!,2193,2268,feedback
+0031,Nice work!,2423,2483,feedback
+0031,Let's get started!,2597,2672,feedback
+0031,Keep those kicks straight!,2721,2798,feedback
+0031,Really try to keep those kicks straight! Aim towards the camera.,2825,2890,feedback
+0031,You still have time to get those kicks straight!,2933,2997,feedback
+0031,Try harder next time!,3144,3209,feedback
+0031,Yes! That's it! Keep it going!,3331,3393,feedback
+0031,Wow! You are flexible.,3403,3467,feedback
+0031,Always try to keep your neck relaxed! Try to look down towards your feet.,3480,3544,feedback
+0031,That's looking solid! Keep going!,3596,3658,feedback
+0031,Don't stop! Keep going! There is still time.,3766,3830,feedback
+0031,It's time for shoulder gators!,3965,4022,feedback
+0031,Let's get started!,4023,4080,feedback
+0031,"Yes, that's it. Now try to slow it down a bit!",4083,4141,feedback
+0031,Bring down the speed a bit!,4198,4272,feedback
+0031,You are still going too fast!,4314,4388,feedback
+0031,Try going a bit slower next time!,4501,4577,feedback
+0031,That's the end of the session.,4665,4739,feedback
+0031,First up are good morning beginner!,379,454,transition
+0031,Moving on to air jump rope!,1063,1107,transition
+0031,Moving on to boxing squat punches!,1728,1786,transition
+0031,Moving on to squat kicks!,2484,2559,transition
+0031,Moving on to toe touchers!,3222,3286,transition
+0031,Moving on to shoulder gators!,3925,3964,transition
+0032,Let's get started with good mornings!,376,438,feedback
+0032,Let's get moving!,462,522,feedback
+0032,You still have time! Let's go!,549,611,feedback
+0032,"You can skip if you want, no pressure!",671,733,feedback
+0032,Try harder next time!,844,902,feedback
+0032,Let's get skipping!,999,1062,feedback
+0032,You are only moving your arms! Let's get skipping!,1085,1160,feedback
+0032,That's it! But keep moving your hands!,1204,1279,feedback
+0032,You are still not moving your hands!,1327,1400,feedback
+0032,Hmm now you stopped skipping! It's one fluid motion.,1430,1506,feedback
+0032,Let's put in more effort next time!,1556,1630,feedback
+0032,Let's get started!,1784,1857,feedback
+0032,Remember to squat after every punch!,1858,1933,feedback
+0032,Let's get squatting!,1934,2005,feedback
+0032,Good! But remember to punch it out at the top of the squat!,2049,2114,feedback
+0032,Come on! I'm not seeing any punches at the top of your squat!,2162,2226,feedback
+0032,Let's put in more effort next time!,2294,2358,feedback
+0032,Moving on to squat kicks!,2371,2436,feedback
+0032,Time to get moving!,2564,2627,feedback
+0032,"That's a squat, but where is the kick?",2643,2704,feedback
+0032,I wanna see some squat kicks!,2708,2765,feedback
+0032,Not bad! Now try to kick higher!,2766,2829,feedback
+0032,Kick higher and pick up the pace!,2840,2903,feedback
+0032,Ok! Try to get those kicks higher next time.,2934,2997,feedback
+0032,Moving on to shoulder gators!,3029,3072,feedback
+0032,It's time to start!,3132,3189,feedback
+0032,Let's keep moving. Let's go!,3202,3259,feedback
+0032,Let's get that upper body in motion. I'm waiting.,3298,3364,feedback
+0032,Really get the elbows moving back and forth. Let's get it.,3419,3495,feedback
+0032,Put in more effort next time.,3636,3710,feedback
+0032,Moving on to toe touchers!,3725,3799,feedback
+0032,That's it! Now really try to touch those toes!,3902,3975,feedback
+0032,Let your head hang loose when you bend over.,3976,4051,feedback
+0032,Let your head hang loose and really try to touch those toes now!,4105,4175,feedback
+0032,Come on! Really try to touch those toes now.,4228,4299,feedback
+0032,That's the end of the session.,4491,4555,feedback
+0032,First up are good morning beginner!,267,329,transition
+0032,Moving on to air jump rope!,912,969,transition
+0032,Moving on to boxing squat punches!,1658,1731,transition
+0032,Let's do some squat kicks!,2480,2543,transition
+0032,It's time for shoulder gators!,3073,3131,transition
+0032,Let's start with the toe touches!,3840,3901,transition
+0033,It's time for good mornings!,381,442,feedback
+0033,Time is passing you by!,467,530,feedback
+0033,Try to bend your upper body forward!,566,623,feedback
+0033,Hmm that's not it!,670,728,feedback
+0033,Try to improve next time!,865,939,feedback
+0033,Don't let the time pass by!,1043,1119,feedback
+0033,Let's get skipping!,1126,1202,feedback
+0033,"Yes, good job jumping. But don't forget to move those legs!",1292,1365,feedback
+0033,Come on! Move those arms too!,1422,1496,feedback
+0033,You gotta work your whole body.,1536,1608,feedback
+0033,Don't stop skipping!,1625,1699,feedback
+0033,Let's try to move both your arms and legs next time!,1718,1777,feedback
+0033,It's time for squat jumps!,1824,1887,feedback
+0033,"Hey c'mon, don't leave me hangin'!",1940,2003,feedback
+0033,Try to go deeper into the squats and jump higher!,2049,2092,feedback
+0033,Yes! That a good jump! Now try to squat deeper with a wider stance.,2093,2157,feedback
+0033,"Keep squatting and jumping, don't stop!",2181,2241,feedback
+0033,You are not really squatting! Come on!,2242,2305,feedback
+0033,We need to work harder next time.,2363,2426,feedback
+0033,Let's get squatting!,2536,2597,feedback
+0033,Don't forget the kicks!,2651,2701,feedback
+0033,Squat kick left squat kick right you got this,2702,2763,feedback
+0033,Waiting for you to start kicking!,2842,2899,feedback
+0033,Its a squat followed by two kicks! Don't forget the squats.,2937,2993,feedback
+0033,It's time to stretch that arm!,3129,3205,feedback
+0033,Let's do the arm stretch!,3206,3275,feedback
+0033,Wrong arm! Stretch the right arm!,3276,3351,feedback
+0033,Yes! Now pull your arm across. ,3354,3428,feedback
+0033,Don't keep on switching arms! Stretch each arm for at least 20 seconds.,3469,3545,feedback
+0033,Hmm I am not sure what you are doing!,3635,3707,feedback
+0033,Let's go! This is your time!,3946,4020,feedback
+0033,Let's get started!,4047,4104,feedback
+0033,That's the wrong arm! Stretch your left arm.,4105,4167,feedback
+0033,I am still waiting! Let's stretch that left arm!,4222,4286,feedback
+0033,That's the wrong arm!,4310,4374,feedback
+0033,First up are good morning beginner!,285,347,transition
+0033,Moving on to jumping jacks!,982,1042,transition
+0033,Moving on to squat jumps!,1778,1823,transition
+0033,Moving on to squat kicks!,2448,2511,transition
+0033,Moving on to armcrosschest right!,3082,3128,transition
+0033,Moving on to armcrosschest left!,3738,3810,transition
+0033,That's the end of the session.,4470,4533,transition
+0039,Good,1202,1265,feedback
+0039,You should try to get down to hip level.,1323,1385,feedback
+0039,"Also, straighten up that back. Make sure you bend only at the hips.",1487,1550,feedback
+0039,"Hey, it's important that you keep your back straight.",1590,1654,feedback
+0039,Good.,1839,1901,feedback
+0039,Don't let that clock tick down! Get back in there!,1924,1987,feedback
+0039,5,2079,2140,feedback
+0039,10,2216,2272,feedback
+0039,Make sure you're squatting down all the way.,2273,2330,feedback
+0039,First squat looks good.,2571,2644,feedback
+0039,Good depth on those squats.,2710,2785,feedback
+0039,Try to straighten your arm at the wrists. Punch straight out with the knuckles.,2934,3008,feedback
+0039,Almost done.,3022,3094,feedback
+0039,Nice.,3382,3446,feedback
+0039,Really try to touch those toes now.,3511,3569,feedback
+0039,"That's it, just a little further.",3570,3632,feedback
+0039,"Awesome, you're almost touching your toes!",3642,3705,feedback
+0039,Keep this up and you'll be touching your toes in no time.,3788,3853,feedback
+0039,Let's get it.,3978,4041,feedback
+0039,Nice!,4049,4111,feedback
+0039,"These look great, keep it up.",4192,4254,feedback
+0039,Squeeze those shoulder blades together at the back.,4379,4442,feedback
+0039,First up are butt kickers!,264,338,transition
+0039,Moving on to good morning beginner!,1083,1148,transition
+0039,Moving on to squat jumps!,1754,1818,transition
+0039,Moving on to boxing squat punches!,2391,2464,transition
+0039,Moving on to toe touchers!,3227,3300,transition
+0039,Moving on to shoulder gators!,3912,3976,transition
+0039,That's the end of the session.,4577,4634,transition
+0040,Nice! Keep it up!,459,521,feedback
+0040,Lovely speed,553,616,feedback
+0040,Just like this.,685,748,feedback
+0040,Good.,760,823,feedback
+0040,That's it! Keep it up!,1158,1222,feedback
+0040,Keep your back straight.,1246,1309,feedback
+0040,Give me a nice straight back on the way down with your elbows back.,1388,1449,feedback
+0040,Good.,1500,1557,feedback
+0040,Moving on to squat jumps!,1674,1731,feedback
+0040,"5 reps, keep it up!",1934,2011,feedback
+0040,10,2127,2201,feedback
+0040,15,2293,2368,feedback
+0040,Moving on to floor touches!,2435,2508,feedback
+0040,5,2757,2820,feedback
+0040,"You got this, cmon! Jump back in!",2877,2924,feedback
+0040,"Good, push through to the end. You've got this!",2925,2990,feedback
+0040,Keep your chest up.,3035,3098,feedback
+0040,Moving on to shoulder gators!,3166,3218,feedback
+0040,Slow it down just a bit.,3251,3314,feedback
+0040,This looks better.,3391,3455,feedback
+0040,Mmhmm,3516,3579,feedback
+0040,Keep it up.,3771,3830,feedback
+0040,Moving on to toe touchers!,3845,3903,feedback
+0040,Good.,3944,4001,feedback
+0040,"Go on, get down there and hang out. Say hi to your toes.",4248,4322,feedback
+0040,That's the end of the session.,4596,4670,feedback
+0040,First up are air jump rope!,359,429,transition
+0040,Moving on to good morning beginner!,1029,1092,transition
+0040,Nice! Let's keep moving. Let's go!,1773,1844,transition
+0040,"Yes, that's it. Keep it coming.",2564,2636,transition
+0040,Nice!,3219,3250,transition
+0040,You should be getting closer to your toes not further!,4105,4179,transition
+0041,"Yeah, this is hopping.",414,476,feedback
+0041,Maintain this speed,516,577,feedback
+0041,Keep it up.,675,733,feedback
+0041,Good.,761,818,feedback
+0041,Almost there.,876,949,feedback
+0041,That's it,1126,1201,feedback
+0041,Make sure you keep that back straight.,1359,1434,feedback
+0041,Keep that back straight as you go down.,1553,1627,feedback
+0041,Nice! Let's go!,1900,1965,feedback
+0041,Focus on your squats and just add a quick punch combo to the top. It's all one motion.,1978,2043,feedback
+0041,Good.,2073,2136,feedback
+0041,"Nice, you’re at ten reps, keep it going",2346,2407,feedback
+0041,Moving on to walking lunges!,2486,2549,feedback
+0041,That back foot should be pointed forward and your back knee should bend as you go down.,2773,2836,feedback
+0041,Step forward with both toes pointed straight and bend both knees to about 90.,2861,2922,feedback
+0041,Moving on to shoulder gators!,3151,3226,feedback
+0041,Nice and smooth forward and backward.,3354,3429,feedback
+0041,Feel the burn!,3520,3593,feedback
+0041,Good,3781,3855,feedback
+0041,Moving on to toe touchers!,3929,4005,feedback
+0041,Get on down there and touch your toes.,4105,4171,feedback
+0041,Stretch even further if you can.,4340,4403,feedback
+0041,It's ok to add a slight bend to your knees if you need to. ,4421,4484,feedback
+0041,That's the end of the session.,4642,4704,feedback
+0041,First up are air jump rope!,341,403,transition
+0041,Moving on to good morning beginner!,1018,1094,transition
+0041,Moving on to boxing squat punches!,1801,1869,transition
+0041,Good but keep your shoulders square. Don't forget to bend that back leg too.,2611,2672,transition
+0041,Nice,3239,3313,transition
+0041,Nice.,4039,4104,transition
+0043,Pretend you're using a real rope and move your arms too.,416,478,feedback
+0043,Yes but keep on jumping too!,506,569,feedback
+0043,"Don't just move your wrists now, combine this with jumping!",582,647,feedback
+0043,What are you doing?,669,733,feedback
+0043,"Good, now keep this up to the end.",779,842,feedback
+0043,Why?,895,957,feedback
+0043,Get those elbows up! Pose!,1209,1272,feedback
+0043,Nothing says good morning like get your elbows behind your head,1284,1344,feedback
+0043,These are shoulder gators not good mornings.,1392,1449,feedback
+0043,Do you need to take a break?,1475,1533,feedback
+0043,You should be kicking straight out.,1815,1892,feedback
+0043,"Nope, kick out towards your hands!",1949,2013,feedback
+0043,Get those feet up! Aim for the chin!,2014,2061,feedback
+0043,There. Keep this going.,2062,2137,feedback
+0043,You're doing the wrong thing again. Kick forward!,2184,2260,feedback
+0043,Let's get kickin'!,2547,2614,feedback
+0043,"Hhmm, why don't we kick the other way?",2674,2738,feedback
+0043,Kick straight out in front of you.,2795,2858,feedback
+0043,There we go!,2894,2959,feedback
+0043,Great height on those kicks.,2991,3055,feedback
+0043,Nice,3270,3332,feedback
+0043,"Wrong exercise pal, we're doing shoulder gators.",3333,3395,feedback
+0043,Let's do shoulder gators.,3422,3483,feedback
+0043,Jump back in once you're done stretching.,3627,3684,feedback
+0043,First up are air jump rope!,324,386,transition
+0043,Moving on to good morning beginner!,990,1051,transition
+0043,Moving on to standing kicks!,1627,1703,transition
+0043,Moving on to squat kicks!,2458,2530,transition
+0043,Moving on to shoulder gators!,3135,3198,transition
+0043,Moving on to toe touchers!,3809,3866,transition
+0043,That's the end of the session.,4591,4667,transition
+0045,Make sure you move your arms too.,376,433,feedback
+0045,Not just your arms though! Bring the jump back in.,461,524,feedback
+0045,Cool! Make sure you hop on the other leg the same amount.,621,697,feedback
+0045,Awesome.,727,802,feedback
+0045,Get back in! It'll be easier if you hop on both feet.,858,933,feedback
+0045,Yes!,956,1032,feedback
+0045,Good squats but let's not forget about the jumps!,1943,2004,feedback
+0045,That's the spirit!,2022,2087,feedback
+0045,"Yeah, these are tough but keep pushing with the jumps!",2151,2214,feedback
+0045,Jump!,2341,2402,feedback
+0045,Let's go! Clock's ticking.,2594,2651,feedback
+0045,Good. Now get up to a full plank and back down again.,2708,2765,feedback
+0045,That's it. Just like that.,2791,2860,feedback
+0045,2,2861,2937,feedback
+0045,3,2940,3015,feedback
+0045,Place your knees further back for a bigger challenge.,3019,3092,feedback
+0045,Bring those elbows forward instead of twisting.,4163,4227,feedback
+0045,Good.,4255,4319,feedback
+0045,Jump right back in once you're done stretching.,4443,4507,feedback
+0045,First up are air jump rope!,316,373,transition
+0045,Moving on to good morning beginner!,1054,1129,transition
+0045,Moving on to squat jumps!,1823,1887,transition
+0045,Moving on to moving plank!,2514,2572,transition
+0045,Moving on to toe touchers!,3236,3310,transition
+0045,Moving on to shoulder gators!,4013,4077,transition
+0045,That's the end of the session.,4696,4759,transition
+0048,Skip it out.,309,339,feedback
+0048,Maintain this speed,340,405,feedback
+0048,Great job.,504,568,feedback
+0048,Keep those wrists loose.,602,665,feedback
+0048,Try to stay in one spot.,701,765,feedback
+0048,We're on high knees now.,974,1022,feedback
+0048,Good. Now pump those knees!,1023,1080,feedback
+0048,Get those knees higher.,1093,1146,feedback
+0048,Get those knees up to hip height.,1147,1204,feedback
+0048,We're almost there with the knee height.,1257,1330,feedback
+0048,Awesome.,1737,1811,feedback
+0048,"Good, keep this up.",1878,1949,feedback
+0048,You've still got time to keep going! Don't drop it now!,2039,2111,feedback
+0048,That's it. Don't forget those punches though!,2424,2487,feedback
+0048,Nice. Make that transition from squats to punches nice and smooth.,2527,2589,feedback
+0048,"5 reps, keep it up!",2718,2780,feedback
+0048,Good form on those squats.,2819,2882,feedback
+0048,Speed up your transition from squats to punches.,2899,2960,feedback
+0048,"Great! Now that you're set, let's stretch the front of that leg out.",3137,3202,feedback
+0048,Focus on a fixed point in front of you to help balance.,3222,3283,feedback
+0048,Love the commitment! Engage your core and find a fixed point to focus on.,3323,3380,feedback
+0048,"Nice, this looks solid.",3447,3505,feedback
+0048,"Remember, focus on a fixed point to help balance.",3584,3639,feedback
+0048,Careful you don't fall over!,3890,3962,feedback
+0048,"Stand up nice and tall, engage your core, and focus on a fixed spot ahead of you.",3979,4055,feedback
+0048,Good,4081,4156,feedback
+0048,First up are air jump rope!,233,298,transition
+0048,Moving on to high knees!,897,960,transition
+0048,Moving on to mountain climbers!,1586,1659,transition
+0048,Moving on to boxing squat punches!,2349,2413,transition
+0048,Moving on to quad stretch left!,3044,3106,transition
+0048,Moving on to quad stretch right!,3640,3714,transition
+0048,That's the end of the session.,4444,4509,transition
+0049,Nice! Keep your legs straight though.,359,420,feedback
+0049,"Yes, that's it.",440,502,feedback
+0049,"Good, now focus on keeping that back straight.",538,595,feedback
+0049,Give me a nice straight back on the way down.,681,741,feedback
+0049,"Imagine there's a broomstick down your shirt, keeping your back straight.",784,860,feedback
+0049,"Jump right in, let's go!",1058,1131,feedback
+0049,Okay!,1190,1263,feedback
+0049,This is looking great. Keep it up.,1292,1365,feedback
+0049,Good.,1425,1499,feedback
+0049,Almost there.,1599,1674,feedback
+0049,Good,1861,1894,feedback
+0049,"Your target is a little higher, raise those kicks for me!",1895,1958,feedback
+0049,"Yes, just like this!",2014,2075,feedback
+0049,Don't lose that height. Get those kicks back up there!,2184,2249,feedback
+0049,"Good, keep it going like this.",2272,2334,feedback
+0049,Let's start the floor touches.,2495,2555,feedback
+0049,That's it!,2575,2637,feedback
+0049,5,2717,2776,feedback
+0049,"Your hands go down, but your chest and head stay up. Keep your eyes on me.",2823,2881,feedback
+0049,"Don't leave the floor longing for your touch, speed it up!",2913,2970,feedback
+0049,"Okay, but let's start with the other arm.",3209,3284,feedback
+0049,Start with your other arm.,3306,3379,feedback
+0049,"Good, now give that arm a big pull.",3487,3563,feedback
+0049,"We're going left arm, that's your right.",3933,4002,feedback
+0049,"That's it. Now, can you feel the pull in your shoulder blade?",4070,4132,feedback
+0049,Nice,4177,4239,feedback
+0049,Good job,4316,4380,feedback
+0049,First up are good morning beginner!,282,345,transition
+0049,Moving on to air jump rope!,971,1043,transition
+0049,Moving on to squat kicks!,1742,1804,transition
+0049,Moving on to floor touches!,2407,2469,transition
+0049,Moving on to armcrosschest right!,3051,3125,transition
+0049,Moving on to armcrosschest left!,3703,3779,transition
+0049,That's the end of the session.,4428,4493,transition
+0050,Bring those arms in on the action too.,418,491,feedback
+0050,Pump up those arms!,534,607,feedback
+0050,"Come on, let's give that upper body some love too.",641,714,feedback
+0050,"Arms, arms, arms!",768,842,feedback
+0050,Okay. I'll wait.,878,952,feedback
+0050,"Yes, let's make it happen.",1219,1272,feedback
+0050,Straighten up that back. Lift with your chest a little to help with this.,1273,1337,feedback
+0050,Don't quit yet! Keep going!,1376,1419,feedback
+0050,You need to use both those arms. ,1420,1482,feedback
+0050,Let's get going.,1553,1617,feedback
+0050,Get your elbows behind your head.,1681,1745,feedback
+0050,Let's go!,1937,1991,feedback
+0050,Go deeper in that squat and keep your chest up. Don't forget the jumps either!,1992,2054,feedback
+0050,"Deeper, taller, and jumpier!",2127,2191,feedback
+0050,Let's focus on fixing those next time.,2287,2347,feedback
+0050,"Don't be a bore, kiss the floor!",2809,2884,feedback
+0050,Wrong exercise. Give me a push-up.,2904,2978,feedback
+0050,"Planks are nice, but push-ups are nicer.",2988,3063,feedback
+0050,"Good, hold this to the end.",3420,3493,feedback
+0050,Don't stop just yet!,3499,3568,feedback
+0050,Stretch down to your toes with both hands and hold it there.,3735,3797,feedback
+0050,"Bring your elbows forward and backward, not in circles.",4106,4169,feedback
+0050,"Forward and backward, let's go!",4236,4298,feedback
+0050,"Once you're done stretching, hop right back in.",4361,4424,feedback
+0050,First up are jumping jacks!,306,379,transition
+0050,Moving on to good morning beginner!,1103,1177,transition
+0050,Moving on to squat jumps!,1851,1913,transition
+0050,Moving on to pushups!,2498,2555,transition
+0050,Moving on to toe touchers!,3270,3345,transition
+0050,Moving on to shoulder gators!,3976,4040,transition
+0050,That's the end of the session.,4647,4704,transition
+0051,"Yeah, nice skipping.",341,389,feedback
+0051,"This speed is great, keep it up",390,453,feedback
+0051,Looks great,474,536,feedback
+0051,Keep that up.,587,648,feedback
+0051,Good,773,835,feedback
+0051,Nice! Keep this up!,1072,1129,feedback
+0051,Looks perfect,1260,1335,feedback
+0051,Bam!,1530,1605,feedback
+0051,Good,1790,1842,feedback
+0051,"This is looking great, yes!",1843,1918,feedback
+0051,Can you go faster?,1929,2004,feedback
+0051,I know you've got more speed in you!,2070,2147,feedback
+0051,Quick! Thieves!,2209,2273,feedback
+0051,"This is looking great, yes!",2274,2338,feedback
+0051,Moving on to standing kicks!,2380,2444,feedback
+0051,Let's keep those arms right in front of us.,2495,2558,feedback
+0051,Yes! Now keep this up to the end.,2830,2894,feedback
+0051,"Whoa, that's a high kick!",2915,2977,feedback
+0051,Moving on to shoulder gators!,3041,3104,feedback
+0051,"Yes, that's it. Keep it coming.",3135,3198,feedback
+0051,Perfect range of motion. Keep it up.,3459,3516,feedback
+0051,Moving on to toe touchers!,3722,3799,feedback
+0051,Nice! You're so flexible!,3957,4032,feedback
+0051,That's the end of the session.,4517,4580,feedback
+0051,First up are air jump rope!,285,340,transition
+0051,Moving on to good morning beginner!,941,1003,transition
+0051,Moving on to quick feet!,1631,1703,transition
+0051,Kicks are looking solid but let's keep those arms in front of you.,2653,2717,transition
+0051,You're crushing it! Let's keep it going,3272,3330,transition
+0051,Legs as straight as you can. You got this.,4077,4152,transition
+0052,"Yeah, kick that butt!",417,479,feedback
+0052,Buck kicking at light speed! Keep up the pace!,547,608,feedback
+0052,Try not to lift your knee up. Keep them pointed down and lift only your heels.,703,760,feedback
+0052,"Remember, keep your knees pointed down.",866,923,feedback
+0052,Here we go,1167,1235,feedback
+0052,"Yes, feet not too wide. This looks good",1236,1310,feedback
+0052,Lookin' good,1422,1497,feedback
+0052,"Nice and steady, that's five reps",1568,1640,feedback
+0052,Well done,1728,1804,feedback
+0052,That's it! Keep it up!,1921,1964,feedback
+0052,Perfect form!,1965,2028,feedback
+0052,"5 reps, keep it up!",2137,2200,feedback
+0052,Careful not to squat too deep now.,2223,2285,feedback
+0052,Squat down until your thighs are parallel to the floor. ,2354,2418,feedback
+0052,Feel that pull in your shoulder? That's good stuff.,4028,4098,feedback
+0052,Great work! You got this!,4167,4232,feedback
+0052,That looks great. Good stretching.,4297,4361,feedback
+0052,Nice stretch. You'll feel it in the shoulder.,4469,4533,feedback
+0052,First up are butt kickers!,370,416,transition
+0052,Moving on to good morning beginner!,1046,1123,transition
+0052,Moving on to boxing squat punches!,1830,1900,transition
+0052,Moving on to standing kicks!,2510,2574,transition
+0052,Moving on to armcrosschest right!,3147,3209,transition
+0052,Moving on to armcrosschest left!,3805,3879,transition
+0052,That's the end of the session.,4543,4603,transition
+0053,Let's start doing some high knees!,350,408,feedback
+0053,What are you doing? Clock's ticking let's go!,573,648,feedback
+0053,Just keep going and earn your rest breaks!,652,727,feedback
+0053,"Hey, where are you going? Come back!",778,853,feedback
+0053,If you're getting a snack can you get me one too?,854,930,feedback
+0053,We're on good mornings now.,1108,1182,feedback
+0053,Take your time but jump back in once you're done stretching.,1284,1357,feedback
+0053,You've still got time to get a few reps in.,1484,1546,feedback
+0053,Let's go!,2491,2552,feedback
+0053,Kick out straight in front of you.,2553,2609,feedback
+0053,Good but keep those arms in front of you and maintain a solid stance.,2688,2745,feedback
+0053,"The kicks to the front were fine, return to those.",2910,2983,feedback
+0053,You should be doing a deltoid stretch right now.,3269,3343,feedback
+0053,"That's the wrong exercise, we're on deltoid stretches.",3468,3541,feedback
+0053,"Good, now give that arm a nice pull.",3545,3622,feedback
+0053,It's important to hold the stretch to the very end!,3719,3761,feedback
+0053,Pull your arm straight across your chest.,3919,3982,feedback
+0053,First up are high knees!,263,320,transition
+0053,Moving on to good morning beginner!,978,1055,transition
+0053,Moving on to puddle jumps!,1740,1804,transition
+0053,Moving on to standing kicks!,2428,2489,transition
+0053,Moving on to armcrosschest right!,3116,3189,transition
+0053,Moving on to armcrosschest left!,3762,3826,transition
+0053,That's the end of the session.,4442,4505,transition
+0054,Yes.,360,394,feedback
+0054,Your arms and legs should move in the same direction.,395,459,feedback
+0054,Your arms and legs and moving in opposite directions!,525,588,feedback
+0054,Better but they're out of sync. Try to move them out and in at the same time.,667,729,feedback
+0054,There we go! Good job!,828,891,feedback
+0054,"Jumping jack time is over, let's do good mornings.",1041,1103,feedback
+0054,"Yes, let's make it happen.",1148,1211,feedback
+0054,That's 5. Keep it up!,1332,1389,feedback
+0054,Keep your legs still and bend down from the waist.,1444,1504,feedback
+0054,"Let's go, clock's ticking!",1774,1848,feedback
+0054,Good but let's keep those arms in front.,1908,1981,feedback
+0054,"There, just like that. Keep this up!",2027,2099,feedback
+0054,Nice kicks! Can you go higher?,2166,2241,feedback
+0054,I know you've got more in you. Let's get higher!,2274,2347,feedback
+0054,Take your feet wider apart so you can get nice and low in that lunge.,2636,2700,feedback
+0054,Better but let's skip the jumping for now and focus on your lunge form. Give me a nice big step and go deep.,2819,2882,feedback
+0054,Yes! That's what I'm looking for! We'll add the jump next time.,2953,3015,feedback
+0054,"Don't just stand there, let's stretch!",3275,3339,feedback
+0054,"We're going left arm, that's your right.",3377,3440,feedback
+0054,"Ok, stick to this arm but straighten it out across your chest.",3488,3548,feedback
+0054,Your arm should go right across your chest to get the most out of this.,3590,3647,feedback
+0054,Keep going!,3683,3703,feedback
+0054,"Looks good. Now, stretch out that shoulder.",3812,3887,feedback
+0054,Jump back in!,3888,3962,feedback
+0054,"Wrong arm, we're on the right arm right now.",3969,4045,feedback
+0054,Try your other right arm.,4113,4187,feedback
+0054,"Good, now give that arm a pull.",4290,4366,feedback
+0054,First up are jumping jacks!,286,350,transition
+0054,Moving on to good morning beginner!,976,1038,transition
+0054,Moving on to standing kicks!,1644,1719,transition
+0054,Moving on to lunge jumps!,2443,2507,transition
+0054,Moving on to armcrosschest left!,3148,3209,transition
+0054,Moving on to armcrosschest right!,3704,3761,transition
+0054,That's the end of the session.,4494,4566,transition
+0055,Let's kick some butt!,402,467,feedback
+0055,"Good speed, keep this up.",483,545,feedback
+0055,Try not to raise your knees. Keep them pointed down.,632,695,feedback
+0055,"Knees down straight, heels up high, kick that butt and make it cry!",738,801,feedback
+0055,"No, you're still raising them. Point them down straight.",862,926,feedback
+0055,Go for it!,1766,1842,feedback
+0055,That's it,1845,1920,feedback
+0055,You can go deeper! Work with me!,1981,2056,feedback
+0055,"Make sure you're touching the floor on those floor touches, okay?",2066,2140,feedback
+0055,"Come on, touch the floor, it won't bite. The floor loves you.",2204,2279,feedback
+0055,"Hey, don't stop! Go all the way to the end!",2356,2432,feedback
+0055,Let's make it happen.,2574,2638,feedback
+0055,Don't hold out on me. Give me a deep squat then launch into the air!,2675,2739,feedback
+0055,"Come on, you can do this. ",2760,2823,feedback
+0055,Closer. Pretend you're sitting back into a chair.,2884,2947,feedback
+0055,Let's focus on getting the squat right before you add the jump in.,2996,3058,feedback
+0055,Jump right in.,3247,3309,feedback
+0055,Good.,3310,3371,feedback
+0055,Good range of motion here. Keep it up.,3469,3530,feedback
+0055,Move smoothly forward and backward. Don't snap to either position.,3632,3689,feedback
+0055,"It's okay to bend your knees a bit, but make sure you still feel a stretch in the back of your legs.",3979,4053,feedback
+0055,"Nice, almost there!",4100,4175,feedback
+0055,So close to your toes! Hold this position now.,4214,4290,feedback
+0055,Great work! You'll be touching your toes in no time.,4303,4378,feedback
+0055,First up are butt kickers!,346,401,transition
+0055,Moving on to air jump rope!,1012,1075,transition
+0055,Moving on to floor touches!,1689,1763,transition
+0055,Moving on to squat jumps!,2470,2544,transition
+0055,Moving on to shoulder gators!,3177,3238,transition
+0055,Moving on to toe touchers!,3813,3878,transition
+0055,That's the end of the session.,4606,4679,transition
+0056,Skip it! Skip it!,329,393,feedback
+0056,You're crushing it! Let's keep it going,533,596,feedback
+0056,"Yup, this looks good. ",650,712,feedback
+0056,Great pacing.,756,817,feedback
+0056,That's it! Keep it up!,1044,1117,feedback
+0056,Be sure to keep your back straight as you go down.,1133,1208,feedback
+0056,That's a little better.,1272,1347,feedback
+0056,Try to get your back straighter and stick your elbows straight out to the side.,1401,1476,feedback
+0056,"Good, but bring your hips down.",1857,1932,feedback
+0056,Solid as a rock but your hips are still too high.,1980,2049,feedback
+0056,"Next time let's focus on bringing those hips down. You want to be in a classic plank position with your back, hips, and legs in line.",2145,2208,feedback
+0056,Give me a deep squat then explode up and off the ground!,2561,2624,feedback
+0056,"This isn't hop scotch, give me a nice squat when you land!",2688,2750,feedback
+0056,"C'mon, don't leave me hangin'!",2762,2825,feedback
+0056,"Still lots of time to get it, let's go!",2859,2921,feedback
+0056,"Don't just stand there, let's move!",2990,3051,feedback
+0056,"Okay, now try to reach further down.",3296,3365,feedback
+0056,You should feel a nice stretch at the back of your legs.,3499,3574,feedback
+0056,Keep this up and you'll be touching your toes in no time.,3661,3736,feedback
+0056,Good,3765,3840,feedback
+0056,Good,4018,4092,feedback
+0056,Perfect range and speed.,4127,4200,feedback
+0056,"Nice, keep this going.",4297,4362,feedback
+0056,That's 10 reps. Awesome! Keep it going to the end.,4457,4520,feedback
+0056,That's the end of the session.,4615,4678,feedback
+0056,First up are air jump rope!,265,328,transition
+0056,Moving on to good morning beginner!,914,971,transition
+0056,Moving on to plank taps!,1708,1779,transition
+0056,Moving on to squat jumps!,2452,2515,transition
+0056,Moving on to toe touchers!,3138,3195,transition
+0056,Moving on to shoulder gators!,3866,3940,transition
+0073,"Not toe toucher stretches, floor touches!",1830,1888,feedback
+0073,Nice. Keep that chest up.,1906,1964,feedback
+0073,"5 reps, keep it up!",1974,2042,feedback
+0073,Keep up that great form!,2147,2211,feedback
+0073,"Nice, you’re at ten reps, keep it going",2212,2289,feedback
+0073,"Great floor touching, keep it up.",2406,2480,feedback
+0073,Good.,2659,2688,feedback
+0073,Nice kicks! I'm impressed.,2689,2762,feedback
+0073,Keep it up!,2823,2895,feedback
+0073,"Awesome, now let's pick up the pace!",3014,3068,feedback
+0073,That's it! Keep pushing.,3069,3134,feedback
+0073,Looks good. Now focus on pulling that foot back.,3384,3449,feedback
+0073,Balance can be a challenge with this stretch. Try to focus on a fixed point in front of you.,3466,3530,feedback
+0073,Careful not to fall over!,3615,3676,feedback
+0073,"Engage that core, stand tall, and focus on a fixed spot ahead of you.",3742,3805,feedback
+0073,Props for keeping at it!,3858,3905,feedback
+0073,First up are butt kickers!,394,468,transition
+0073,Moving on to good morning beginner!,1133,1197,transition
+0073,Moving on to floor touches!,1790,1829,transition
+0073,Moving on to standing kicks!,2549,2626,transition
+0073,Moving on to quad stretch right!,3312,3375,transition
+0073,Moving on to quad stretch left!,3906,3966,transition
+0073,That's the end of the session.,4613,4687,transition
+0074,Nice. Nice.,363,428,feedback
+0074,Keep going! You're doing great!,471,533,feedback
+0074,That looks good. Keep it going.,538,600,feedback
+0074,Excellent! You're really getting it!,614,676,feedback
+0074,Range of motion looks good.,732,793,feedback
+0074,Nice job.,863,920,feedback
+0074,Okay!,1047,1122,feedback
+0074,Good speed.,1133,1208,feedback
+0074,Keep it going just like this.,1217,1293,feedback
+0074,This is looking great.,1349,1424,feedback
+0074,We're almost done! Get back in there!,1633,1706,feedback
+0074,"Right into it, let's go!",1877,1922,feedback
+0074,Nice! Just like this. Let's go!,1923,1997,feedback
+0074,5,2132,2197,feedback
+0074,10,2334,2366,feedback
+0074,Keep it up!,2367,2428,feedback
+0074,Let's go!,2538,2600,feedback
+0074,"Yes, let's make it happen.",2616,2678,feedback
+0074,Feet so quick I can barely see them!,2701,2765,feedback
+0074,Yup.,2825,2887,feedback
+0074,Keep it up!,2971,3033,feedback
+0074,Moving on to quad stretch left!,3139,3196,feedback
+0074,Almost had it! Engage your core and stand up tall.,3345,3418,feedback
+0074,"That's alright, keep trying. Just be careful not to fall over!",3495,3569,feedback
+0074,"Remember, stand up tall and proud.",3759,3831,feedback
+0074,Moving on to quad stretch right!,3832,3905,feedback
+0074,Stand up tall and engage your core.,4028,4104,feedback
+0074,Balance can be a challenge with this stretch. Try placing your fingers in your belly button to center yourself.,4262,4327,feedback
+0074,Great effort!,4384,4446,feedback
+0074,Remember to stand tall and focus on a fixed spot ahead of you.,4528,4577,feedback
+0074,That's the end of the session.,4578,4642,feedback
+0074,First up are jumping jacks!,339,362,transition
+0074,Moving on to air jump rope!,986,1042,transition
+0074,Moving on to squat kicks!,1774,1849,transition
+0074,Moving on to quick feet!,2473,2535,transition
+0074,Stand up tall and focus on a fixed spot ahead of you to help balance.,3214,3272,transition
+0074,"All right, we've got the leg up.",3961,4027,transition
+0077,"Yeah, this is hopping.",439,513,feedback
+0077,Good. Keep this up to the end.,558,634,feedback
+0077,Looking good,950,1017,feedback
+0077,Great work!,1035,1098,feedback
+0077,Nice!,1248,1310,feedback
+0077,You've got this!,1357,1421,feedback
+0077,Let's see if we can get those knees higher.,1460,1523,feedback
+0077,"Uh oh, looks like your knees are getting lower.",1574,1635,feedback
+0077,"Knees up way higher, let's go.",1659,1723,feedback
+0077,Nice! Let's keep moving. Let's go!,1869,1933,feedback
+0077,Don't neglect the floor! These are floor touches after all!,1936,1997,feedback
+0077,Get all the way down to that floor.,2067,2124,feedback
+0077,Better! Keep your chest up as you go down.,2135,2192,feedback
+0077,"Hey, we're not done yet! Jump back in!",2203,2260,feedback
+0077,"Okay, now let's get closer to those toes.",3400,3462,feedback
+0077,You should feel a nice stretch at the back of your legs.,3518,3582,feedback
+0077,Keep this up and you'll be touching your toes in no time.,3646,3709,feedback
+0077,Keep it up. Try to reach even further if you can.,3816,3863,feedback
+0077,Looks great,3864,3928,feedback
+0077,That's it! Keep it up!,4104,4166,feedback
+0077,Don't snap your arms forward. You should move smoothly forward and back.,4192,4255,feedback
+0077,That looks better. Try to slow it down a bit more.,4327,4384,feedback
+0077,Go a little slower.,4475,4532,feedback
+0077,Good job,4553,4631,feedback
+0077,First up are air jump rope!,382,438,transition
+0077,Moving on to high knees!,1135,1197,transition
+0077,Moving on to floor touches!,1794,1854,transition
+0077,Moving on to pushups!,2521,2594,transition
+0077,Moving on to toe touchers!,3286,3350,transition
+0077,Moving on to shoulder gators!,3970,4034,transition
+0077,That's the end of the session.,4644,4708,transition
+0078,Good,468,495,feedback
+0078,Elbows back like you're about to give me a big elbow we hug,496,571,feedback
+0078,That's better.,639,709,feedback
+0078,Give me a nice straight back on the way down.,812,887,feedback
+0078,Good! You don't have to hold at the bottom position. ,890,963,feedback
+0078,Nice start!,1904,1968,feedback
+0078,Feet so quick I can barely see them!,1993,2044,feedback
+0078,"Whoa, burning up the dance floor!",2045,2105,feedback
+0078,Keep going. Keep going.,2185,2238,feedback
+0078,This is looking great! Yes!,2239,2292,feedback
+0078,Great job!,2293,2361,feedback
+0078,You can do it! Let's get squat kickin'!,2611,2687,feedback
+0078,"Come on, let's see what you've got!",2751,2824,feedback
+0078,"I have a fever, and the only cure is watching you do squat kicks.",2988,3059,feedback
+0078,Come on! Get it!,3125,3199,feedback
+0078,Let's get that upper body in motion. I'm waiting.,3391,3437,feedback
+0078,That's it,3438,3501,feedback
+0078,"Bring down the speed a bit, you're gonna fly away!",3509,3572,feedback
+0078,Good range but go a bit slower.,3614,3676,feedback
+0078,Slow it down just a little.,3685,3748,feedback
+0078,Good!,3828,3891,feedback
+0078,First up are good morning beginner!,385,460,transition
+0078,Moving on to air jump rope!,1140,1202,transition
+0078,Moving on to quick feet!,1802,1865,transition
+0078,Moving on to squat kicks!,2459,2533,transition
+0078,Moving on to shoulder gators!,3285,3348,transition
+0078,Moving on to toe touchers!,3956,4019,transition
+0078,That's the end of the session.,4614,4689,transition
+0079,Good.,326,381,feedback
+0079,"Yup, keep going down to the same level.",382,446,feedback
+0079,Make sure you keep your back straight as you go down.,458,521,feedback
+0079,Think about popping your chest out and pulling your head back.,597,659,feedback
+0079,You'll feel less strain on your neck if you keep your back straight. ,726,788,feedback
+0079,Focus on hinging only at the hips. ,807,871,feedback
+0079,Nice!,1055,1112,feedback
+0079,Let's see if you can pick up the pace a bit.,1129,1186,feedback
+0079,Nice work! I know you've got more height in those knees.,1234,1307,feedback
+0079,Don't slow down on me now. Keep pushing!,1365,1438,feedback
+0079,"We're almost at the end, push through!",1499,1572,feedback
+0079,Nice! Let's keep moving. Let's go!,2570,2633,feedback
+0079,Bam!,2779,2842,feedback
+0079,Wow... you're crushing it! Let's keep it going,2961,3024,feedback
+0079,"Yes, let's make it happen.",3190,3251,feedback
+0079,Good range of motion.,3255,3313,feedback
+0079,Go a little slower with these.,3374,3431,feedback
+0079,A bit more.,3524,3599,feedback
+0079,"There, keep this up.",3657,3732,feedback
+0079,First up are good morning beginner!,269,325,transition
+0079,Moving on to high knees!,935,996,transition
+0079,Moving on to boxing squat punches!,1664,1739,transition
+0079,Moving on to quick feet!,2449,2511,transition
+0079,Moving on to shoulder gators!,3107,3167,transition
+0079,Moving on to toe touchers!,3820,3890,transition
+0079,That's the end of the session.,4594,4656,transition
+0087,Great job!,359,434,feedback
+0087,"Nice, you’re at ten reps, keep it going",558,632,feedback
+0087,I know that feeling.,748,806,feedback
+0087,"Awesome, you really, really like this one.",807,882,feedback
+0087,Wow! I love the range of motion you have here!,904,975,feedback
+0087,Good start!,1167,1235,feedback
+0087,You're doing great. Keep going!,1254,1317,feedback
+0087,Wow... you're crushing it!,1346,1410,feedback
+0087,Bam!,1587,1651,feedback
+0087,I call this the superhero landing exercise.,1917,1981,feedback
+0087,"Great speed, keep it up.",2047,2110,feedback
+0087,Look at that speed! Love it!,2152,2216,feedback
+0087,Nice moves!,2217,2266,feedback
+0087,Keep it up!,2267,2324,feedback
+0087,Great job!,2329,2386,feedback
+0087,Moving on to floor touches!,2430,2487,feedback
+0087,"Looks great, keep it up!",2693,2768,feedback
+0087,"Great floor touching, keep it up!",2829,2904,feedback
+0087,Keep up the hustle in great form!,2955,3032,feedback
+0087,"Yeah, this looks really great.",3081,3156,feedback
+0087,Moving on to armcrosschest right!,3226,3297,feedback
+0087,First up are jumping jacks!,298,358,transition
+0087,Moving on to good morning beginner!,1087,1162,transition
+0087,Moving on to lunge jumps!,1769,1832,transition
+0087,"Yes, let's make it happen.",2527,2603,transition
+0087,Moving on to armcrosschest left!,3807,3871,transition
+0087,That's the end of the session.,4483,4547,transition
+0088,"You can skip if you want, no pressure",393,468,feedback
+0088,Great moves!,547,622,feedback
+0088,Perfect speed,667,744,feedback
+0088,"Wow, great speed! Keep it up!",890,961,feedback
+0088,Maintain this speed,962,1034,feedback
+0088,"Yes, that's it. Keep it coming.",1172,1235,feedback
+0088,Wow... you're crushing it! Let's keep it going,1356,1418,feedback
+0088,Give me a nice straight back on the way down.,1422,1485,feedback
+0088,"Straighten up that back, partner. You can lift from your chest a little to help with this.",1526,1588,feedback
+0088,Yes!,1654,1718,feedback
+0088,Squat kick left. Squat kick right. You got this!,2531,2605,feedback
+0088,5,2743,2819,feedback
+0088,10,3000,3075,feedback
+0088,Great job!,3133,3208,feedback
+0088,First up are air jump rope!,344,392,transition
+0088,Moving on to good morning beginner!,1112,1171,transition
+0088,Moving on to floor touches!,1778,1842,transition
+0088,Moving on to squat kicks!,2442,2515,transition
+0088,Moving on to armcrosschest right!,3219,3295,transition
+0088,Moving on to armcrosschest left!,3795,3859,transition
+0088,That's the end of the session.,4467,4523,transition
+0089,First up are butt kickers!,334,394,transition
+0089,Moving on to air jump rope!,971,1044,transition
+0089,Moving on to quick feet!,1750,1826,transition
+0089,Moving on to standing kicks!,2443,2507,transition
+0089,Moving on to shoulder gators!,3136,3193,transition
+0089,Moving on to toe touchers!,3928,4003,transition
+0089,That's the end of the session.,4656,4719,transition
+0145,Excellent.,344,401,feedback
+0145,Focus on your range of motion.,402,464,feedback
+0145,Come on! Move the legs!,508,571,feedback
+0145,Yes! Great range of motion.,634,693,feedback
+0145,Hmm don't stop moving your hands!,710,772,feedback
+0145,You are still not moving your hands!,775,854,feedback
+0145,Ok! That's a start!,1050,1108,feedback
+0145,"Come on, I wanna see you jumping!",1109,1168,feedback
+0145,"Come on, faster! Jump! Jump! Jump!",1197,1256,feedback
+0145,That's better! But you can go faster still!,1277,1338,feedback
+0145,Yes! That's it! Now lift your knees higher!,1360,1420,feedback
+0145,Higher knees!,1421,1466,feedback
+0145,Let's try harder next time!,1467,1529,feedback
+0145,"Yes, that's it. Keep it coming.",1754,1820,feedback
+0145,Try to bring your knees closer to your chest!,1893,1956,feedback
+0145,Wow... you're crushing it! Let's keep it going,1957,2018,feedback
+0145,Don't stop! Use both of your legs!,2038,2101,feedback
+0145,Try to do more reps next time.,2156,2217,feedback
+0145,Yes! Good start!,2448,2519,feedback
+0145,Keep changing lunges from left leg to right leg!,2520,2583,feedback
+0145,Yes! Just like that!,2638,2698,feedback
+0145,Go deeper with the lunges!,2742,2801,feedback
+0145,Yes! That's it!,2828,2891,feedback
+0145,Yes! You got it in the end!,2930,2991,feedback
+0145,Great! Now pull your arm across.,3127,3191,feedback
+0145,"Mmm, feel that pull in your shoulder? That's good stuff.",3245,3308,feedback
+0145,Great work! You'll get the best stretch if that arm stretches directly across your body. You got this!,3360,3422,feedback
+0145,Keep your arms straight for the best results!,3553,3616,feedback
+0145,Nice but remember to keep that arm straight next time!,3651,3683,feedback
+0145,"Great, now stretch that arm out.",3805,3864,feedback
+0145,Don't need to hug yourself. Stick that arm straight out.,3901,3978,feedback
+0145,Your stretch will be more effective if you straighten that arm!,4082,4144,feedback
+0145,"Even more, all the way straight.",4223,4282,feedback
+0145,"There, just like that.",4327,4386,feedback
+0145,First up are jumping jacks!,318,343,transition
+0145,Moving on to high knees!,1010,1049,transition
+0145,Moving on to mountain climbers!,1691,1753,transition
+0145,Moving on to walking lunges!,2367,2440,transition
+0145,Moving on to armcrosschest left!,3042,3101,transition
+0145,Moving on to armcrosschest right!,3684,3743,transition
+0145,That's the end of the session.,4389,4451,transition
+0146,Let's get moving!,367,426,feedback
+0146,"Legs, legs, legs, I'm talking to you. Come on in!",435,495,feedback
+0146,Yes! Now pick up the pace!,552,611,feedback
+0146,Come on! Pick up the pace!,641,701,feedback
+0146,You are still too slow!,718,777,feedback
+0146,Next time try to be a little bit faster!,896,969,feedback
+0146,"Good. Keep moving, but hold your position.",1141,1204,feedback
+0146,You are still moving too much! Hold your position!,1225,1288,feedback
+0146,Come on! Try and hold your position!,1319,1380,feedback
+0146,Yes! That's it!,1403,1464,feedback
+0146,Good work! But try and hold your position next time!,1516,1575,feedback
+0146,Let's get started!,1813,1881,feedback
+0146,Yes! Now pick up the pace!,1955,2018,feedback
+0146,Let's bring those hips back down to Earth!,2055,2117,feedback
+0146,Okay! That's more like it!,2200,2260,feedback
+0146,Moving on to lunge jumps!,2379,2425,feedback
+0146,It's called lunge jumps not lunge walks! Jump!,2503,2575,feedback
+0146,Yes! That's a jump! Now speed it up!,2604,2677,feedback
+0146,Yes! That's a good pace!,2706,2767,feedback
+0146,10 reps! Amazing!,2828,2890,feedback
+0146,That was really good!,2957,3017,feedback
+0146,Moving on to armcrosschest left!,3054,3113,feedback
+0146,Hey! Don't leave! Still loads of time to go!,3253,3316,feedback
+0146,I am still waiting!,3388,3454,feedback
+0146,Yes! Welcome back! Let's get started!,3500,3559,feedback
+0146,Stretch out that arm!,3594,3653,feedback
+0146,Moving on to armcrosschest right!,3663,3724,feedback
+0146,Stretch out the deltoid across!,3839,3898,feedback
+0146,Keep your arm straight!,3988,4050,feedback
+0146,That's the end of the session.,4369,4431,feedback
+0146,First up are jumping jacks!,322,366,transition
+0146,Moving on to butt kickers!,1013,1085,transition
+0146,Moving on to plank taps!,1703,1780,transition
+0146,Yes! Lunge jumps for when lunging just isn't cool enough.,2426,2489,transition
+0146,Let's get started with deltoid stretch!,3163,3233,transition
+0146,Let's stretch that deltoid out!,3771,3832,transition
+0148,Awesome!,384,444,feedback
+0148,Great job! ,445,517,feedback
+0148,That's 8 reps. Keep it going.,534,591,feedback
+0148,But keep those arms up!  ,592,653,feedback
+0148,Uhm,664,693,feedback
+0148,Arms?,694,753,feedback
+0148,Here we go,754,815,feedback
+0148,Uhm,839,872,feedback
+0148,Now without legs? Keep them moving!,873,936,feedback
+0148,"Great, that's it",973,1032,feedback
+0148,Moving on to butt kickers!,1033,1110,feedback
+0148,Now really try to make your feet go back towards your butt!,1161,1238,feedback
+0148,Come on! Really try to kick your butt!,1275,1353,feedback
+0148,Hey! Hey! Don't stop so soon!,1402,1464,feedback
+0148,Pick up the pace!,1479,1538,feedback
+0148,Yes! That's it!,1593,1656,feedback
+0148,Moving on to pushups!,1798,1838,feedback
+0148,Good,1935,1983,feedback
+0148,"Yes, those are some great push-ups.",1984,2054,feedback
+0148,"Awesome form, you're on fire!",2055,2107,feedback
+0148,"That's 5, keep'em coming!",2108,2177,feedback
+0148,"Keep'em coming, you got this!",2206,2276,feedback
+0148,Yes! ,2389,2449,feedback
+0148,"7 down, good job.",2450,2491,feedback
+0148,Moving on to mountain climbers!,2492,2515,feedback
+0148,Now try to really bring your knees closer to your chest!,2620,2679,feedback
+0148,Come on! Really try to bring your knees closer to your chest!,2743,2807,feedback
+0148,Yes! That's much better! Knees closer to your chest!,2877,2950,feedback
+0148,Moving on to armcrosschest left!,3240,3287,feedback
+0148,"Mmm, feel that pull in your shoulder? That's good stuff.",3393,3454,feedback
+0148,Awesome! Keep it up!,3501,3564,feedback
+0148,You are still going strong!,3601,3660,feedback
+0148,That was really good! Keep it up for the next one!,3825,3850,feedback
+0148,Moving on to armcrosschest right!,3851,3917,feedback
+0148,Nice stretch. You should feel it in your shoulder.,4051,4110,feedback
+0148,Keep your arm steady please!,4174,4233,feedback
+0148,Yes! That's it! Stretch it out!,4305,4367,feedback
+0148,Good work!,4414,4473,feedback
+0148,That's the end of the session.,4535,4599,feedback
+0148,First up are jumping jacks!,331,383,transition
+0148,"Yeah, kick that butt!",1135,1160,transition
+0148,"Alright, here we go!",1839,1897,transition
+0148,Nice!,2516,2576,transition
+0148,"There we go, really stretch that deltoid out.",3288,3350,transition
+0148,Great! Now pull your arm across.,3976,4035,transition
+0149,"Nice, good butt kicking.",404,445,feedback
+0149,Nice speed!,446,486,feedback
+0149,Good job!,487,520,feedback
+0149,"Good pacing, good height in the feet, good speed. That's the recipe!",521,579,feedback
+0149,"You're on fire, don't stop now!",625,686,feedback
+0149,Hello?,687,752,feedback
+0149,"Haha, good one. C'mon back now. Please?",761,838,feedback
+0149,And on it goes! ,885,941,feedback
+0149,Great!,942,1002,feedback
+0149,That's good!,1093,1128,feedback
+0149,Right on.,1129,1190,feedback
+0149,Try to keep up the continuous smooth motion from before.,1237,1299,feedback
+0149,Try to go back to the smooth jumps you did when you started.,1363,1422,feedback
+0149,Getting a little better. ,1484,1562,feedback
+0149,"Aaand, you're back!",1587,1606,feedback
+0149,Good,1607,1683,feedback
+0149,"Can you feel the cold air? Swish, swish, swish!",1839,1900,feedback
+0149,Leap a bit more to the side. Imagine a bigger puddle to jump over.,1901,1959,feedback
+0149,Nice,2003,2062,feedback
+0149,Now watch out that you bend that front leg when you land. ,2069,2130,feedback
+0149,"Yes, like that!",2148,2209,feedback
+0149,Awesome,2220,2278,feedback
+0149,Hey! Your arms are too close together!,2518,2589,feedback
+0149,Keep your arms shoulder width apart! ,2605,2667,feedback
+0149,"If you can hear me, keep your arms shoulder width apart! ",2692,2753,feedback
+0149,Now that's way too wide! Keep them under your shoulders.,2859,2914,feedback
+0149,Try to keep your arms shoulder width apart next time!,2915,2976,feedback
+0149,Whoops! You're stretching the right quad.,3133,3195,feedback
+0149,"This is your right leg, we're stretching the left right now. The left now. You know what I mean.",3220,3288,feedback
+0149,That's it!,3293,3368,feedback
+0149,Nice,3436,3499,feedback
+0149,Now give your leg a nice stretch.,3504,3566,feedback
+0149,Here we go.,3589,3648,feedback
+0149,Great balance,3649,3708,feedback
+0149,Moving on to quad stretch right!,3709,3770,feedback
+0149,That's the correct leg! Stretch it out!,3879,3951,feedback
+0149,That stretch looks great! Do you feel the burn?,4005,4082,feedback
+0149,Excellent! Good work!,4234,4293,feedback
+0149,That's the end of the session.,4417,4476,feedback
+0149,First up are butt kickers!,358,403,transition
+0149,Moving on to jumping jacks!,1049,1092,transition
+0149,Moving on to puddle jumps!,1733,1809,transition
+0149,Moving on to pushups!,2402,2475,transition
+0149,Moving on to quad stretch left!,3086,3132,transition
+0149,No! It's your other right! ,3819,3878,transition
+0154,Good start!,381,432,feedback
+0154,Bring those knees all the way up to your chest.,433,496,feedback
+0154,"There's more in there. Come on, knees up, up, up!",497,550,feedback
+0154,Yes! Looks great!,551,610,feedback
+0154,Looking good! Keep going!,653,713,feedback
+0154,Don't stop! I know there's a few more reps there. Let's go!,756,820,feedback
+0154,"Yes, yes, we burn deep when the knees are as high as your hips.",860,932,feedback
+0154,It's time for jumping jacks!,1104,1166,feedback
+0154,Come on! Let's get started with jumping jacks!,1167,1230,feedback
+0154,Still waiting for you to start!,1271,1334,feedback
+0154,Yes that's it! Now try to improve the range of motion in your arms!,1415,1474,feedback
+0154,Yes! Good range of motion! Keep it up!,1569,1627,feedback
+0154,Hey! It's time for squats.,1774,1847,feedback
+0154,Let's get started with squats!,1848,1918,feedback
+0154,Yes! That's it! Now try to make your squats deeper!,1931,2002,feedback
+0154,Nice deep squat! Keep it up!,2015,2077,feedback
+0154,"5 reps! I love your form Work it, work it.",2106,2170,feedback
+0154,Good work!,2269,2332,feedback
+0154,Let's do some push ups!,2522,2596,feedback
+0154,Still waiting for you to start!,2634,2706,feedback
+0154,Knee push-ups are a good start. But try to keep your back straight!,2722,2794,feedback
+0154,Keep your back straight!,2816,2885,feedback
+0154,Let's put in more effort next time!,2918,2980,feedback
+0154,Moving on to quad stretch right!,3120,3180,feedback
+0154,Wow... you're crushing it! Let's keep it going,3328,3402,feedback
+0154,Try to keep your knee pointing down to the floor.,3528,3592,feedback
+0154,Come on! Keep your knee pointing down to the floor.,3622,3687,feedback
+0154,Moving on to quad stretch left!,3735,3797,feedback
+0154,"This is your right leg, we're stretching the left right now.",3993,4056,feedback
+0154,"Looks good, now focus on pulling that foot back.",4089,4148,feedback
+0154,Come on! Pull that foot back!,4222,4284,feedback
+0154,Try to really pull that foot back next time!,4285,4362,feedback
+0154,That's the end of the session.,4420,4492,feedback
+0154,First up are high knees!,327,380,transition
+0154,Moving on to jumping jacks!,1045,1103,transition
+0154,Moving on to squats!,1721,1773,transition
+0154,Moving on to pushups!,2424,2481,transition
+0154,"All right, we've got the leg up!",3222,3281,transition
+0154,"Wrong leg, pal.",3927,3986,transition
+0155,Great start!,426,491,feedback
+0155,That's awesome! Good pace and form.,534,597,feedback
+0155,Good job! Keep going!,640,701,feedback
+0155,I am loving your energy!,745,806,feedback
+0155,That was awesome! Keep it up for the next one!,952,1024,feedback
+0155,Nice! Good butt kickin'!,1134,1199,feedback
+0155,"Yeah, that's it! Bring your heels right up to your butt and keep kicking!",1270,1333,feedback
+0155,Keep it up! That's looking great!,1365,1427,feedback
+0155,Keep going!,1462,1525,feedback
+0155,That was really great! Keep it up for the next one!,1626,1698,feedback
+0155,Yes! That's a start!,1845,1916,feedback
+0155,It's called lunge jumps not lunge walks!,1944,2007,feedback
+0155,Come on! Jump in between the lunges!,2021,2084,feedback
+0155,Try to really jump next time!,2224,2287,feedback
+0155,Knee push-ups are a good start.,2551,2626,feedback
+0155,Hmm try keep your knees further back to engage your core!,2641,2712,feedback
+0155,Come on! Try to keep your knees further back!,2774,2833,feedback
+0155,Yes! That's a bit better!,2834,2896,feedback
+0155,Not bad! But try to keep your knees further back next time!,3071,3135,feedback
+0155,Don't twist your body! Keep it straight!,3260,3337,feedback
+0155,That's the wrong arm pal! Stretch your right arm!,3385,3463,feedback
+0155,Yes! That's it! Now try to keep your arm straight!,3484,3558,feedback
+0155,Don't switch arms! Stretch one arm at a time!,3605,3664,feedback
+0155,Next time stretch your right arm for longer!,3743,3756,feedback
+0155,Stretch that arm out!,3919,3978,feedback
+0155,Don't bend your torso and try to keep your arm straight!,4020,4085,feedback
+0155,Your arm is still not straight!,4112,4185,feedback
+0155,You have to keep your arm straight for a proper workout!,4248,4319,feedback
+0155,Try to keep your arm straight next time!,4394,4454,feedback
+0155,First up are jumping jacks!,358,421,transition
+0155,Moving on to butt kickers!,1044,1115,transition
+0155,Moving on to lunge jumps!,1725,1799,transition
+0155,Moving on to pushups!,2409,2476,transition
+0155,Moving on to armcrosschest right!,3164,3223,transition
+0155,Moving on to armcrosschest left!,3757,3818,transition
+0155,That's the end of the session.,4466,4529,transition
+0158,Awesome start!,346,406,feedback
+0158,Wow! I love the range of motion you have here!,461,524,feedback
+0158,I bet you can see your whole house from here.,570,644,feedback
+0158,Keep it going! You're doing great!,731,795,feedback
+0158,You blew me away! Keep it up for the next one!,898,961,feedback
+0158,"Yeah, that's it! Bring your heels right up to your butt and keep kicking!",1097,1155,feedback
+0158,Great stuff! Butt-kickers really work your glutes!,1218,1288,feedback
+0158,This is looking great. You're crushing it.,1340,1410,feedback
+0158,Awesome! Keep it up for the next one!,1575,1637,feedback
+0158,Nice! Good start!,1787,1849,feedback
+0158,Love your form and pace!,1893,1951,feedback
+0158,"5 reps, keep it up!",2035,2107,feedback
+0158,Good work! Keep it up!,2235,2315,feedback
+0158,Let's get started with mountain climbers!,2494,2558,feedback
+0158,Good! Now try to bring your knees closer to your chest.,2610,2671,feedback
+0158,Don't stop! Keep going!,2695,2752,feedback
+0158,Yes! Really to bring your knees closer to your chest.,2763,2833,feedback
+0158,Don't stop! You still have time!,2837,2909,feedback
+0158,"All right, we've got the leg up.",3229,3288,feedback
+0158,Try to keep your knee pointed to the ground!,3325,3384,feedback
+0158,Pull that foot back! Keep it pointing towards the ground!,3432,3491,feedback
+0158,Yes! Yes! Yes! That's it!,3542,3623,feedback
+0158,Not bad!,3742,3752,feedback
+0158,"Great, now that you're set, let's stretch the front of that leg out.",3885,3944,feedback
+0158,Wow... you're crushing it! Let's keep it going,4014,4077,feedback
+0158,Keep it going! That's it! ,4106,4168,feedback
+0158,That was really good! Keep it up for the next one.,4319,4378,feedback
+0158,First up are jumping jacks!,287,345,transition
+0158,Moving on to butt kickers!,1017,1079,transition
+0158,Moving on to walking lunges!,1706,1766,transition
+0158,Moving on to mountain climbers!,2389,2451,transition
+0158,Moving on to quad stretch left!,3141,3200,transition
+0158,Moving on to quad stretch right!,3753,3820,transition
+0158,That's the end of the session.,4437,4502,transition
+0165,"Add some zip to these, let's bounce!",382,442,feedback
+0165,"Feet off the floor as you work, come on!",505,561,feedback
+0165,Let's add some bounce!,580,626,feedback
+0165,That's way too slow... get those knees pumping!,627,697,feedback
+0165,That height is good but lets start hopping!,729,794,feedback
+0165,Looks good! Now give me a little more pep! Come on!,838,906,feedback
+0165,Let's get the heart and knees pumping!,924,984,feedback
+0165,Nice one.,1065,1120,feedback
+0165,I know you can go much faster than this!,1121,1178,feedback
+0165,Careful not to hit them in the face!,1195,1256,feedback
+0165,Your range of motion is perfect but let's pick up the pace!,1346,1412,feedback
+0165,There we go! Yes! This is what I want to see!,1483,1518,feedback
+0165,Good job,1519,1577,feedback
+0165,Perfection.,1578,1624,feedback
+0165,Nice job.,1625,1693,feedback
+0165,"Perfect form here. Work it, work it.",1813,1877,feedback
+0165,Amazing! I can almost see your invisible chair!,1935,1995,feedback
+0165,"Ok, now that's a little too wide. Come back to shoulder width.",2014,2060,feedback
+0165,"Careful, your feet are too wide apart and you're leaning over.",2061,2118,feedback
+0165,Feet a little closer together!,2187,2260,feedback
+0165,"Woah, trying some diamonds push-ups eh? Let's see what you've got.",2590,2652,feedback
+0165,Nice! Try to go lower and switch to your knees if needed.,2668,2728,feedback
+0165,Go a little further down or switch to regular push-ups.,2794,2853,feedback
+0165,That's it. You need to get this low with diamond push-ups too. Rock this to the end.,2897,2961,feedback
+0165,We're on the right leg right now.,3175,3246,feedback
+0165,Careful you're not stretching the wrong leg right now.,3273,3318,feedback
+0165,"Good, now give that a nice pull.",3319,3381,feedback
+0165,"No no, keep it pointing down!",3513,3571,feedback
+0165,You won't get a proper stretch like this.,3576,3634,feedback
+0165,Good.,3644,3694,feedback
+0165,"Nope, back down. Let's go.",3695,3731,feedback
+0165,"Wrong leg, pal.",3834,3875,feedback
+0165,Good. Now stretch out that quad.,3876,3945,feedback
+0165,Careful not to bring that knee forward. Stick it straight down.,4040,4099,feedback
+0165,Point your knee straight down.,4128,4187,feedback
+0165,Good. Now hold it there.,4188,4248,feedback
+0165,Stay still.,4249,4308,feedback
+0165,First up are high knees!,329,381,transition
+0165,Moving on to jumping jacks!,1031,1064,transition
+0165,Moving on to squats!,1726,1788,transition
+0165,Moving on to pushups!,2461,2524,transition
+0165,Moving on to quad stretch right!,3122,3174,transition
+0165,Moving on to quad stretch left!,3732,3798,transition
+0165,That's the end of the session.,4397,4456,transition
+0166,Pretend the floor is burning. Move those feet quick!,305,362,feedback
+0166,"That's getting better, but go even faster and jump!",439,509,feedback
+0166,That's faster but keep using both feet!,539,603,feedback
+0166,C'mon! Left and right and left and right.,619,679,feedback
+0166,Yes. And now let's get the speed back up.,748,809,feedback
+0166,We'll keep trying next time! ,866,926,feedback
+0166,Let's get jumping!,1045,1104,feedback
+0166,Good range of motion but you are too slow. Let's get jumping!,1152,1223,feedback
+0166,"Come on, let's get jumping!",1293,1356,feedback
+0166,Yes! That's it! Now pick up the pace a bit.,1459,1519,feedback
+0166,Wow! That's a good lunge jump!,1689,1749,feedback
+0166,We are at 5 reps! ,1765,1822,feedback
+0166,10,1896,1958,feedback
+0166,15! Maintain your speed!,2028,2070,feedback
+0166,Don't stop! You still have time! ,2071,2140,feedback
+0166,Let's get started with pushups!,2391,2453,feedback
+0166,Did...did you leave? Come back!,2471,2531,feedback
+0166,"Ooookay, I'll just hang out here until you get back",2551,2610,feedback
+0166,Yes! Welcome back! There is still time for a few pushups.,2651,2722,feedback
+0166,Let's try to do more pushups next time!,2798,2865,feedback
+0166,"There we go, really stretched that deltoid out.",3108,3169,feedback
+0166,Hey! Keep your arm straight!,3198,3259,feedback
+0166,Keep your arm straight for an effective stretch!,3319,3379,feedback
+0166,Yes! That looks great. Good stretching.,3421,3491,feedback
+0166,Good effort! Try to keep your arms straight next time.,3618,3651,feedback
+0166,Good start!,3786,3849,feedback
+0166,Keep your arm straight!,3850,3912,feedback
+0166,First up are butt kickers!,268,304,transition
+0166,Moving on to jumping jacks!,960,1024,transition
+0166,Moving on to lunge jumps!,1639,1688,transition
+0166,Moving on to pushups!,2294,2358,transition
+0166,Moving on to armcrosschest left!,3045,3103,transition
+0166,Moving on to armcrosschest right!,3652,3717,transition
+0166,That's the end of the session.,4336,4403,transition
+0167,Skip it! Skip it!,420,479,feedback
+0167,Keep that speed up!,535,595,feedback
+0167,This is looking great. Keep it up.!,626,686,feedback
+0167,You are crushing it!,747,808,feedback
+0167,That was really good! Keep it up for the next one!,934,1009,feedback
+0167,Good! Now try to bend down a bit lower.,1145,1218,feedback
+0167,Yes! Better! Keep it up!,1263,1328,feedback
+0167,5 reps! Awesome!,1405,1468,feedback
+0167,Hey-o! Proud Trainer here! Keep crushing!,1525,1584,feedback
+0167,"Yes, let's make it happen.",1769,1829,feedback
+0167,Try to bring your knees closer to your chest!,1830,1898,feedback
+0167,Slow down a bit and bring your knees closer to your chest!,1957,2031,feedback
+0167,"Come on., slow down and get your knees closer to your chest!",2149,2212,feedback
+0167,Let's try harder next time.,2240,2302,feedback
+0167,"Yes, that's it. Now really try to touch the floor!",2538,2596,feedback
+0167,Yes! That's a good one!,2597,2643,feedback
+0167,"5 reps, keep it up!",2644,2706,feedback
+0167,10,2876,2939,feedback
+0167,15,3051,3084,feedback
+0167,Wow! Keep up the hustle!,3085,3127,feedback
+0167,Ok! Now try to get your feet closer together.,3214,3273,feedback
+0167,Your feet are still too close together!,3319,3378,feedback
+0167,"If you can hear me, your feet are too close together!",3442,3501,feedback
+0167,Good effort! But try to keep your feet wider apart next time!,3713,3777,feedback
+0167,Good start!,3862,3923,feedback
+0167,Wow... you're crushing it! Let's keep it going,3963,4023,feedback
+0167,Keep it up!,4058,4117,feedback
+0167,We are at 5 reps!,4179,4238,feedback
+0167,First up are air jump rope!,375,419,transition
+0167,Moving on to good morning beginner!,1027,1102,transition
+0167,Moving on to mountain climbers!,1715,1768,transition
+0167,Moving on to floor touches!,2434,2495,transition
+0167,Moving on to toe touchers!,3128,3188,transition
+0167,Moving on to shoulder gators!,3803,3861,transition
+0167,That's the end of the session.,4474,4548,transition
+0168,"So just a thought, try jumping! Sounds crazy, I know, but just go with me on this one!",339,409,feedback
+0168,The main workout here is in the jumping. Let's put it in action.,477,556,feedback
+0168,"This exercise is called jump rope, not stand rope.",581,654,feedback
+0168,"Get some more reps in. Think of this as one consistent movement, like jogging, not individual jumps.",695,754,feedback
+0168,I think we can increase the tempo a bit here.,857,920,feedback
+0168,Let's get started!,1095,1158,feedback
+0168,Too slow! Pick up the pace!,1204,1280,feedback
+0168,Let's speed it up and get some reps in!,1322,1398,feedback
+0168,I am still waiting!,1427,1496,feedback
+0168,Let's pick up the pace next time!,1588,1647,feedback
+0168,Hmm what's that? Let's get started!,1729,1788,feedback
+0168,Get those kicks higher! Alternate from one leg to the other.,1802,1861,feedback
+0168,Now get those kicks up high!,1924,1992,feedback
+0168,Yes! That's a good kick! Now try to go higher and get those arms out in front of you.,2162,2230,feedback
+0168,That's a start! Remember to punch it out at the top of the squat.,2472,2533,feedback
+0168,Yes! That's it!,2559,2594,feedback
+0168,Keep your squats deep!,2595,2650,feedback
+0168,"Hmm it's two punches! Left punch, right punch!",2687,2751,feedback
+0168,"Come on, two punches after every squat!",2824,2901,feedback
+0168,Yes! That's it!,2932,3006,feedback
+0168,Moving on to armcrosschest right!,3052,3100,feedback
+0168,Wrong arm pal!,3159,3222,feedback
+0168,Yeah! That's the correct arm! Now stretch it out!,3232,3291,feedback
+0168,Wow... you're crushing it! Let's keep it going,3346,3405,feedback
+0168,Great work!,3592,3608,feedback
+0168,Moving on to armcrosschest left!,3609,3671,feedback
+0168,That looks great! Good stretching!,3858,3916,feedback
+0168,Keep stretching! You'll feel it in the shoulder.,3960,4019,feedback
+0168,Do you feel that pull in your shoulder? That's good stuff.,4062,4121,feedback
+0168,That was excellent!,4201,4260,feedback
+0168,That's the end of the session.,4293,4352,feedback
+0168,First up are air jump rope!,300,338,transition
+0168,Moving on to good morning beginner!,993,1052,transition
+0168,Moving on to standing kicks!,1667,1728,transition
+0168,Moving on to boxing squat punches!,2384,2446,transition
+0168,Start with your other arm!,3101,3158,transition
+0168,"Okay, now stretch that arm out.",3773,3849,transition
+0169,Let's get started!,395,464,feedback
+0169,Yes That's it!,495,570,feedback
+0169,Hmm can you hold your position? You are moving too much from side to side.,572,634,feedback
+0169,Try to jump holding your position as much as possible!,702,762,feedback
+0169,Try to focus on your stability next time.,878,940,feedback
+0169,Let's get started with good mornings!,1071,1133,feedback
+0169,You need to bend forward not from side to side!,1182,1247,feedback
+0169,That's very slow! Keep up the pace!,1310,1384,feedback
+0169,Yes! That's better!,1473,1543,feedback
+0169,Try to keep your motion fluid next time!,1699,1761,feedback
+0169,Good start! But don't stay too long in the squatting position.,1868,1911,feedback
+0169,I'm not seeing any punches at the top of your squat.,1912,1971,feedback
+0169,"Hey! It's a squat followed by two punches, left punch, right punch!",1982,2041,feedback
+0169,Keep on squatting!,2061,2136,feedback
+0169,Try going even deeper into those squats!,2227,2288,feedback
+0169,Deeper!,2324,2387,feedback
+0169,That's a good squat! But where are the kicks?,2613,2673,feedback
+0169,Come on! Add a kick to the end of the squat!,2706,2765,feedback
+0169,I am waiting for you to add some kicks!,2836,2898,feedback
+0169,That's a jump! Not a kick.,2947,3009,feedback
+0169,Let's try to add some kicks after every squat next time.,3129,3192,feedback
+0169,"That's it, now let's bend over from the waist to reach the floor.",3275,3334,feedback
+0169,Really try to touch those toes now.,3347,3409,feedback
+0169,Yes! Now try to bring your feet closer together!,3450,3511,feedback
+0169,Come on! Try and bring those feet closer together!,3564,3632,feedback
+0169,Not bad! But try to keep less of a gap between your feet next time.,3794,3857,feedback
+0169,Ok! That's really too fast!,3951,4013,feedback
+0169,Slow it down! Keep your motion nice and fluid!,4040,4101,feedback
+0169,That's a bit too slow! Speed it up a bit!,4153,4214,feedback
+0169,"Come on, it's one steady fluid motion!",4233,4292,feedback
+0169,That's better! But a bit too slow!,4481,4543,feedback
+0169,First up are air jump rope!,296,355,transition
+0169,Moving on to good morning beginner!,966,1028,transition
+0169,Moving on to boxing squat punches!,1796,1858,transition
+0169,Moving on to squat kicks!,2518,2580,transition
+0169,Moving on to toe touchers!,3201,3260,transition
+0169,Moving on to shoulder gators!,3878,3944,transition
+0169,That's the end of the session.,4552,4628,transition
+0170,Great! Working out is so much more fun when we do it together!,319,380,feedback
+0170,Don't stop! Try to jump and really lift your heels.,422,493,feedback
+0170,"The bounce keeps the heart rate up, so keep it up and moving!",525,598,feedback
+0170,Yes! That's it! Keep bouncing.,661,723,feedback
+0170,Keep it up! Good speed.,756,818,feedback
+0170,Try to bend down a bit lower!,1018,1067,feedback
+0170,Bend down lower for a full range of motion.,1068,1132,feedback
+0170,Come on! Try and bend down a bit lower.,1190,1255,feedback
+0170,Yes! That's better!,1425,1484,feedback
+0170,Don't stop! Keep on moving!,1505,1568,feedback
+0170,Yes! That's it.,1579,1643,feedback
+0170,It's time to get squatting!,1704,1765,feedback
+0170,Follow up the punches with a squat!,1776,1835,feedback
+0170,Yes! That more like it!,1854,1913,feedback
+0170,Now try to squat a little bit deeper!,1920,1987,feedback
+0170,"Follow each squat with two punches! Right punch, left punch!",2054,2133,feedback
+0170,Remember two punches after each squat!,2170,2241,feedback
+0170,Yeah! That's it!,2257,2316,feedback
+0170,Follow every squat with a kick!,2415,2475,feedback
+0170,"Your target is a little higher, raise those kicks for me!",2532,2575,feedback
+0170,Come on! I want higher kicks!,2576,2630,feedback
+0170,Higher kicks! I am waiting.,2660,2717,feedback
+0170,Try to get your kicks higher next time.,2914,2978,feedback
+0170,Let's get started!,3111,3173,feedback
+0170,Hmm that's a bit too slow! Pick up the pace!,3242,3301,feedback
+0170,Yeah! That's better!,3358,3418,feedback
+0170,Awesome! Keep it up!,3459,3538,feedback
+0170,Good work!,3567,3646,feedback
+0170,Legs as straight as you can. You got this.,3738,3806,feedback
+0170,Keep your legs straight!,3833,3895,feedback
+0170,Much better! Now try to keep your feet closer.,3924,3987,feedback
+0170,Feet a little bit closer.,4032,4093,feedback
+0170,Good effort! But try to keep a smaller gap between your feet next time.,4158,4221,feedback
+0170,First up are air jump rope!,278,318,transition
+0170,Moving on to good morning beginner!,952,1014,transition
+0170,Moving on to boxing squat punches!,1672,1703,transition
+0170,Moving on to squat kicks!,2363,2414,transition
+0170,Moving on to shoulder gators!,2999,3062,transition
+0170,Moving on to toe touchers!,3675,3737,transition
+0170,That's the end of the session.,4378,4440,transition
+0171,Good! Keep going!,354,416,feedback
+0171,Love your form and pace!,417,467,feedback
+0171,Don't stop! Loads of time to go!,468,534,feedback
+0171,Where did you go? I am still waiting.,572,631,feedback
+0171,Yes! Welcome back! Let's get going.,822,882,feedback
+0171,Let's get jumping!,903,962,feedback
+0171,"Yes, that's it. Keep it coming.",1070,1135,feedback
+0171,Keep on moving! Don't stop!,1142,1207,feedback
+0171,Yes! Now bend down towards me again.,1289,1340,feedback
+0171,Yes! That's it! Keep it going.,1341,1403,feedback
+0171,We are at 5 reps!,1548,1598,feedback
+0171,Good job! You are really crushed it!,1599,1658,feedback
+0171,Good start!,1735,1776,feedback
+0171,Hey! Your squats are too shallow! Try to go deeper.,1777,1845,feedback
+0171,Yes! That better! Keep squatting deep.,1899,1967,feedback
+0171,Looking good! Keep going!,2004,2072,feedback
+0171,Wow! That's a high jump!,2102,2161,feedback
+0171,Don't stop! Keep squatting and jumping! ,2170,2233,feedback
+0171,Squat kick left squat kick right you got this,2446,2503,feedback
+0171,Your squats are too shallow and kicks too low!,2504,2570,feedback
+0171,That's a good kick! Now go for deeper squats.,2631,2706,feedback
+0171,Nice deep squat love it!,2720,2785,feedback
+0171,You are crushing it! Love the high kicks!,2854,2913,feedback
+0171,Excellent work!,3026,3078,feedback
+0171,Can you feel the pull in your shoulder blade?,3135,3194,feedback
+0171,Nice stretch. You should feel it in your shoulder.,3236,3296,feedback
+0171,That looks great! Good stretching!,3331,3403,feedback
+0171,Keep it up!,3459,3534,feedback
+0171,Good stretching! Keep it up for the next one.,3675,3700,feedback
+0171,"There we go, really stretched that deltoid out.",3832,3893,feedback
+0171,Nice. Straight arm across your body.,3926,3988,feedback
+0171,Looking good! Keep it up!,4047,4108,feedback
+0171,Wow... you're crushing it! Let's keep it going,4165,4230,feedback
+0171,That was really good! Keep it up for the next one.,4334,4397,feedback
+0171,First up are jumping jacks!,286,353,transition
+0171,Moving on to good morning beginner!,1002,1069,transition
+0171,Moving on to squat jumps!,1670,1732,transition
+0171,Moving on to squat kicks!,2400,2445,transition
+0171,Moving on to armcrosschest right!,3079,3134,transition
+0171,Moving on to armcrosschest left!,3701,3763,transition
+0171,That's the end of the session.,4398,4457,transition
+0179,Nice! Try to bend down a tiny bit more!,406,476,feedback
+0179,Yes! That's better!,513,582,feedback
+0179,Keep your elbows straight!,652,717,feedback
+0179,Hey! Try to keep your elbows straight and in line with your ears.,738,800,feedback
+0179,Okay! That's more like ir!,801,864,feedback
+0179,Good work!,948,1009,feedback
+0179,Skip! Skip! Skip!,1087,1129,feedback
+0179,Maybe a bit slower,1130,1187,feedback
+0179,Now the speed looks great,1215,1246,feedback
+0179,Good speed!,1247,1308,feedback
+0179,Keep it up!,1309,1354,feedback
+0179,Don't slow down now!,1355,1429,feedback
+0179,Keep up the speed,1430,1465,feedback
+0179,Perfect speed,1466,1516,feedback
+0179,This is looking great! Keep it up!,1517,1584,feedback
+0179,Good start! Try to bring your feet closer to your chest.,1788,1850,feedback
+0179,Really try to bring your feet closer to your chest.,1882,1944,feedback
+0179,Slow and steady! You should really try to bring your feet closer to your chest.,1980,2036,feedback
+0179,Good effort! But try harder next time.,2177,2246,feedback
+0179,"Yes, that's it. Keep it coming.",2463,2527,feedback
+0179,Great form! Now let's speed it up!,2572,2597,feedback
+0179,5!,2598,2652,feedback
+0179,"Great floor touching, keep it up!",2653,2705,feedback
+0179,"Yeah, this looks really great!",2706,2746,feedback
+0179,10!,2747,2799,feedback
+0179,All the way down - touch the floor!,2800,2851,feedback
+0179,That's better. You're touching the floor!,2852,2901,feedback
+0179,15!,2902,2942,feedback
+0179,Great floor touching form. Don't slow down now!,2943,3014,feedback
+0179,"Okay, Stretch! Stretch! Stretch!",3229,3275,feedback
+0179,"Great, you've reached your toes",3276,3338,feedback
+0179,"Now, can you touch the floor?",3348,3410,feedback
+0179,Now you've  made if all the way. That's impressive!,3505,3566,feedback
+0179,Awesome flexibility!,3647,3706,feedback
+0179,Nice!,3927,3998,feedback
+0179,Love your pace! Good range of motion.,4059,4131,feedback
+0179,Hmm you are now going a bit too fast! Slow down a tiny bit.,4194,4257,feedback
+0179,Slow down a tiny bit.,4289,4351,feedback
+0179,Try to be a little slower next time.,4377,4437,feedback
+0179,First up are good morning beginner!,337,405,transition
+0179,Moving on to air jump rope!,1030,1086,transition
+0179,Moving on to mountain climbers!,1730,1787,transition
+0179,Moving on to floor touches!,2425,2462,transition
+0179,Moving on to toe touchers!,3127,3200,transition
+0179,Moving on to shoulder gators!,3822,3894,transition
+0179,That's the end of the session.,4530,4588,transition
+0180,You need to bend forward more.,329,392,feedback
+0180,Come on! Try and bend forward.,448,506,feedback
+0180,You are still not doing it right!,546,620,feedback
+0180,That's a bit better! Now try to bend forward a little more!,735,806,feedback
+0180,It's time to start skipping!,1056,1118,feedback
+0180,"So just a thought, try jumping! Sounds crazy, I know, but just go with me on this one!",1190,1251,feedback
+0180,You are still not jumping!,1285,1344,feedback
+0180,"Now, you're not moving at all.",1501,1573,feedback
+0180,Try to put in more effort next time!,1603,1673,feedback
+0180,That's it! Let's start kicking!,1723,1773,feedback
+0180,Kick higher!,1774,1792,feedback
+0180,"That's a good high kick, but let's alternate legs",1793,1855,feedback
+0180,Let's kick up that right leg.,1856,1918,feedback
+0180,Give the right leg a chance too!,1962,2025,feedback
+0180,"Ahh good, the right leg is kicking",2042,2074,feedback
+0180,Good job alternating the kicks. Keep it up.,2075,2125,feedback
+0180,That's a nice high kick!,2126,2186,feedback
+0180,"This kick is rather short. Higher, higher.",2187,2258,feedback
+0180,You are not squatting! It's a squat followed by two punches.,2447,2513,feedback
+0180,"Yes! Now two punches, right punch, left punch!",2579,2640,feedback
+0180,Remember to punch it out at the top of the squat.,2661,2723,feedback
+0180,Yes! That's it! Now try to squat a bit deeper.,2786,2847,feedback
+0180,"The deeper you go, the stronger you'll get.",2871,2913,feedback
+0180,Wow! That's a great squat.,2914,2977,feedback
+0180,All right! You're in position already!,3094,3165,feedback
+0180,Pull in that arm and Stretch!,3190,3262,feedback
+0180,"Feels good, doesn't it?",3314,3377,feedback
+0180,"Keep it up. Stretch, stretch, stretch!",3440,3503,feedback
+0180,"Mmm, feel that pull in your shoulder? That's good stuff.",3555,3617,feedback
+0180,"All right, now that we're set up, let's stretch that shoulder.",3803,3870,feedback
+0180,Great work! Good form!,3908,3977,feedback
+0180,Keep pulling in your right arm.,4057,4122,feedback
+0180,That looks great! Keep it up!,4128,4188,feedback
+0180,Nice stretch. You should feel it in your shoulder.,4189,4251,feedback
+0180,First up are good morning beginner!,283,328,transition
+0180,Moving on to air jump rope!,1014,1055,transition
+0180,Moving on to standing kicks!,1697,1722,transition
+0180,Moving on to boxing squat punches!,2395,2446,transition
+0180,Moving on to armcrosschest left!,3066,3093,transition
+0180,Moving on to armcrosschest right!,3675,3732,transition
+0180,That's the end of the session.,4374,4436,transition
+0181,That's a good start. Skipping already!,318,364,feedback
+0181,"This speed is great, keep it up",365,409,feedback
+0181,I'm liking this speed,410,470,feedback
+0181,Keep it loose in the wrists and energized at the elbows so your body can flow through the exercise.,563,623,feedback
+0181,Good endurance. Keep up the skipping.,737,810,feedback
+0181,Lovely speed,888,955,feedback
+0181,"Yes, let's make it happen.",1038,1101,feedback
+0181,Wow... you're crushing it! Let's keep it going,1175,1237,feedback
+0181,We are at 5 reps!,1296,1355,feedback
+0181,10,1572,1645,feedback
+0181,Nice! Good start!,1719,1782,feedback
+0181,5,1878,1941,feedback
+0181,"Real fast, but make sure your form stays solid!",1955,2017,feedback
+0181,10,2056,2114,feedback
+0181,15,2217,2280,feedback
+0181,That was solid! Keep it up for the next one!,2281,2342,feedback
+0181,Moving on to squat kicks!,2343,2379,feedback
+0181,"Whoa, now that's a high kick.",2495,2556,feedback
+0181,"5 reps, keep it up!",2557,2621,feedback
+0181,Nice work! Keep it going!,2643,2706,feedback
+0181,10 reps!,2777,2838,feedback
+0181,Looking good! Keep going!,2877,2936,feedback
+0181,15 reps!,2956,3020,feedback
+0181,Moving on to toe touchers!,3070,3143,feedback
+0181,Your feet are still too far apart!,3294,3361,feedback
+0181,For an effective stretch try to keep your feet closer together!,3429,3492,feedback
+0181,Good effort but try to keep your feet closer together next time!,3658,3717,feedback
+0181,Moving on to shoulder gators!,3750,3801,feedback
+0181,Looking good! Keep it up!,3929,4001,feedback
+0181,Love your pace!,4062,4133,feedback
+0181,Now you are getting a bit too fast! Slow down a bit.,4154,4215,feedback
+0181,That's the end of the session.,4463,4522,feedback
+0181,First up are air jump rope!,287,317,transition
+0181,Moving on to good morning beginner!,991,1037,transition
+0181,Moving on to boxing squat punches!,1672,1718,transition
+0181,Good start!,2380,2452,transition
+0181,"Yes, that's it. Now try to bring your feet closer together.",3169,3241,transition
+0181,Awesome!,3802,3873,transition
+0185,Nice,326,395,feedback
+0185,Amazing work! Let's keep it going,482,551,feedback
+0185,5,616,679,feedback
+0185,Love your pace! Great form!,718,780,feedback
+0185,10,865,925,feedback
+0185,"Yeah, this is hopping.",993,1058,feedback
+0185,I'm liking this speed!,1121,1190,feedback
+0185,Hmm try to hold your position! Don't love too much from side to side.,1220,1290,feedback
+0185,You are still moving too much from side to side!,1351,1413,feedback
+0185,Yes! That's better!,1414,1477,feedback
+0185,"Yes, let's make it happen.",1674,1718,feedback
+0185,Try to really get those legs closer to your chest! Try to keep your head loose and looking down.,1719,1777,feedback
+0185,Yes! That is looking much better!,1848,1917,feedback
+0185,Nice! Keep it up!,1951,2021,feedback
+0185,"Yes, that's it. Love your energy!",2376,2435,feedback
+0185,5,2483,2540,feedback
+0185,10,2621,2691,feedback
+0185,15,2750,2819,feedback
+0185,20,2896,2958,feedback
+0185,You smashed it out of the park! Keep it up for the next one!,2994,3035,feedback
+0185,Moving on to quad stretch right!,3036,3079,feedback
+0185,Keep your head up and focus on me to keep your balance.,3080,3141,feedback
+0185,Love your pose! Keep it going!,3299,3367,feedback
+0185,Do you feel the burn?,3419,3490,feedback
+0185,Keep your core tight to maintain your balance!,3513,3584,feedback
+0185,Moving on to quad stretch left!,3646,3710,feedback
+0185,"Great, you got in position quick.",3776,3838,feedback
+0185,Nice balance now.,3908,3970,feedback
+0185,Just keep stretching that quad.,4008,4065,feedback
+0185,Nice upper body posture.,4126,4197,feedback
+0185,That's the end of the session.,4339,4406,feedback
+0185,First up are good morning beginner!,274,325,transition
+0185,Moving on to air jump rope!,955,992,transition
+0185,Moving on to mountain climbers!,1634,1673,transition
+0185,Moving on to squat jumps!,2357,2375,transition
+0185,That's it! Stretch out that quad.,3166,3227,transition
+0185,Keep your balance. Keep still!,3841,3903,transition
+0192,You are not moving your hands!,402,458,feedback
+0192,Yes! That's it! Good speed!,459,520,feedback
+0192,Keep going! I am loving it!,591,650,feedback
+0192,Keep up the energy!,694,751,feedback
+0192,That was awesome!,905,977,feedback
+0192,It's time for good mornings!,1070,1130,feedback
+0192,It's time to start!,1131,1192,feedback
+0192,Keep your elbows back and your back straight!,1235,1298,feedback
+0192,"Hey! Straighten up that back, partner.  Keep your elbows back!",1342,1405,feedback
+0192,Let's put in more effort next time!,1576,1647,feedback
+0192,It's time for squat punches!,1742,1813,feedback
+0192,That's it! Now try to go a bit deeper.,1833,1894,feedback
+0192,Looking good! Keep going!,1970,1990,feedback
+0192,5,1991,2053,feedback
+0192,"Nice, you’re at ten reps, keep it going",2195,2252,feedback
+0192,That was really good! Keep it up for the next one!,2309,2355,feedback
+0192,It's time for squat kicks!,2479,2551,feedback
+0192,Yes! Now try to kick higher!,2599,2662,feedback
+0192,Come on! Try to kick higher!,2708,2767,feedback
+0192,Still waiting for the high kicks!,2807,2868,feedback
+0192,Try to kick higher next time!,2990,3037,feedback
+0192,Let's get started!,3161,3230,feedback
+0192,"Yes, that's it. Keep it coming.",3277,3345,feedback
+0192,Try to slow down a little bit!,3391,3455,feedback
+0192,A little bit slower please!,3476,3541,feedback
+0192,Next time try to go a bit slower!,3637,3698,feedback
+0192,Ok! Keep your knees straight and your feet closer.,3831,3903,feedback
+0192,Your knees are bent and the gap between your feet is too much!,3957,4032,feedback
+0192,There is still time! I am waiting!,4135,4197,feedback
+0192,Let's try harder next time!,4345,4408,feedback
+0192,First up are air jump rope!,322,384,transition
+0192,Moving on to good morning beginner!,1021,1069,transition
+0192,Moving on to boxing squat punches!,1692,1741,transition
+0192,Moving on to squat kicks!,2356,2427,transition
+0192,Moving on to shoulder gators!,3038,3111,transition
+0192,Moving on to toe touchers!,3728,3784,transition
+0192,That's the end of the session.,4439,4499,transition
+0193,"Yeah, nice skipping!",365,444,feedback
+0193,Good pace and form! Love it!,489,558,feedback
+0193,Amazing! Let's keep it going.,593,654,feedback
+0193,That was a good one! Keep up the energy for the next one!,893,952,feedback
+0193,It's time for good mornings!,1057,1134,feedback
+0193,Nice! Try to keep your back straight and elbows straight out!,1135,1198,feedback
+0193,Elbows back like you're about to give me a big elbow we hug,1245,1310,feedback
+0193,Waiting for you to straighten your back and elbows!,1379,1438,feedback
+0193,Try to keep your legs straight as you bring them close to your chest!,1749,1811,feedback
+0193,Remember to keep your legs straight! Don't bend them away from your body!,1876,1944,feedback
+0193,Keep your legs straight please!,1982,2054,feedback
+0193,Try harder next time!,2193,2263,feedback
+0193,That's it! Keep it up!,2454,2517,feedback
+0193,Let's pick up the pace a bit!,2538,2596,feedback
+0193,5 reps! I love the pace now!,2650,2708,feedback
+0193,Looking good! Keep it going!,2769,2831,feedback
+0193,10 reps!,2855,2923,feedback
+0193,Wow! That was quite something!,3036,3067,feedback
+0193,Legs as straight as you can. You got this.,3170,3233,feedback
+0193,Don't bend your legs and keep them closer together!,3264,3325,feedback
+0193,Waiting for you to straighten your legs!,3380,3440,feedback
+0193,Try to keep your legs wider apart next time!,3632,3703,feedback
+0193,Let's get started! Let's go!,3837,3904,feedback
+0193,Nice! Let's keep moving.,3939,3998,feedback
+0193,"Slow it down, champ! Feel the burn!",3999,4062,feedback
+0193,Don't stop! Still loads to time to go!,4107,4167,feedback
+0193,First up are air jump rope!,302,364,transition
+0193,Moving on to good morning beginner!,966,1025,transition
+0193,Moving on to mountain climbers!,1650,1714,transition
+0193,Moving on to floor touches!,2393,2452,transition
+0193,Moving on to toe touchers!,3068,3136,transition
+0193,Moving on to shoulder gators!,3725,3794,transition
+0193,That's the end of the session.,4411,4476,transition
+0194,Don't arch your back! Keep it straight.,388,447,feedback
+0194,Come on! Keeping your back straight!,482,544,feedback
+0194,Ok! Looking better! Keep it up!,567,629,feedback
+0194,Looking good!,689,748,feedback
+0194,No! You are arching your back again!,770,839,feedback
+0194,"Yeah, this is hopping!",1052,1111,feedback
+0194,Make sure you are really jumping and lifting your heels off the floor! ,1133,1197,feedback
+0194,Looking good! Keep going!,1273,1332,feedback
+0194,Good job! Keep it up for the next one!,1539,1605,feedback
+0194,That's it,1757,1818,feedback
+0194,Make sure to keep the les straight !,1883,1942,feedback
+0194,"Whoa, now that's a high kick! But please keep your legs straight.",1980,2039,feedback
+0194,"That were nice kicks, but as said before, remember to keep your leg straight.",2085,2144,feedback
+0194,"Yes, let's make it happen.",2434,2501,feedback
+0194,Try to speed up a little bit!,2569,2630,feedback
+0194,5 reps! Keep it coming.,2634,2713,feedback
+0194,Love your speed!,2752,2812,feedback
+0194,10,2835,2896,feedback
+0194,Don't bend! Keep your arms straight.,3111,3175,feedback
+0194,Face towards the camera and straighten your arm across your body.,3216,3292,feedback
+0194,Yes! That's better. Now try to stretch that arm out.,3357,3433,feedback
+0194,Yes! That's it. Feel that pull in your shoulder!,3522,3582,feedback
+0194,Nice stretch. You should really feel it in the shoulder.,3791,3851,feedback
+0194,Great work! You got this!,3928,3997,feedback
+0194,Looking great. Keep it going!,4039,4112,feedback
+0194,That was awesome! ,4267,4326,feedback
+0194,First up are good morning beginner!,314,377,transition
+0194,Moving on to air jump rope!,978,1050,transition
+0194,Moving on to standing kicks!,1645,1706,transition
+0194,Moving on to boxing squat punches!,2315,2374,transition
+0194,Moving on to armcrosschest left!,2997,3058,transition
+0194,Moving on to armcrosschest right!,3644,3703,transition
+0194,That's the end of the session.,4337,4400,transition
+0195,Skip it! Skip it!,342,408,feedback
+0195,Remember to jump and always lift your heels off the ground!,503,566,feedback
+0195,Love the speed! Keep it up!,575,634,feedback
+0195,Wow... you're crushing it! Let's keep it going,703,765,feedback
+0195,Still going strong!,810,865,feedback
+0195,That was a good one!,866,932,feedback
+0195,That's it! Keep it up!,1048,1113,feedback
+0195,Love your form! Looking great!,1169,1231,feedback
+0195,5 reps!,1283,1342,feedback
+0195,Remember to always keep the back straight!,1386,1445,feedback
+0195,10 reps!,1523,1586,feedback
+0195,Good! But there is no need to touch the floor!,1685,1761,feedback
+0195,Come on! No need to touch the floor! But make it a nice deep squat.,1776,1846,feedback
+0195,Yeah! That's it!,1861,1924,feedback
+0195,5 reps! Pick up the pace though!,2070,2133,feedback
+0195,Yeah! I like the pace!,2166,2226,feedback
+0195,Nice!,2462,2521,feedback
+0195,That's a great squat and makes for a great kick!,2560,2626,feedback
+0195,"5 reps, keep it up!",2714,2779,feedback
+0195,That's it! Really squat down deep! Good!,2823,2883,feedback
+0195,That's a great squat and makes for a great kick! 9 reps. that is amazing.,2947,3007,feedback
+0195,"Yes, let's make it happen.",3116,3175,feedback
+0195,"Wow, you should be inserted as a lay",3297,3360,feedback
+0195,"Wow, you're flexible!",3397,3464,feedback
+0195,Come back in position !,3478,3554,feedback
+0195,Great job ! ,3628,3689,feedback
+0195,It's time for shoulder gators!,3739,3797,feedback
+0195,Nice! Let's keep moving. Let's go!,3804,3866,feedback
+0195,Try to slow down a bit!,3889,3952,feedback
+0195,You are still going too fast! Slow down!,4005,4064,feedback
+0195,Next time try to do the exercise a bit slower.,4209,4281,feedback
+0195,First up are air jump rope!,311,341,transition
+0195,Moving on to good morning beginner!,979,1047,transition
+0195,Moving on to boxing squat punches!,1647,1684,transition
+0195,Moving on to squat kicks!,2332,2392,transition
+0195,Moving on to toe touchers!,3020,3079,transition
+0195,Moving on to shoulder gators!,3695,3738,transition
+0195,That's the end of the session.,4402,4461,transition
+0196,Good! Now try to bend forward a bit more!,368,425,feedback
+0196,A bit more forward towards me!,426,447,feedback
+0196,Yes! That looks good! Nice!,448,508,feedback
+0196,5,592,655,feedback
+0196,Proud Trainer here! Keep crushing!,706,769,feedback
+0196,You completed 9 reps! Good work!,848,919,feedback
+0196,Skip it out.,981,1057,feedback
+0196,Looks great! Keep it up!,1083,1154,feedback
+0196,That's a good speed!,1174,1233,feedback
+0196,Wow! You are crushing it!,1287,1346,feedback
+0196,That was really good! Keep it up for the next one!,1425,1485,feedback
+0196,"Yes, let's make it happen.",1650,1721,feedback
+0196,Come on ! Move your knees more !,1738,1805,feedback
+0196,Are you listening ? your knees have to come closer to your chest.,1821,1888,feedback
+0196,"Great for doing the exercise. But remember next time, you need to move more.",2005,2068,feedback
+0196,Good start!,2332,2391,feedback
+0196,5,2430,2470,feedback
+0196,Really try to touch the floor now!,2471,2542,feedback
+0196,10,2614,2678,feedback
+0196,Come on! Really try to touch the floor!,2679,2752,feedback
+0196,15! Great floor touching!,2803,2864,feedback
+0196,Moving on to shoulder gators!,2986,3007,feedback
+0196,That's a good one!,3092,3151,feedback
+0196,"Bring down the speed a bit, you're gonna fly away!",3177,3248,feedback
+0196,Yes! That's it! Keep that pace!,3271,3345,feedback
+0196,Love it! Keep it up!,3381,3452,feedback
+0196,Good work!,3579,3638,feedback
+0196,Moving on to toe touchers!,3658,3713,feedback
+0196,Don't bend your knees and keep your feet closer together!,3829,3890,feedback
+0196,You still have time! Come on!,3931,3990,feedback
+0196,Try to put in more effort next time.,4189,4252,feedback
+0196,That's the end of the session.,4363,4424,feedback
+0196,First up are good morning beginner!,276,352,transition
+0196,Moving on to air jump rope!,946,980,transition
+0196,Moving on to mountain climbers!,1608,1649,transition
+0196,Moving on to floor touches!,2295,2331,transition
+0196,Nice!,3008,3069,transition
+0196,Try not to bend your knees and try to keep your feet closer together!,3714,3776,transition
+0197,Yes! It's time to hop!,373,447,feedback
+0197,Good form and speed!,460,533,feedback
+0197,Keep it up! Looking good!,577,645,feedback
+0197,"This speed is great, keep it up!",688,749,feedback
+0197,Keep up the energy!,802,862,feedback
+0197,Wow! You did really well.,960,1017,feedback
+0197,"Yes, that's it. Keep it coming.",1078,1142,feedback
+0197,"Ah, smell that morning air!",1143,1214,feedback
+0197,Proud Trainer here! Keep crushing!,1292,1363,feedback
+0197,5 reps!,1435,1497,feedback
+0197,That's it! Keep it up!,1758,1815,feedback
+0197,That was a real good kick! Keep it going!,1818,1884,feedback
+0197,10,1916,1984,feedback
+0197,Try to get your left kicks as high as the right ones!,2009,2080,feedback
+0197,20,2093,2164,feedback
+0197,30,2296,2357,feedback
+0197,Good! Now try to go deeper with the squats!,2475,2536,feedback
+0197,Yes! That's a good squat!,2537,2584,feedback
+0197,"5 reps, keep it up!",2585,2644,feedback
+0197,"Nice, you’re at ten reps, keep it going",2748,2818,feedback
+0197,"Real fast, but make sure your form stays solid.",2869,2928,feedback
+0197,15,2929,2995,feedback
+0197,20,3090,3149,feedback
+0197,Wow! You smashed it out of the park!,3150,3196,feedback
+0197,Moving on to armcrosschest left!,3197,3251,feedback
+0197,Can you feel the pull in your shoulder blade?,3333,3390,feedback
+0197,That looks great! Good stretching!,3459,3529,feedback
+0197,I am loving this!,3579,3651,feedback
+0197,That was really good stretching! Keep it up for the next one!,3793,3843,feedback
+0197,Moving on to armcrosschest right!,3844,3906,feedback
+0197,You should feel it in your shoulder!,4028,4090,feedback
+0197,"Mmm, feel that pull in your shoulder? That's good stuff.",4134,4191,feedback
+0197,Still going strong! Love it!,4233,4306,feedback
+0197,Amazing! Keep it up for the next one!,4477,4548,feedback
+0197,That's the end of the session.,4550,4612,feedback
+0197,First up are air jump rope!,319,372,transition
+0197,Moving on to good morning beginner!,1037,1077,transition
+0197,Moving on to standing kicks!,1732,1757,transition
+0197,Moving on to boxing squat punches!,2446,2474,transition
+0197,Yes! That's it!,3252,3312,transition
+0197,Looks good. Now stretch out that shoulder.,3938,4000,transition
+0204,"Nice, but go lower.",373,443,feedback
+0204,That's better,502,577,feedback
+0204,Keep those elbows back though. Shoot 'em straight out.,612,684,feedback
+0204,Don't hunch over either. Straight back and elbows out.,713,772,feedback
+0204,Good. Now keep this up.,840,899,feedback
+0204,It's not air pom-poms it's air jump rope. Get jumping!,1125,1184,feedback
+0204,"Come on, jump with me!",1229,1306,feedback
+0204,Let's go! You'll never regret hard work,1333,1406,feedback
+0204,"It not air stand rope either, JUMP!",1501,1571,feedback
+0204,Let's go! This mountain ain't gonna climb itself.,1828,1888,feedback
+0204,Rest time's later. Go go go!,1907,1971,feedback
+0204,What are you looking at? Look at me and let's go!,2008,2067,feedback
+0204,Yoohoo! Let's get going!,2111,2177,feedback
+0204,"Yes, good start!",2474,2496,feedback
+0204,Let's bring those legs together on the way up and jump back out on the way down.,2497,2557,feedback
+0204,Great! You are jumping!,2638,2663,feedback
+0204,Bend those knees and squat that booty low when you touch the ground.,2664,2726,feedback
+0204,"Don't leave the floor longing for your touch, speed it up!",2808,2867,feedback
+0204,"Not bad, but let's add some speed to those floor touches. I know you can do it.",2914,2978,feedback
+0204,Good speed!,2989,3067,feedback
+0204,Really try to touch those toes now!,3173,3233,feedback
+0204,Get on down there and hang out! Say hi to your toes!,3234,3309,feedback
+0204,Give your toes a little pat. Let them know you appreciate them.,3394,3456,feedback
+0204,Don't bend your legs! Keep your legs and back straight.,3495,3558,feedback
+0204,Legs as straight as you can.,3617,3661,feedback
+0204,Much better!,3662,3721,feedback
+0204,"Yes, let's make it happen.",3883,3949,feedback
+0204,Good speed! But try to bring your elbows forward.,4052,4116,feedback
+0204,Looks good!,4117,4183,feedback
+0204,First up are good morning beginner!,324,372,transition
+0204,Moving on to air jump rope!,1022,1081,transition
+0204,Moving on to mountain climbers!,1745,1804,transition
+0204,Moving on to floor touches!,2429,2473,transition
+0204,Moving on to toe touchers!,3093,3164,transition
+0204,Moving on to shoulder gators!,3762,3825,transition
+0204,That's the end of the session.,4472,4531,transition
+0205,"Yeah, nice skipping.",431,484,feedback
+0205,Good speed!,485,548,feedback
+0205,Keep it up!,561,620,feedback
+0205,Don't go away!,650,703,feedback
+0205,I know you can make it to the end!,704,773,feedback
+0205,Nice to see you are back!,801,864,feedback
+0205,Good job,944,1011,feedback
+0205,Get down there! I'm sure your feet smell fine.,1114,1175,feedback
+0205,"Get low enough to think, oh no, I'm gonna fall over, but don't actually do that.",1206,1268,feedback
+0205,"Good, good morning!",1297,1359,feedback
+0205,Elbows back and back straight,1476,1538,feedback
+0205,That's it,1563,1638,feedback
+0205,Make sure you kick all the way!,1793,1867,feedback
+0205,"Be careful, your right shoe lace is loose.",1900,1962,feedback
+0205,"Whoa, now that's a high kick! Fix your laces though before you fall.",2003,2064,feedback
+0205,"Good, tie 'em nice and tight then hop back in!",2125,2187,feedback
+0205,This is why I like velcro better.,2240,2293,feedback
+0205,Just in time! Go! Go!,2294,2361,feedback
+0205,Nice! Great depth on that squat!,2479,2548,feedback
+0205,Punches are looking a little shallow though.,2595,2656,feedback
+0205,5,2674,2736,feedback
+0205,Squats are getting shallow too. Go deeper.,2834,2897,feedback
+0205,"You’re at ten reps, keep it going.",2934,2998,feedback
+0205,"There we go, really stretch that deltoid out.",3158,3226,feedback
+0205,Try to get deeper in that stretch.,3448,3507,feedback
+0205,"Yes, just like that!",3533,3592,feedback
+0205,I bet that feels good. ,3631,3679,feedback
+0205,Got it up. Now pull it straight across,3802,3861,feedback
+0205,There we go! Much better!,3919,3986,feedback
+0205,Great work! Nice straight arm and solid stance.,4014,4075,feedback
+0205,Try to pull even more.,4106,4171,feedback
+0205,"Good, now hold it there.",4206,4277,feedback
+0205,First up are air jump rope!,350,412,transition
+0205,Moving on to good morning beginner!,1040,1099,transition
+0205,Moving on to standing kicks!,1693,1768,transition
+0205,Moving on to boxing squat punches!,2421,2478,transition
+0205,Moving on to armcrosschest right!,3093,3157,transition
+0205,Moving on to armcrosschest left!,3680,3743,transition
+0205,That's the end of the session.,4376,4435,transition
+0209,Nice! Let's go!,402,464,feedback
+0209,"Straighten up that back, partner. You can lift with your chest a little to help with this.",471,533,feedback
+0209,Give me a nice straight back on the way down.,569,628,feedback
+0209,"Imagine there's a broomstick down your shirt, keeping your back straight.",671,730,feedback
+0209,Still a little bent. We'll keep working on it.,769,848,feedback
+0209,Speed and range is good. Just need to focus on that back,917,987,feedback
+0209,"Yeah, nice skipping.",1100,1159,feedback
+0209,Keep it loose in the wrists.,1234,1293,feedback
+0209,Good,1353,1415,feedback
+0209,Keep moving the wrist just like this.,1559,1622,feedback
+0209,You're crushing it!,1647,1713,feedback
+0209,Good.,1909,1968,feedback
+0209,Squats are looking great.,1979,2041,feedback
+0209,"5 reps, keep it up!",2102,2161,feedback
+0209,Let's get some more pow in those punches.,2198,2257,feedback
+0209,More power!,2308,2387,feedback
+0209,Hey you! Don't stand around! Let's see those squats and kicks!,2534,2601,feedback
+0209,Move!,2668,2730,feedback
+0209,Good,2731,2790,feedback
+0209,"5 reps, keep it up!",2952,3001,feedback
+0209,Get your feet up! Aim for the face!,3002,3061,feedback
+0209,Moving on to toe touchers!,3126,3193,feedback
+0209,Nice!,3245,3311,feedback
+0209,That's better,3409,3471,feedback
+0209,You're so flexible!,3581,3640,feedback
+0209,Keep it up.,3680,3739,feedback
+0209,Moving on to shoulder gators!,3801,3860,feedback
+0209,"Don't worry, we'll stretch later. Let's see some gators!",3872,3947,feedback
+0209,Keep your hands fixed behind your head.,4077,4140,feedback
+0209,Love it,4188,4247,feedback
+0209,Good range,4276,4336,feedback
+0209,That's the end of the session.,4500,4559,feedback
+0209,First up are good morning beginner!,348,401,transition
+0209,Moving on to air jump rope!,1057,1099,transition
+0209,Moving on to boxing squat punches!,1764,1832,transition
+0209,Moving on to squat kicks!,2431,2512,transition
+0209,Keep your feet closer together.,3314,3386,transition
+0209,Nice! Let's keep moving. Let's go!,3964,4031,transition
+0212,That's it! Keep it up!,371,444,feedback
+0212,Don't stop! Let's keep it going.,461,524,feedback
+0212,Awesome! ,525,584,feedback
+0212,"Keeping your back straight, part of a complete breakfast.",731,790,feedback
+0212,Love your dedication!,855,914,feedback
+0212,Skip it out.,1043,1117,feedback
+0212,Try to jump higher and get your feet off the ground.,1149,1210,feedback
+0212,Yes! Those jumps are better!,1211,1278,feedback
+0212,Try to move your hands like you are skipping with a rope.,1310,1372,feedback
+0212,Let's keep it going! Come on!,1431,1494,feedback
+0212,"Right into it, let's go!",1694,1753,feedback
+0212,Wake me up when you're up the mountain...,1792,1867,feedback
+0212,"Let's go, speed it up!",1921,1991,feedback
+0212,What is this? Let's get those legs moving!,2012,2083,feedback
+0212,More energy!,2094,2153,feedback
+0212,Let's get jumping!,2406,2463,feedback
+0212,"Yes, that's it. Keep it coming.",2464,2529,feedback
+0212,"5 reps, keep it up!",2618,2699,feedback
+0212,Get lower on your squats!,2716,2786,feedback
+0212,10 resp! Try to get nice and low.,2814,2833,feedback
+0212,We need a wide stance here. Protect those precious knees.,2834,2896,feedback
+0212,Widen your stance like you're riding a pony!,2919,2978,feedback
+0212,Let's get stretching!,3083,3144,feedback
+0212,"All right, we've got the leg up.",3169,3228,feedback
+0212,Engage that core and point your knee down.,3265,3324,feedback
+0212,Awesome!,3409,3474,feedback
+0212,Keep this up.,3535,3607,feedback
+0212,Stretch out that quad.,3744,3803,feedback
+0212,Keep your core engaged to help you balance.,3872,3936,feedback
+0212,Good. Let's keep it going,3971,4030,feedback
+0212,Remember to breath through the stretch.,4085,4153,feedback
+0212,Great job!,4168,4245,feedback
+0212,First up are good morning beginner!,252,322,transition
+0212,Moving on to air jump rope!,971,1041,transition
+0212,Moving on to mountain climbers!,1654,1693,transition
+0212,Moving on to squat jumps!,2333,2393,transition
+0212,Moving on to quad stretch right!,3042,3082,transition
+0212,Moving on to quad stretch left!,3642,3701,transition
+0212,That's the end of the session.,4341,4402,transition
+0214,Good start!,459,503,feedback
+0214,Keep your hands out in front.,504,566,feedback
+0214,Yes! you got the hands right.,618,676,feedback
+0214,"Come on, keep those knees up, you got it!",738,806,feedback
+0214,This is looking great. Keep it up.,850,917,feedback
+0214,"You are a pro! Go, go, go!",953,1026,feedback
+0214,"Yeah, nice skipping.",1110,1172,feedback
+0214,Keep that speed up!,1237,1298,feedback
+0214,Loving your skipping!,1393,1454,feedback
+0214,"This speed is great, keep it up!",1566,1640,feedback
+0214,Wow! Love it!,1647,1720,feedback
+0214,"Right into it, love it!",1828,1893,feedback
+0214,Nice energy! Try to stay in one place though.,1896,1958,feedback
+0214,Ten reps! Try to stay in one spot though.,2004,2067,feedback
+0214,Straight up and down.,2089,2151,feedback
+0214,Twenty! Now these are looking great!,2207,2265,feedback
+0214,25,2324,2391,feedback
+0214,Squat kick left squat kick right you got this,2509,2583,feedback
+0214,"5 reps, keep it up! Try to kick as high as possible.",2723,2786,feedback
+0214,"Nice, you’re at ten reps, keep the kicks high.",2893,2955,feedback
+0214,"Keep your squats low, don't lose your form.",2998,3056,feedback
+0214,Nice! Let's keep moving. Let's go!,3234,3304,feedback
+0214,Try to always keep your hands behind your head.,3507,3566,feedback
+0214,Nice! Keep going!,3663,3725,feedback
+0214,Now we're set. Let your head hang loose when you bend over.,3936,4004,feedback
+0214,Really try to touch those toes!,4005,4072,feedback
+0214,Yes! That's great toe touching.,4138,4200,feedback
+0214,"Wow, you're flexible!",4244,4304,feedback
+0214,Awesome! Always try to keep your feet as close together as possible.,4367,4430,feedback
+0214,First up are high knees!,408,458,transition
+0214,Moving on to air jump rope!,1096,1109,transition
+0214,Moving on to lunge jumps!,1792,1827,transition
+0214,Moving on to squat kicks!,2469,2508,transition
+0214,Moving on to shoulder gators!,3200,3233,transition
+0214,Moving on to toe touchers!,3885,3935,transition
+0214,That's the end of the session.,4575,4634,transition
