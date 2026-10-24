@@ -1,0 +1,17 @@
+# Install everything with:  pip install -r requirements.txt
+# Tested together on Python 3.14. (Colab already has most of these; there, just run the notebooks.)
+
+# Data and charts (form_analysis.ipynb)
+numpy==2.5.4
+pandas==3.1.0
+matplotlib==3.11.2
+scikit-learn==1.9.1
+kagglehub==1.0.3
+
+# Video and pose detection (pose-detection.ipynb)
+mediapipe==1.1.1
+# MediaPipe brings its own OpenCV; don't also install opencv-python (two copies conflict)
+opencv-contrib-python==5.0.0.93
+
+# Running the notebooks locally
+jupyter==1.1.1

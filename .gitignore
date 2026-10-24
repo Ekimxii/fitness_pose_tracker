@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+
+# Downloaded by pose-detection.ipynb, and the videos it reads and writes
+*.task
+*.mp4
+*.mov
