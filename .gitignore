@@ -7,3 +7,9 @@ __pycache__/
 *.task
 *.mp4
 *.mov
+
+# Keep these folders on GitHub, but never what's in them (videos can show faces)
+Videos for Testing/*
+!Videos for Testing/README.md
+Video Output/*
+!Video Output/README.md
