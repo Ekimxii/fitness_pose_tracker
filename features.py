@@ -72,21 +72,36 @@ def angle(a, b, c):
 
 def add_angles(df):
     """Return a copy of df (which has the landmark columns) with all 12 angle columns added."""
-    new = {}
+    points = df[LANDMARK_COLS].to_numpy().reshape(len(df), len(LANDMARKS), 3)
+    new = pd.DataFrame(angles_from_points(points), columns=list(ALL_ANGLES), index=df.index)
+    return pd.concat([df.drop(columns=list(new), errors="ignore"), new], axis=1)
+
+
+def angles_from_points(points):
+    """The 12 angles (columns in ALL_ANGLES order) for an (n_frames, 33, 3) array of normalized landmarks.
+
+    Plain numpy, so it's fast enough to run on every frame of a live camera feed.
+    """
+    points = np.asarray(points, dtype=float)
+
+    def point(name):   # (n, 3) coordinates of a landmark; mid_X averages left and right
+        if name.startswith("mid_"):
+            return (point(f"left_{name[4:]}") + point(f"right_{name[4:]}")) / 2
+        return points[:, LANDMARKS.index(name)]
+
+    columns = []
     for col in ALL_ANGLES:
         if col == "torso_lean":
             # Angle between the hip-to-shoulder line and straight up (y points down, so up is -y)
-            torso = joint(df, "mid_shoulder") - joint(df, "mid_hip")
+            torso = point("mid_shoulder") - point("mid_hip")
             cos_up = -torso[:, 1] / np.linalg.norm(torso, axis=1)
-            new[col] = np.degrees(np.arccos(np.clip(cos_up, -1, 1)))
+            columns.append(np.degrees(np.arccos(np.clip(cos_up, -1, 1))))
         else:
-            a, b, c = _three_joints(col)
-            new[col] = angle(joint(df, a), joint(df, b), joint(df, c))
-    return pd.concat([df.drop(columns=list(new), errors="ignore"),
-                      pd.DataFrame(new, index=df.index)], axis=1)
+            columns.append(angle(*(point(j) for j in angle_joints(col))))
+    return np.column_stack(columns)
 
 
-def _three_joints(col):
+def angle_joints(col):
     """'right_hip_right_knee_right_ankle' -> ('right_hip', 'right_knee', 'right_ankle')."""
     parts = col.split("_")
     starts = [i for i, p in enumerate(parts) if p in ("left", "right", "mid")]
