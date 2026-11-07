@@ -106,3 +106,37 @@ def angle_joints(col):
     parts = col.split("_")
     starts = [i for i, p in enumerate(parts) if p in ("left", "right", "mid")]
     return tuple("_".join(parts[i:j]) for i, j in zip(starts, starts[1:] + [len(parts)]))
+
+
+def window_features(frames):
+    """Summarise one clip (or one rep) as one row of numbers, for form models.
+
+    `frames`: its rows of qevd_data/frames.parquet, or of a `poses` table from pose-detection, in time
+    order. Besides the 12 angles it measures flat, on-screen distances (in torso lengths): filmed from
+    the front, as QEVD is, these show depth and stance much better than the 3D angles do.
+    """
+    def middle(joint, axis):   # average of the left and right landmark
+        return (frames[f"{axis}_left_{joint}"] + frames[f"{axis}_right_{joint}"]) / 2
+
+    def width(joint):          # left-to-right distance; the normalized torso is 40 units long
+        return (frames[f"x_left_{joint}"] - frames[f"x_right_{joint}"]).abs() / 40
+
+    hips_above_knees = (middle("knee", "y") - middle("hip", "y")) / 40   # y points down
+    shoulders_above_hands = (middle("wrist", "y") - middle("shoulder", "y")) / 40
+    measures = {
+        **{label: frames[col] for col, label in ALL_ANGLES.items()},
+        "hips above knees": hips_above_knees,
+        "hips above knees (vs standing)": hips_above_knees / hips_above_knees.quantile(0.95),
+        "shoulders above hands": shoulders_above_hands,
+        "shoulders above hands (vs top)": shoulders_above_hands / shoulders_above_hands.quantile(0.95),
+        "feet width / hip width": width("ankle") / width("hip"),
+        "knee width / feet width": width("knee") / width("ankle"),
+        "hand width / shoulder width": width("wrist") / width("shoulder"),
+        "elbow width / shoulder width": width("elbow") / width("shoulder"),
+    }
+    row = {}
+    for name, values in measures.items():
+        values = values.rolling(5, center=True, min_periods=1).median()   # remove single-frame jitter
+        for q in (5, 50, 95):   # low point, typical, high point
+            row[f"{name} p{q}"] = values.quantile(q / 100)
+    return pd.Series(row).replace([np.inf, -np.inf], np.nan)   # e.g. a width of 0 in a side view
