@@ -230,4 +230,5 @@ class LiveRepCounter:
 
     def summary(self):
         columns = ["rep", "start_s", "deepest_s", "end_s", "duration_s"] + [f"{j} at deepest (deg)" for j in self.ranges]
-        return pd.DataFrame(self.reps, columns=columns).set_index("rep").round(1)
+        extra = [k for k in dict.fromkeys(k for rep in self.reps for k in rep) if k not in columns]   # e.g. form answers
+        return pd.DataFrame(self.reps, columns=columns + extra).set_index("rep").round(1)

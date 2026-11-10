@@ -5,10 +5,13 @@ Run it from the project folder with the .venv active:
     python live.py --camera 1           # another camera, e.g. a phone used as a webcam
     python live.py --video "Videos for Testing/5 squats.mov"   # a recording instead of the camera
 
-1. A preview window opens. Stand where the camera sees your whole body from the side.
+1. A preview window opens. Stand where the camera sees your whole body. Face the camera if you want
+   form feedback: the form models (form_models.py) learned from front-view videos.
 2. Click Start (or press S). After a short countdown to get into position, reps are counted live.
+   After each rep, the form models judge it (e.g. "squat depth: too shallow"), if they've been
+   trained with `python form_models.py`.
 3. Click Terminate (or press T) to stop. Saved to "Video Output": the video with the skeleton and
-   rep count drawn on, the plain camera video, and a table of the reps.
+   rep count drawn on, the plain camera video, and a table of the reps and their form answers.
 Press Q or Esc in the preview to quit without recording.
 """
 import argparse
@@ -25,9 +28,11 @@ import cv2
 import kagglehub
 import mediapipe as mp
 import numpy as np
+import pandas as pd
 from mediapipe.tasks.python import BaseOptions, vision
 
-from features import angles_from_points, normalize
+import form_models
+from features import ALL_ANGLES, LANDMARK_COLS, angles_from_points, normalize
 from reps import EXERCISES, LiveRepCounter, load_training_data
 
 HERE = Path(__file__).resolve().parent
@@ -39,9 +44,11 @@ WHITE, BLACK, BLUE, GREEN, RED = (255, 255, 255), (0, 0, 0), (214, 120, 42), (60
 
 
 def frame_features(landmarks, width, height):
-    """One frame's landmarks -> its 12 angles and 33 visibilities, scaled like the Kaggle data (as in pose-detection)."""
+    """One frame's landmarks -> its 99 landmark coordinates and 12 angles, scaled like the Kaggle data
+    (as in pose-detection), and its 33 visibilities."""
     pixels = np.array([[[lm.x * width, lm.y * height, lm.z * width] for lm in landmarks]])
-    return angles_from_points(normalize(pixels))[0], np.array([lm.visibility for lm in landmarks])
+    points = normalize(pixels)
+    return points.reshape(-1), angles_from_points(points)[0], np.array([lm.visibility for lm in landmarks])
 
 
 def text_scale(img):
@@ -123,12 +130,14 @@ class BackgroundWriter:
 class Session:
     """Pose detection, rep counting, drawing and recording for one run of the app."""
 
-    def __init__(self, landmarker, train, exercise, output_dir, save_raw):
-        self.landmarker, self.train, self.exercise = landmarker, train, exercise
+    def __init__(self, landmarker, train, exercise, output_dir, save_raw, form=None):
+        self.landmarker, self.train, self.exercise, self.form = landmarker, train, exercise, form
         self.output_dir, self.save_raw = output_dir, save_raw
         self.counter = self.start_t = self.count_from = None
         self.writers, self.paths, self.frames_written, self.last_ms = {}, {}, 0, -1
         self.process_times = deque(maxlen=300)
+        self.history = deque(maxlen=900)   # (time, landmarks, angles) of recent frames, for judging each rep
+        self.reps_judged = 0
 
     @property
     def recording(self):
@@ -147,7 +156,10 @@ class Session:
             draw_skeleton(out, landmarks)
         if self.recording:
             if landmarks and t >= self.count_from:
-                self.counter.update(t - self.start_t, *frame_features(landmarks, w, h))
+                points, angles, visibility = frame_features(landmarks, w, h)
+                self.history.append((t - self.start_t, points, angles))
+                if self.counter.update(t - self.start_t, angles, visibility) > self.reps_judged:
+                    self._judge_rep()
             self._draw_status(out, t, landmarks is not None)
             self._record(frame, out, t)
         self.process_times.append(time.perf_counter() - began)
@@ -169,8 +181,23 @@ class Session:
         if self.counter.reps:
             last = self.counter.reps[-1]
             joint = next(iter(self.counter.ranges))
+            line = 2 + len(self.counter.angles)
             put_text(img, f"Last rep: {joint} {last[f'{joint} at deepest (deg)']:.0f} deg, "
-                          f"{last['duration_s']:.1f} s", 2 + len(self.counter.angles), 0.8)
+                          f"{last['duration_s']:.1f} s", line, 0.8)
+            for k, question in enumerate(q for q in form_models.TARGETS if q in last):
+                put_text(img, f"{question}: {last[question]}".replace("°", " deg"), line + 1 + k, 0.8)   # OpenCV can't draw °
+
+    def _judge_rep(self):
+        """Ask the form models about the rep that just finished, and add their answers to it."""
+        self.reps_judged = len(self.counter.reps)
+        rep = self.counter.reps[-1]
+        # The rep's frames, plus half a second before it, so the "vs standing" measures see the start position
+        rows = [(p, a) for t, p, a in self.history if rep["start_s"] - 0.5 <= t <= rep["end_s"]]
+        if not self.form or len(rows) < 5:
+            return
+        frames = pd.DataFrame(np.hstack([np.array([p for p, _ in rows]), np.array([a for _, a in rows])]),
+                              columns=LANDMARK_COLS + list(ALL_ANGLES))
+        rep.update(form_models.assess(frames, self.exercise, self.form))
 
     def _record(self, raw, annotated, t):
         # Write as many copies as real time requires, so the saved video plays at the right speed
@@ -184,6 +211,8 @@ class Session:
     def start(self, t, fps, size, countdown_s):
         """Start recording and (after the countdown) counting."""
         self.counter = LiveRepCounter(self.train, self.exercise)
+        self.history.clear()
+        self.reps_judged = 0
         self.start_t, self.count_from, self.fps = t, t + countdown_s, fps
         self.output_dir.mkdir(parents=True, exist_ok=True)
         base = f"{self.exercise}_{datetime.now():%Y-%m-%d_%H-%M-%S}"
@@ -251,6 +280,14 @@ def main():
         urllib.request.urlretrieve(POSE_MODEL_URL.format(args.pose_model), pose_model)
     print("Loading the Kaggle data to train the rep counter...")
     train = load_training_data(kagglehub.dataset_download("muhannadtuameh/exercise-recognition"))
+    form = form_models.load()
+    questions = [q for q, (ex, _) in form_models.TARGETS.items() if ex == args.exercise]
+    if form is None:
+        print("No form models yet, so reps are counted but not judged. To add form feedback, run "
+              "`python form_models.py` (needs qevd_data/).")
+    elif questions:
+        print(f"Form feedback after each rep: {', '.join(questions)}. Face the camera: the models learned from "
+              "front-view videos.")
 
     cap = cv2.VideoCapture(args.video if args.video else args.camera)
     if not args.video:
@@ -268,7 +305,7 @@ def main():
                                            running_mode=vision.RunningMode.VIDEO)
     clicks = deque()
     with vision.PoseLandmarker.create_from_options(options) as landmarker:
-        session = Session(landmarker, train, args.exercise, Path(args.output), save_raw=camera is not None)
+        session = Session(landmarker, train, args.exercise, Path(args.output), save_raw=camera is not None, form=form)
         if not args.no_window:
             cv2.namedWindow(WINDOW, cv2.WINDOW_AUTOSIZE)
             cv2.setMouseCallback(WINDOW, lambda event, x, y, *_: clicks.append((x, y))
