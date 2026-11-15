@@ -9,7 +9,7 @@ You build the **checkpoint classifier** for the Form track (meeting notes 11/7).
 Given a frame's 12 joint angles (`ALL_ANGLES` in `features.py`), predict the exercise's checkpoint (`up` / `down` for each of squats, pushups, pullups, situp, jumping_jacks). Its output fills the `"checkpoint"` field of the issue dictionary defined in `form_dict.py`.
 
 ## Files you own
-- `checkpoints.py` (new): `train()`, `load()`, `predict(angles, exercise)`. Training saves to `models/checkpoint_model.joblib`.
+- `checkpoints.py` (it already exists: improve it rather than starting over): `train()`, `load()`, `pose_probabilities()`, `p_work()` and `CheckpointTracker`. Training saves to `models/checkpoint_model.joblib`. Keep `python -m unittest discover tests` passing.
 - You may read `reps.py`, `features.py`, `form_analysis.ipynb` and `form_model.ipynb`, but do not edit them. If `reps.py` should switch to your model, describe the change in your final report instead.
 
 ## How

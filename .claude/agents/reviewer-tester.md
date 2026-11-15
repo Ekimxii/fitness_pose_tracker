@@ -8,7 +8,7 @@ You check other agents' work. **Do not edit or create project files** (no file-w
 
 ## Checklist
 1. **Diff:** `git diff` / `git diff main...HEAD`. Read every changed file in full, not only the diff.
-2. **Interfaces:** do the dicts and decisions match `form_dict.py` exactly (field names, value spellings such as `squats` not `squat`)?
+2. **Interfaces:** do the dicts and decisions match `form_dict.py` exactly (field names, value spellings such as `squat` not `squats`, `knee` not `knees`)?
 3. **ML correctness:** is the train/test split by video/person rather than by frame? Is anything fit on test data? Are the reported scores plausible?
 4. **Data rules:** nothing derived from QEVD is newly committed (see `.gitignore`), and no videos or faces are committed.
 5. **Run things:**

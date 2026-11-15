@@ -10,11 +10,17 @@ Run it from the project folder with the .venv active:
 2. Click Start (or press S). After a short countdown to get into position, reps are counted live.
    After each rep, the form models judge it (e.g. "squat depth: too shallow"), if they've been
    trained with `python form_models.py`.
+   At each checkpoint (e.g. the bottom of every squat) the pose is also compared with
+   form_reference_rules.csv (issue_flagger.py), if the checkpoint model has been trained with
+   `python checkpoints.py`. Most of those rules need a side view; knee valgus, jumping jacks and
+   pull-ups need a front view.
 3. Click Terminate (or press T) to stop. Saved to "Video Output": the video with the skeleton and
-   rep count drawn on, the plain camera video, and a table of the reps and their form answers.
+   rep count drawn on, the plain camera video, a table of the reps and their form answers, and the
+   rule checks: the issue dictionaries (_form.json) and what was measured for each (_form_checks.csv).
 Press Q or Esc in the preview to quit without recording.
 """
 import argparse
+import json
 import math
 import queue
 import threading
@@ -31,8 +37,11 @@ import numpy as np
 import pandas as pd
 from mediapipe.tasks.python import BaseOptions, vision
 
+import checkpoints
+import form_dict
 import form_models
 from features import ALL_ANGLES, LANDMARK_COLS, angles_from_points, normalize
+from issue_flagger import IssueFlagger, load_rules
 from reps import EXERCISES, LiveRepCounter, load_training_data
 
 HERE = Path(__file__).resolve().parent
@@ -130,10 +139,11 @@ class BackgroundWriter:
 class Session:
     """Pose detection, rep counting, drawing and recording for one run of the app."""
 
-    def __init__(self, landmarker, train, exercise, output_dir, save_raw, form=None):
+    def __init__(self, landmarker, train, exercise, output_dir, save_raw, form=None, checkpoint_model=None):
         self.landmarker, self.train, self.exercise, self.form = landmarker, train, exercise, form
+        self.checkpoint_model = checkpoint_model
         self.output_dir, self.save_raw = output_dir, save_raw
-        self.counter = self.start_t = self.count_from = None
+        self.counter = self.flagger = self.start_t = self.count_from = None
         self.writers, self.paths, self.frames_written, self.last_ms = {}, {}, 0, -1
         self.process_times = deque(maxlen=300)
         self.history = deque(maxlen=900)   # (time, landmarks, angles) of recent frames, for judging each rep
@@ -160,6 +170,8 @@ class Session:
                 self.history.append((t - self.start_t, points, angles))
                 if self.counter.update(t - self.start_t, angles, visibility) > self.reps_judged:
                     self._judge_rep()
+                if self.flagger:   # compares the pose at each checkpoint with form_reference_rules.csv
+                    self.flagger.update(t - self.start_t, points.reshape(-1, 3), visibility)
             self._draw_status(out, t, landmarks is not None)
             self._record(frame, out, t)
         self.process_times.append(time.perf_counter() - began)
@@ -178,14 +190,23 @@ class Session:
         put_text(img, status, 1)
         for k, (joint, angle) in enumerate(self.counter.angles.items()):
             put_text(img, f"{joint}: {angle:.0f} deg", 2 + k, 0.8)
+        line = 2 + len(self.counter.angles)
         if self.counter.reps:
             last = self.counter.reps[-1]
             joint = next(iter(self.counter.ranges))
-            line = 2 + len(self.counter.angles)
             put_text(img, f"Last rep: {joint} {last[f'{joint} at deepest (deg)']:.0f} deg, "
                           f"{last['duration_s']:.1f} s", line, 0.8)
-            for k, question in enumerate(q for q in form_models.TARGETS if q in last):
-                put_text(img, f"{question}: {last[question]}".replace("°", " deg"), line + 1 + k, 0.8)   # OpenCV can't draw °
+            for question in (q for q in form_models.TARGETS if q in last):
+                line += 1
+                put_text(img, f"{question}: {last[question]}".replace("°", " deg"), line, 0.8)   # OpenCV can't draw °
+            line += 1
+        if self.flagger and self.flagger.hint:    # the latest checkpoint couldn't be checked
+            put_text(img, f"Rules: {self.flagger.hint}", line, 0.8)
+        elif self.flagger and self.flagger.dicts:   # the latest rule check: its worst issue, or that all was good
+            found = self.flagger.dicts[-1]
+            worst = form_dict.bad_issues(found)
+            verdict = f"{worst[0]['issue']} ({worst[0]['status']}, {worst[0]['severity']:.2f})" if worst else "good"
+            put_text(img, f"Rules, rep {found['rep']} {found['checkpoint']}: {verdict}", line, 0.8)
 
     def _judge_rep(self):
         """Ask the form models about the rep that just finished, and add their answers to it."""
@@ -211,6 +232,7 @@ class Session:
     def start(self, t, fps, size, countdown_s):
         """Start recording and (after the countdown) counting."""
         self.counter = LiveRepCounter(self.train, self.exercise)
+        self.flagger = IssueFlagger(self.exercise, self.checkpoint_model) if self.checkpoint_model else None
         self.history.clear()
         self.reps_judged = 0
         self.start_t, self.count_from, self.fps = t, t + countdown_s, fps
@@ -219,6 +241,9 @@ class Session:
         names = ["overlay", "raw"] if self.save_raw else ["overlay"]
         self.paths = {name: self.output_dir / f"{base}_{name}.mp4" for name in names}
         self.paths["reps"] = self.output_dir / f"{base}_reps.csv"
+        if self.flagger:
+            self.paths["form"] = self.output_dir / f"{base}_form.json"
+            self.paths["form checks"] = self.output_dir / f"{base}_form_checks.csv"
         self.writers = {name: BackgroundWriter(self.paths[name], fps, size) for name in names}
         print(f"Recording started; counting {self.exercise} in {countdown_s:.0f} s")
 
@@ -231,10 +256,26 @@ class Session:
         print(f"\n{len(summary)} {self.exercise} reps")
         if len(summary):
             print(summary.to_string())
+        if self.flagger:
+            self._save_form_checks()
         print(f"Processing speed: {1 / np.mean(self.process_times):.0f} frames per second")
         print("Saved:")
         for path in self.paths.values():
             print("  ", path)
+
+    def _save_form_checks(self):
+        """Save the issue dictionaries (what the Feedback track reads) and the measurements behind them."""
+        self.flagger.finish()
+        self.paths["form"].write_text(json.dumps(self.flagger.dicts, indent=1), encoding="utf-8")
+        checks = self.flagger.checks_table()
+        checks.to_csv(self.paths["form checks"], index=False)
+        print(f"\nRule checks (form_reference_rules.csv): {len(self.flagger.dicts)} checkpoints checked")
+        if len(checks):
+            print(checks[["rep", "checkpoint", "check", "value", "min", "max", "issue", "severity", "status"]]
+                  .astype(object).fillna("").to_string(index=False))
+        else:
+            print("No rule could be checked: the camera must see the whole body, from the view the rules are "
+                  f"written for{f' ({self.flagger.hint})' if self.flagger.hint else ''}.")
 
 
 def make_display(frame, session, max_w=1280, max_h=800):
@@ -288,6 +329,14 @@ def main():
     elif questions:
         print(f"Form feedback after each rep: {', '.join(questions)}. Face the camera: the models learned from "
               "front-view videos.")
+    checkpoint_model = checkpoints.load()
+    if checkpoint_model is None:
+        print("No checkpoint model yet, so poses aren't compared with form_reference_rules.csv. To add that, run "
+              "`python checkpoints.py`.")
+    else:
+        rules = load_rules().query("exercise == @args.exercise")
+        for view, checks in rules.groupby("camera_view")["check"]:
+            print(f"Rule checks at each checkpoint, from the {view}: {', '.join(checks.unique())}")
 
     cap = cv2.VideoCapture(args.video if args.video else args.camera)
     if not args.video:
@@ -305,7 +354,8 @@ def main():
                                            running_mode=vision.RunningMode.VIDEO)
     clicks = deque()
     with vision.PoseLandmarker.create_from_options(options) as landmarker:
-        session = Session(landmarker, train, args.exercise, Path(args.output), save_raw=camera is not None, form=form)
+        session = Session(landmarker, train, args.exercise, Path(args.output), save_raw=camera is not None, form=form,
+                          checkpoint_model=checkpoint_model)
         if not args.no_window:
             cv2.namedWindow(WINDOW, cv2.WINDOW_AUTOSIZE)
             cv2.setMouseCallback(WINDOW, lambda event, x, y, *_: clicks.append((x, y))

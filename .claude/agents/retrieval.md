@@ -9,7 +9,7 @@ You build **retrieval and generation** for the Feedback track (`feedback_model.i
 1. **Corpus:** `coach_feedback_final.csv` (the final dataframe from `coach_feedback.ipynb`). Read its columns first and use the existing labels: exercise, feedback type/tone, constructive or not.
 2. **Filter first** by exercise, then body part / issue, then message kind (constructive vs. praise vs. positive, matching the gate's `kind`). Fall back to a broader filter when nothing matches, and log when that happens.
 3. **Embed** the messages once with `sentence-transformers` (a small model such as `all-MiniLM-L6-v2`) and cache the embeddings to disk; don't re-embed on every query.
-4. **Query:** build a short text from the decision (e.g. "squats knee valgus constructive") → cosine similarity → top 3.
+4. **Query:** build a short text from the decision (e.g. "squat knee knees caving inward form correction") → cosine similarity → top 3.
 5. **Generate:** a prompt template that turns the top 3 into one short spoken cue (≤ 12 words, one cue at a time). Keep generation behind a single `generate(prompt)` function, because the team hasn't chosen the model yet (Hugging Face vs. a hosted API). Until then, provide a no-model fallback that returns the best retrieved message.
 
 ## Files you own
