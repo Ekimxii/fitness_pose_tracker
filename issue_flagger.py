@@ -264,7 +264,7 @@ class IssueFlagger:
     def __init__(self, exercise, bundle=None, rules=None):
         bundle = bundle or checkpoints.load()
         if bundle is None:
-            raise FileNotFoundError("No checkpoint model yet: run `python checkpoints.py` first.")
+            raise FileNotFoundError("No checkpoint model yet: run checkpoint_model.ipynb first.")
         self.exercise = exercise
         self.rules = load_rules() if rules is None else rules
         self.tracker = CheckpointTracker(exercise, bundle)

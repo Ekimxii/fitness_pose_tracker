@@ -11,8 +11,8 @@ Run it from the project folder with the .venv active:
    After each rep, the form models judge it (e.g. "squat depth: too shallow"), if they've been
    trained with `python form_models.py`.
    At each checkpoint (e.g. the bottom of every squat) the pose is also compared with
-   form_reference_rules.csv (issue_flagger.py), if the checkpoint model has been trained with
-   `python checkpoints.py`. Most of those rules need a side view; knee valgus, jumping jacks and
+   form_reference_rules.csv (issue_flagger.py), if the checkpoint model has been trained by running
+   checkpoint_model.ipynb. Most of those rules need a side view; knee valgus, jumping jacks and
    pull-ups need a front view.
 3. Click Terminate (or press T) to stop. Saved to "Video Output": the video with the skeleton and
    rep count drawn on, the plain camera video, a table of the reps and their form answers, and the
@@ -332,7 +332,7 @@ def main():
     checkpoint_model = checkpoints.load()
     if checkpoint_model is None:
         print("No checkpoint model yet, so poses aren't compared with form_reference_rules.csv. To add that, run "
-              "`python checkpoints.py`.")
+              "checkpoint_model.ipynb.")
     else:
         rules = load_rules().query("exercise == @args.exercise")
         for view, checks in rules.groupby("camera_view")["check"]:

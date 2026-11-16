@@ -1,16 +1,14 @@
 """Checkpoint model: which position of which exercise a frame shows, e.g. "squats_down".
 
-Train once (about a minute; needs the Kaggle data, which kagglehub downloads):
-    python checkpoints.py
-This prints how well the model does and saves models/checkpoint_model.joblib.
+This file is what runs live. The model is trained and evaluated in checkpoint_model.ipynb, which uses
+the functions here and saves models/checkpoint_model.joblib.
 
-Two parts:
-
-- The model: XGBoost, trained on the Kaggle frames, predicting one of the 10 poses (5 exercises, up or
-  down). Besides the 12 joint angles from features.py it looks at how the body sits on screen (how far
-  the thighs, shins, torso and arms tilt from upright, how high the hips and hands are), which is what
-  tells a push-up from a squat. When the exercise is already known, as in live.py, only that exercise's
-  up and down are compared.
+- pose_features: the model's inputs. Besides the 12 joint angles from features.py, how the body sits on
+  screen (how far the thighs, shins, torso and arms tilt from upright, how high the hips and hands
+  are), which is what tells a push-up from a squat.
+- save, load, pose_probabilities, p_work: the saved model (XGBoost, predicting one of the 10 poses:
+  5 exercises, up or down) and its answers. When the exercise is already known, as in live.py, only
+  that exercise's up and down are compared.
 - CheckpointTracker: follows the model frame by frame and reports each checkpoint as it is reached
   (the bottom of every squat, the top of every push-up), with the pose at that moment.
   issue_flagger.py compares that pose with form_reference_rules.csv.
@@ -23,8 +21,8 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from features import ALL_ANGLES, LANDMARK_COLS, LANDMARKS, angle_joints, angles_from_points
-from reps import EXERCISES, REST_BELOW, WORK_ABOVE, RepTracker, joint_ranges, load_training_data, work_position
+from features import ALL_ANGLES, LANDMARKS, angle_joints, angles_from_points
+from reps import EXERCISES, REST_BELOW, WORK_ABOVE, RepTracker, joint_ranges, work_position
 
 HERE = Path(__file__).resolve().parent
 MODEL = HERE / "models" / "checkpoint_model.joblib"
@@ -100,72 +98,27 @@ def pose_features(points):
     ])
 
 
-def xgboost():
-    from xgboost import XGBClassifier
-    # 150 rounds score the same as form_model.ipynb's 300 here, and predict a live frame twice as fast
-    return XGBClassifier(n_estimators=150, max_depth=4, learning_rate=0.1, subsample=0.8, colsample_bytree=0.8,
-                         random_state=0)
+def save(model, poses, data, path=MODEL):
+    """Save a trained model with what the live code needs beside it.
 
-
-def random_forest():   # for comparison: what form_analysis.ipynb and the rep counter use
-    from sklearn.ensemble import RandomForestClassifier
-    return RandomForestClassifier(n_estimators=150, random_state=0)
-
-
-def compare(data, X):
-    """5-fold cross-validation of random forest vs XGBoost, on the 12 angles alone and on all the features.
-
-    Every frame is predicted by a model that never saw it. Returns one row of scores per combination.
+    model: a classifier trained on pose_features, with classes 0, 1, 2, ... standing for `poses` in order.
+    data: the training frames (load_training_data in reps.py), for each exercise's typical joint angles.
     """
-    from sklearn.metrics import f1_score
-    from sklearn.model_selection import StratifiedKFold
-
-    codes, poses = pd.factorize(data["pose"], sort=True)
-    exercise = np.array([pose.rsplit("_", 1)[0] for pose in poses])
-    rows = []
-    for features, columns in [("12 angles", slice(len(ALL_ANGLES))), ("angles + on-screen", slice(None))]:
-        for name, make in [("random forest", random_forest), ("XGBoost", xgboost)]:
-            proba = np.zeros((len(X), len(poses)))
-            for train_i, test_i in StratifiedKFold(5, shuffle=True, random_state=0).split(X, codes):
-                proba[test_i] = make().fit(X[train_i, columns], codes[train_i]).predict_proba(X[test_i, columns])
-            predicted = proba.argmax(axis=1)
-            # With the exercise known, only its own up and down compete
-            known = np.where(exercise == exercise[codes][:, None], proba, -1).argmax(axis=1)
-            rows.append({"features": features, "model": name,
-                         "pose accuracy": (predicted == codes).mean(),
-                         "pose macro F1": f1_score(codes, predicted, average="macro"),
-                         "exercise accuracy": (exercise[predicted] == exercise[codes]).mean(),
-                         "up/down accuracy (exercise known)": (known == codes).mean(),
-                         "up/down macro F1 (exercise known)": f1_score(codes, known, average="macro")})
-    return pd.DataFrame(rows).set_index(["features", "model"])
-
-
-def train(path=None):
-    """Compare the models, then train XGBoost on every Kaggle frame and save it."""
-    import kagglehub
-    data = load_training_data(path or kagglehub.dataset_download("muhannadtuameh/exercise-recognition"))
-    X = pose_features(data[LANDMARK_COLS].to_numpy().reshape(len(data), len(LANDMARKS), 3))
-    print(f"{len(data)} Kaggle frames, {data['pose'].nunique()} poses, {X.shape[1]} features\n")
-    print("5-fold cross-validation (every frame predicted by a model that never saw it):")
-    print(compare(data, X).round(3).to_string(), "\n")
-
-    codes, poses = pd.factorize(data["pose"], sort=True)
-    bundle = {"model": xgboost().fit(X, codes), "poses": list(poses), "features": FEATURES,
+    bundle = {"model": model, "poses": list(poses), "features": FEATURES,
               # For each exercise's key joints: the typical angle at rest and at work (as the rep counter uses)
               "ranges": {exercise: joint_ranges(data, exercise) for exercise in EXERCISES}}
-    MODEL.parent.mkdir(exist_ok=True)
-    joblib.dump(bundle, MODEL)
-    print(f"Saved {MODEL}")
+    Path(path).parent.mkdir(exist_ok=True)
+    joblib.dump(bundle, path)
     return bundle
 
 
 def load(path=MODEL):
-    """The saved model, or None if `python checkpoints.py` hasn't been run yet."""
+    """The saved model, or None if checkpoint_model.ipynb hasn't been run yet."""
     if not Path(path).exists():
         return None
     bundle = joblib.load(path)
     if bundle["features"] != FEATURES:
-        raise ValueError(f"{path} was trained on different features. Run `python checkpoints.py` to retrain it.")
+        raise ValueError(f"{path} was trained on different features. Run checkpoint_model.ipynb to retrain it.")
     return bundle
 
 
@@ -277,6 +230,3 @@ class CheckpointTracker:
         _, t, points, visibility = stay[2]
         return Checkpoint(stay[0], self.reps, t, points, visibility)
 
-
-if __name__ == "__main__":
-    train()
