@@ -205,7 +205,7 @@ class Session:
         elif self.flagger and self.flagger.dicts:   # the latest rule check: its worst issue, or that all was good
             found = self.flagger.dicts[-1]
             worst = form_dict.bad_issues(found)
-            verdict = f"{worst[0]['issue']} ({worst[0]['status']}, {worst[0]['severity']:.2f})" if worst else "good"
+            verdict = f"{worst[0]['issue']} ({form_dict.level(worst[0])}, {worst[0]['severity']:.2f})" if worst else "good"
             put_text(img, f"Rules, rep {found['rep']} {found['checkpoint']}: {verdict}", line, 0.8)
 
     def _judge_rep(self):
@@ -271,7 +271,7 @@ class Session:
         checks.to_csv(self.paths["form checks"], index=False)
         print(f"\nRule checks (form_reference_rules.csv): {len(self.flagger.dicts)} checkpoints checked")
         if len(checks):
-            print(checks[["rep", "checkpoint", "check", "value", "min", "max", "issue", "severity", "status"]]
+            print(checks[["rep", "checkpoint", "check", "value", "min", "max", "issue", "severity"]]
                   .astype(object).fillna("").to_string(index=False))
         else:
             print("No rule could be checked: the camera must see the whole body, from the view the rules are "
