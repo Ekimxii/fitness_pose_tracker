@@ -9,6 +9,7 @@ outside sets the severity:
 
     severity = how far past the limit / SEVERITY_SPAN, capped at 1
     e.g. squat depth must be at least 75 deg; a squat that reaches 60 deg is 15 past, so 15 / 30 = 0.5
+    (form_dict.BAD_FROM, 1/3, is where the feedback side starts treating it as worth correcting)
 
 The sheet's limits, issue names, body parts and camera views are read from the CSV, so they can be
 tuned there. How each rule's number is measured is in MEASURES below, by rule_id: a new rule in the
@@ -33,11 +34,10 @@ from features import LANDMARKS
 HERE = Path(__file__).resolve().parent
 RULES = HERE / "form_reference_rules.csv"
 SEVERITY_SPAN = {"deg": 30.0, "ratio": 0.5}   # this far past a limit (or further) is severity 1
-BAD_FROM = 1 / 3          # severity from here up is "bad" (10 deg past a limit); below it, "warning"
 MIN_VISIBILITY = 0.6      # a rule is skipped if MediaPipe isn't at least this sure of every joint it uses
 FRONT_ABOVE = 0.4         # shoulders this many torso lengths apart on screen (or more) = facing the camera
 
-CHECK_COLUMNS = ["rule_id", "check", "body_part", "side", "value", "min", "max", "unit", "issue", "severity", "status",
+CHECK_COLUMNS = ["rule_id", "check", "body_part", "side", "value", "min", "max", "unit", "issue", "severity",
                  "visibility"]   # check_pose's table, before view, checkpoint, rep and t are added
 
 
@@ -180,17 +180,17 @@ def body_in_view(visibility):
 
 
 def judge(rule, value):
-    """Compare one measured value with one rule: (issue or None, severity 0-1, "good" / "warning" / "bad")."""
+    """Compare one measured value with one rule: (issue or None, severity 0-1). Good form is (None, 0.0)."""
     if pd.notna(rule["min"]) and value < rule["min"]:
         issue, past = rule["issue_if_below_min"], rule["min"] - value
     elif pd.notna(rule["max"]) and value > rule["max"]:
         issue, past = rule["issue_if_above_max"], value - rule["max"]
     else:
-        return None, 0.0, "good"
+        return None, 0.0
     if pd.isna(issue):   # the sheet names no issue on this side of the range
-        return None, 0.0, "good"
+        return None, 0.0
     severity = float(np.clip(round(past / SEVERITY_SPAN[rule["unit"]], 2), 0.01, 1.0))
-    return issue, severity, "bad" if severity >= BAD_FROM else "warning"
+    return issue, severity
 
 
 def check_pose(checkpoint, exercise, rules, rest=None):
@@ -218,11 +218,11 @@ def check_pose(checkpoint, exercise, rules, rest=None):
             seen = visibility[list(body.used)].min()
             if seen < MIN_VISIBILITY:
                 continue
-            issue, severity, status = judge(rule, value)
+            issue, severity = judge(rule, value)
             if issue and rule["rule_id"] in WHICH_ISSUE:
                 issue = WHICH_ISSUE[rule["rule_id"]](body)
             verdicts.append([rule["rule_id"], rule["check"], rule["body_part"], side, round(float(value), 2),
-                             rule["min"], rule["max"], rule["unit"], issue, severity, status, round(float(seen), 2)])
+                             rule["min"], rule["max"], rule["unit"], issue, severity, round(float(seen), 2)])
         if verdicts:
             rows.append(max(verdicts, key=lambda v: v[CHECK_COLUMNS.index("severity")]))   # the worse side counts
     checks = pd.DataFrame(rows, columns=CHECK_COLUMNS).astype({"issue": object})   # object: keeps None as None
@@ -238,7 +238,7 @@ def issue_dict(checkpoint, exercise, checks):
         part = row["body_part"]
         part = part[:-1] if part.endswith("s") and part[:-1] in form_dict.BODY_PARTS else part   # "knees" -> "knee"
         issue = row["issue"] if isinstance(row["issue"], str) else None   # None for a body part that is fine
-        issues[part] = form_dict.make_issue(part, issue, row["status"], row["severity"])
+        issues[part] = form_dict.make_issue(part, issue, row["severity"] if issue else 0.0)
     confidence = checks["visibility"].min()   # the least visible joint that was measured
     return form_dict.make_dict(form_dict.EXERCISE_NAMES[exercise], checkpoint.position, checkpoint.rep,
                                round(checkpoint.t, 2), confidence, list(issues.values()))
