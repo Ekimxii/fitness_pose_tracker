@@ -99,28 +99,29 @@ class Judging(unittest.TestCase):
         return RULES[RULES["rule_id"] == rule_id].iloc[0]
 
     def test_inside_the_range_is_good(self):
-        self.assertEqual(flagger.judge(self.rule("S2"), 85), (None, 0.0, "good"))
+        self.assertEqual(flagger.judge(self.rule("S2"), 85), (None, 0.0))
 
     def test_severity_grows_with_the_distance_past_the_limit(self):
         depth = self.rule("S2")                                   # good from 75 to 95 deg
-        self.assertEqual(flagger.judge(depth, 70), ("shallow depth", 0.17, "warning"))   # 5 past: 5 / 30
-        self.assertEqual(flagger.judge(depth, 60), ("shallow depth", 0.5, "bad"))        # 15 past
-        self.assertEqual(flagger.judge(depth, 20), ("shallow depth", 1.0, "bad"))        # capped at 1
-        self.assertEqual(flagger.judge(depth, 110), ("too deep", 0.5, "bad"))
+        self.assertEqual(flagger.judge(depth, 70), ("shallow depth", 0.17))   # 5 past: 5 / 30
+        self.assertEqual(flagger.judge(depth, 60), ("shallow depth", 0.5))    # 15 past
+        self.assertEqual(flagger.judge(depth, 20), ("shallow depth", 1.0))    # capped at 1
+        self.assertEqual(flagger.judge(depth, 110), ("too deep", 0.5))
 
     def test_ratios_use_their_own_span(self):
-        self.assertEqual(flagger.judge(self.rule("J1"), 0.75), ("feet not wide enough", 0.5, "bad"))   # 0.25 / 0.5
+        self.assertEqual(flagger.judge(self.rule("J1"), 0.75), ("feet not wide enough", 0.5))   # 0.25 / 0.5
 
 
 class CheckingAPose(unittest.TestCase):
     def test_good_squat_from_the_side(self):
         rows = check(squat(85), "squats", "down")
         self.assertEqual(sorted(rows.index), ["S2", "S3", "S4"])   # S5 (knee valgus) needs a front view
-        self.assertTrue((rows["status"] == "good").all())
+        self.assertTrue(rows["issue"].isna().all())
+        self.assertTrue((rows["severity"] == 0).all())
 
     def test_shallow_squat(self):
         row = check(squat(60), "squats", "down").loc["S2"]
-        self.assertEqual((row["issue"], row["severity"], row["status"]), ("shallow depth", 0.5, "bad"))
+        self.assertEqual((row["issue"], row["severity"]), ("shallow depth", 0.5))
         self.assertAlmostEqual(row["value"], 60)
 
     def test_knees_over_toes_and_forward_lean(self):
@@ -134,10 +135,10 @@ class CheckingAPose(unittest.TestCase):
         self.assertEqual(list(rows.index), ["S5"])                 # the side-view rules are skipped
         self.assertEqual(rows.loc["S5", "issue"], "knees caving inward")
         self.assertAlmostEqual(rows.loc["S5", "value"], 22.62, places=1)   # 2 * atan(0.1 / 0.5)
-        self.assertEqual(rows.loc["S5", "status"], "bad")
+        self.assertGreaterEqual(rows.loc["S5", "severity"], form_dict.BAD_FROM)
 
     def test_knees_out_is_not_valgus(self):
-        self.assertEqual(check(front_squat(knees_in=-0.1), "squats", "down", rest=front_squat()).loc["S5", "status"], "good")
+        self.assertIsNone(check(front_squat(knees_in=-0.1), "squats", "down", rest=front_squat()).loc["S5", "issue"])
 
     def test_valgus_needs_a_standing_pose_to_compare_with(self):
         self.assertTrue(check(front_squat(knees_in=0.1), "squats", "down").empty)
@@ -145,12 +146,12 @@ class CheckingAPose(unittest.TestCase):
     def test_pushup_sag_and_pike_are_told_apart(self):
         self.assertEqual(check(pushup(hip_drop=0.3), "pushups", "up").loc["P3", "issue"], "hips sagging")
         self.assertEqual(check(pushup(hip_drop=-0.3), "pushups", "up").loc["P3", "issue"], "hips piked")
-        self.assertEqual(check(pushup(), "pushups", "up").loc["P3", "status"], "good")
+        self.assertIsNone(check(pushup(), "pushups", "up").loc["P3", "issue"])
 
     def test_pushup_rules_depend_on_the_position(self):
         self.assertEqual(check(pushup(elbow=120), "pushups", "up").loc["P1", "issue"], "arms not fully extended")
         self.assertEqual(check(pushup(elbow=120), "pushups", "down").loc["P2", "issue"], "not low enough")
-        self.assertEqual(check(pushup(elbow=80), "pushups", "down").loc["P2", "status"], "good")
+        self.assertIsNone(check(pushup(elbow=80), "pushups", "down").loc["P2", "issue"])
 
     def test_a_rule_is_skipped_when_its_joints_are_hidden(self):
         hidden = SEEN.copy()
@@ -184,12 +185,39 @@ class TheDictionary(unittest.TestCase):
         d = flagger.issue_dict(cp, "squats", flagger.check_pose(cp, "squats", RULES))
         form_dict.validate(d)
         self.assertEqual((d["exercise"], d["checkpoint"], d["rep"], d["t"], d["confidence"]), ("squat", "down", 3, 12.4, 0.9))
-        self.assertIn({"body_part": "hip", "issue": "shallow depth", "status": "bad", "severity": 0.5}, d["issues"])
-        self.assertIn({"body_part": "back", "issue": None, "status": "good", "severity": 0.0}, d["issues"])
+        self.assertIn({"body_part": "hip", "issue": "shallow depth", "severity": 0.5}, d["issues"])
+        self.assertIn({"body_part": "back", "issue": None, "severity": 0.0}, d["issues"])
+        self.assertTrue(all("status" not in entry for entry in d["issues"]))
 
     def test_nothing_checked_means_no_dictionary(self):
         cp = Checkpoint("up", 1, 1.0, squat(0), SEEN)   # the sheet has no form check for the top of a squat
         self.assertIsNone(flagger.issue_dict(cp, "squats", flagger.check_pose(cp, "squats", RULES)))
+
+
+class TheFormat(unittest.TestCase):
+    """form_dict's own rules, now that severity alone says how bad an issue is."""
+
+    def test_issue_and_severity_must_agree(self):
+        form_dict.make_issue("knee", None, 0.0)
+        form_dict.make_issue("knee", "knees caving inward", 0.2)
+        with self.assertRaises(ValueError):
+            form_dict.make_issue("knee", None, 0.4)                    # no issue but a severity
+        with self.assertRaises(ValueError):
+            form_dict.make_issue("knee", "knees caving inward", 0.0)   # an issue with no severity
+
+    def test_a_status_key_is_rejected(self):
+        entry = {"body_part": "knee", "issue": "knees caving inward", "status": "bad", "severity": 0.7}
+        d = {**form_dict.EXAMPLE, "issues": [entry]}
+        self.assertTrue(any("unknown fields" in p for p in form_dict.problems(d)))
+
+    def test_bad_minor_and_good(self):
+        bad = form_dict.make_issue("hip", "shallow depth", 0.5)
+        minor = form_dict.make_issue("knee", "knees caving inward", 0.2)
+        good = form_dict.make_issue("back", None, 0.0)
+        self.assertEqual([form_dict.is_bad(e) for e in (bad, minor, good)], [True, False, False])
+        self.assertEqual([form_dict.level(e) for e in (bad, minor, good)], ["bad", "minor", "good"])
+        d = form_dict.make_dict("squat", "down", 1, 2.0, 0.9, [good, minor, bad])
+        self.assertEqual(form_dict.bad_issues(d), [bad, minor])   # worst first, good left out
 
 
 class FakeModel:
@@ -248,7 +276,8 @@ class EndToEnd(unittest.TestCase):
             self.assertEqual((d["exercise"], d["checkpoint"]), ("squat", "down"))
         self.assertEqual([form_dict.bad_issues(d) for d in (dicts[0], dicts[2])], [[], []])
         worst = form_dict.bad_issues(dicts[1])[0]
-        self.assertEqual((worst["body_part"], worst["issue"], worst["status"]), ("hip", "shallow depth", "bad"))
+        self.assertEqual((worst["body_part"], worst["issue"]), ("hip", "shallow depth"))
+        self.assertTrue(form_dict.is_bad(worst))
         self.assertAlmostEqual(worst["severity"], 0.5, delta=0.05)
         self.assertEqual(len(flag.checks_table()), 9)   # 3 reps x the 3 side-view squat rules
 

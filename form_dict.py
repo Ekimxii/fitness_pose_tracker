@@ -5,8 +5,8 @@ side (FeedbackController in feedback_model.ipynb) reads them one at a time and d
 anything. Change the format only when the whole team agrees, and update both sides together.
 
     {"exercise": "squat", "checkpoint": "down", "rep": 3, "t": 12.4, "confidence": 0.92,
-     "issues": [{"body_part": "knee", "issue": "knees caving inward", "status": "bad", "severity": 0.7},
-                {"body_part": "back", "issue": None, "status": "good", "severity": 0.0}]}
+     "issues": [{"body_part": "knee", "issue": "knees caving inward", "severity": 0.7},
+                {"body_part": "back", "issue": None, "severity": 0.0}]}
 
 Fields:
 - exercise:   named as coach_feedback_final.csv names it ("squat", "pushup", "jumping jacks"), so the
@@ -22,10 +22,11 @@ Fields:
     - body_part: one of BODY_PARTS (singular, as in coach_feedback_final.csv's body_part column).
     - issue:     what is wrong, in the words of form_reference_rules.csv ("shallow depth"), or None when
                  the body part is fine.
-    - status:    "good", "warning" or "bad".
-    - severity:  0-1, how far from good form (0 = good, 1 = as bad as it gets).
-  A body part with good form is listed with status "good" rather than left out, so the gate can tell
-  "fixed" (rule 6: praise) apart from "not checked this time".
+    - severity:  0-1, how far from good form. 0 exactly when issue is None; above 0 when there is an issue
+                 (1 = as bad as it gets). Severity BAD_FROM or more is worth correcting (is_bad); a smaller
+                 one is a minor issue the feedback side may let pass.
+  A body part with good form is listed with issue None and severity 0 rather than left out, so the gate
+  can tell "fixed" (rule 6: praise) apart from "not checked this time".
 
 To add a new body part, add it to BODY_PARTS below; validate() rejects anything not listed, which catches
 typos like "knees".
@@ -37,7 +38,7 @@ EXERCISE_NAMES = {   # the code's name (EXERCISES in reps.py) -> the name used i
 }
 EXERCISES = tuple(EXERCISE_NAMES.values())
 CHECKPOINTS = ("up", "down")
-STATUSES = ("good", "warning", "bad")
+BAD_FROM = 1 / 3   # severity from here up is worth correcting (10 deg past a rule's limit); shared by both tracks
 BODY_PARTS = ("knee", "hip", "back", "elbow", "shoulder", "hand", "foot", "head", "leg", "arm")
 
 # What each answer of the QEVD form models (TARGETS in form_models.py) means in this format.
@@ -64,7 +65,6 @@ QEVD_ANSWERS = {
 class Issue(TypedDict):
     body_part: str
     issue: str | None
-    status: str
     severity: float
 
 
@@ -77,9 +77,9 @@ class FormDict(TypedDict):
     issues: list[Issue]
 
 
-def make_issue(body_part, issue, status, severity):
-    """One entry of a dict's issues list, checked."""
-    entry = {"body_part": body_part, "issue": issue, "status": status, "severity": float(severity)}
+def make_issue(body_part, issue, severity):
+    """One entry of a dict's issues list, checked. Pass issue None and severity 0 for a body part that is fine."""
+    entry = {"body_part": body_part, "issue": issue, "severity": float(severity)}
     problems = _issue_problems(entry)
     if problems:
         raise ValueError("; ".join(problems))
@@ -135,9 +135,19 @@ def validate(d):
         raise ValueError("invalid issue dictionary: " + "; ".join(found))
 
 
+def is_bad(entry):
+    """Whether an issue entry is worth correcting: it names an issue with severity BAD_FROM or more."""
+    return entry["issue"] is not None and entry["severity"] >= BAD_FROM
+
+
+def level(entry):
+    """A one-word label for showing an entry on screen: "good", "minor" (below BAD_FROM) or "bad"."""
+    return "good" if entry["issue"] is None else "bad" if is_bad(entry) else "minor"
+
+
 def bad_issues(d):
-    """The entries that are actual problems (status warning or bad), worst first."""
-    return sorted((e for e in d["issues"] if e["status"] != "good"), key=lambda e: e["severity"], reverse=True)
+    """The entries that name an issue (minor or bad), worst first."""
+    return sorted((e for e in d["issues"] if e["issue"] is not None), key=lambda e: e["severity"], reverse=True)
 
 
 def issue_key(d, entry):
@@ -156,17 +166,15 @@ def _issue_problems(entry):
         found.append(f"unknown fields: {sorted(extra)}")
     if entry.get("body_part") not in BODY_PARTS:
         found.append(f"body_part {entry.get('body_part')!r} is not one of {BODY_PARTS} (add it to BODY_PARTS if new)")
-    issue, status, severity = entry.get("issue"), entry.get("status"), entry.get("severity")
+    issue, severity = entry.get("issue"), entry.get("severity")
     if issue is not None and not (isinstance(issue, str) and issue.strip()):
         found.append(f"issue must be text or None, got {issue!r}")
-    if status not in STATUSES:
-        found.append(f"status {status!r} is not one of {STATUSES}")
     if not _in_unit_range(severity):
         found.append(f"severity must be between 0 and 1, got {severity!r}")
-    if status == "good" and issue is not None:
-        found.append(f"status 'good' needs issue None, got {issue!r}")
-    if status in ("warning", "bad") and issue is None:
-        found.append(f"status {status!r} needs an issue")
+    elif issue is None and severity != 0:
+        found.append(f"a body part with no issue needs severity 0, got {severity!r}")
+    elif issue is not None and severity == 0:
+        found.append(f"issue {issue!r} needs a severity above 0")
     return found
 
 
@@ -179,6 +187,6 @@ def _in_unit_range(x):
 
 
 EXAMPLE = make_dict("squat", "down", 3, 12.4, 0.92, [
-    make_issue("knee", "knees caving inward", "bad", 0.7),
-    make_issue("back", None, "good", 0.0),
+    make_issue("knee", "knees caving inward", 0.7),
+    make_issue("back", None, 0.0),
 ])
