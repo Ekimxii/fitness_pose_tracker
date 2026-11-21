@@ -32,7 +32,7 @@ from checkpoints import CheckpointTracker, screen_angle, tilt
 from features import LANDMARKS
 
 HERE = Path(__file__).resolve().parent
-RULES = HERE / "form_reference_rules.csv"
+RULES = HERE / "data" / "form_reference_rules.csv"
 SEVERITY_SPAN = {"deg": 30.0, "ratio": 0.5}   # this far past a limit (or further) is severity 1
 MIN_VISIBILITY = 0.6      # a rule is skipped if MediaPipe isn't at least this sure of every joint it uses
 FRONT_ABOVE = 0.4         # shoulders this many torso lengths apart on screen (or more) = facing the camera
