@@ -52,7 +52,7 @@ The feedback system:
 1. **Receives motion analysis results:** Uses the exercise, rep number, detected form issues and their severity from the form analysis component.
 2. **Decides when to speak:** A gate (`FeedbackController`) ignores one-off flickers (an issue must show up in 2 of the last 3 checks), waits at least 4.5 s between messages (coaches in QEVD speak about every 4.7 s), and doesn't repeat the same correction within 15 s.
 3. **Provides actionable corrections:** Translates detected issues into specific instructions that explain what users should adjust in their next movement. Retrieval finds the 3 closest real coach messages (filtered by message type, exercise and body part, then ranked by MiniLM embedding similarity), and Claude writes one short new message in their style.
-4. **Offers encouragement:** Recognizes good form, effort, and improvement to help users stay motivated, for example when a corrected issue goes away. Praise reuses a real coach message.
+4. **Offers encouragement:** Recognizes good form, effort, and improvement to help users stay motivated, for example when a corrected issue goes away. Claude writes praise the same way, in the style of real coach messages.
 5. **Personalizes chatbot responses (future work):** Matching feedback tone and detail to users' preferences, experience levels, and workout goals.
 
 ## Example
@@ -71,7 +71,7 @@ From our test runs:
 
 ## Feedback Personalization
 
-We planned to let users choose a coaching style, such as gentle encouragement or direct instructions. This version keeps one coach voice: Claude writes corrections in the style of the retrieved real coach messages, and praise reuses real messages from QEVD. Personalization is future work. The simplest next step is a tone option that adds one line to the Claude prompt, so the correction stays the same while the wording changes.
+We planned to let users choose a coaching style, such as gentle encouragement or direct instructions. This version keeps one coach voice: Claude writes every message in the style of the retrieved real coach messages. Personalization is future work. The simplest next step is a tone option that adds one line to the Claude prompt, so the correction stays the same while the wording changes.
 
 # Setup
 
