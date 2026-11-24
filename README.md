@@ -1,44 +1,35 @@
-# Fitness Pose Tracker
+# IN PROGRESS
 
-Upload a workout video and get feedback on your form: the video with your skeleton drawn on, a rep count, and short coaching messages.
+brief description
 
-Supports squats, push-ups, pull-ups, sit-ups and jumping jacks.
+I) Form Analysis
 
-## How it works
+# II) Coach Feedback
 
-1. **Form:** MediaPipe finds 33 body landmarks in each frame. We turn them into joint angles, count reps, and check each rep against a sourced rule sheet (`data/form_reference_rules.csv`) and trained form models.
-2. **Feedback:** a gate decides when to speak, retrieval finds similar messages from real coaching data (QEVD), and Claude writes the final message.
+## Overview
 
-## Run it
+The coach feedback component aims to turn users' motion analysis results into clear, helpful coaching messages. It will use information from the form analysis component to explain how users can correct their movements and encourage them throughout their workouts.
 
-Open `app.ipynb` in Colab and run all cells. You need a Colab secret named `client` with a Claude API key. The last cell prints a link to the app.
+We also plan to explore personalized chatbot feedback. Different users may prefer different tones, such as gentle encouragement, direct instructions, or detailed explanations. The goal is to adapt the wording and level of detail to users' stated preferences and experience while keeping the correction consistent.
 
-To run the form side locally with a webcam:
+## Function
 
-```
-pip install -r requirements.txt
-python live.py --exercise squats
-```
+The planned feedback system will:
 
-## Repo layout
+1. **Receive motion analysis results:** Use exercise type, joint positions, body angles, repetition information, and detected form issues from the form analysis component.
+2. **Provide actionable corrections:** Translate detected issues into specific instructions that explain what users should adjust in their next movement.
+3. **Offer encouragement:** Recognize good form, effort, and improvement to help users stay motivated.
+4. **Personalize chatbot responses:** Explore how feedback tone and detail can match different users' preferences, experience levels, and workout goals.
 
-| Path | What's there |
-|---|---|
-| `app.ipynb` | The Gradio app |
-| `live.py`, `feedback.py`, other `.py` files | Shared code: `live.py` runs the form side, `feedback.py` the feedback side |
-| `modeling/` | Training and evaluation notebooks |
-| `eda/` | Data exploration notebooks |
-| `data/` | Rule sheet and labeled coach messages |
-| `models/` | Saved trained models |
-| `tests/` | Run with `python -m unittest discover tests` |
-| `web/` | A separate browser version (JavaScript) |
-| `archive/` | Old files, kept for reference |
+Example(add later)
 
-## Data
+Currently, `coach_feedback.ipynb` loads the Qualcomm Exercise Video Dataset (QEVD) benchmark and extracts coaching messages, video identifiers, frame ranges, and event types into `qevd_feedback_text.csv`. This supports exploration of existing coaching feedback; motion-based feedback generation and chatbot personalization are planned features.
 
-- [Kaggle exercise recognition](https://www.kaggle.com/datasets/muhannadtuameh/exercise-recognition): labeled poses for the checkpoint model
-- [QEVD](https://www.qualcomm.com/developer/software/qevd-dataset) (Qualcomm, research use only): form labels and real coach messages
+## Setup
 
-## Team
+## Usage
 
-(add names)
+## Feedback Personalization
+
+
+
