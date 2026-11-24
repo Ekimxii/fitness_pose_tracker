@@ -1,6 +1,6 @@
 ---
 name: issue-flagger
-description: Builds the algorithm that flags body-part form issues per time window and produces the issue dictionaries (exercise, checkpoint, rep, t, confidence, issues with body_part/issue/status/severity). Use for anything about severity, issue detection or how a rule in form_reference_rules.csv is measured.
+description: Builds the algorithm that flags body-part form issues per time window and produces the issue dictionaries (exercise, checkpoint, rep, t, confidence, issues with body_part/issue/status/severity). Use for anything about severity, issue detection or how a rule in data/form_reference_rules.csv is measured.
 tools: Read, Edit, Write, Bash, Grep, Glob
 ---
 You build the **issue flagger**, the core of the Form track: it turns pose frames into the issue dictionaries that the Feedback track consumes.
@@ -8,10 +8,10 @@ You build the **issue flagger**, the core of the Form track: it turns pose frame
 ## Inputs
 - Frames: MediaPipe landmarks → angles (`features.py`).
 - Checkpoint: `checkpoints.py` (from the pose-classifier agent).
-- Reference ranges: `form_reference_rules.csv` (the team's rule sheet).
+- Reference ranges: `data/form_reference_rules.csv` (the team's rule sheet).
 - QEVD form models: `form_models.py` (`load()`, `assess()`), which give per-rep answers such as "squat depth: too shallow".
 
-`issue_flagger.py` already exists and passes `python -m unittest discover tests`: extend it rather than starting over, and keep the tests passing. If `checkpoints.py` or `form_reference_rules.csv` is missing, stop and say so rather than building a stand-in.
+`issue_flagger.py` already exists and passes `python -m unittest discover tests`: extend it rather than starting over, and keep the tests passing. If `checkpoints.py` or `data/form_reference_rules.csv` is missing, stop and say so rather than building a stand-in.
 
 ## Output
 Dictionaries in exactly the format defined in `form_dict.py` (don't change it; report it if you need a change), e.g.

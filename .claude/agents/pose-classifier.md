@@ -10,8 +10,8 @@ Given a frame's 12 joint angles (`ALL_ANGLES` in `features.py`), predict the exe
 
 ## Files you own
 - `checkpoints.py` (it already exists: improve it rather than starting over): what runs live: `pose_features()`, `save()`, `load()`, `pose_probabilities()`, `p_work()` and `CheckpointTracker`. Keep `python -m unittest discover tests` passing.
-- `checkpoint_model.ipynb`: training and evaluation. It saves `models/checkpoint_model.joblib`. Keep training code out of `checkpoints.py`.
-- You may read `reps.py`, `features.py`, `form_analysis.ipynb` and `form_model.ipynb`, but do not edit them. If `reps.py` should switch to your model, describe the change in your final report instead.
+- `modeling/checkpoint_model.ipynb`: training and evaluation. It saves `models/checkpoint_model.joblib`. Keep training code out of `checkpoints.py`.
+- You may read `reps.py`, `features.py`, `eda/form_analysis.ipynb` and `modeling/form_model.ipynb`, but do not edit them. If `reps.py` should switch to your model, describe the change in your final report instead.
 
 ## How
 1. Reuse `load_training_data` and the Kaggle data loading from `reps.py`. Don't write a second loader.
