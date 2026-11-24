@@ -4,8 +4,9 @@ Run it from the project folder with the .venv active:
     python live.py                      # default webcam, squats
     python live.py --camera 1           # another camera, e.g. a phone used as a webcam
     python live.py --video "Videos for Testing/5 squats.mov"   # a recording instead of the camera
+    python live.py --coach              # also show coach messages (feedback.py + Claude), see LiveCoach
 
-1. A preview window opens. Stand where the camera sees your whole body. Face the camera if you want
+1. A preview window opens. Press 1-5 to pick the exercise (or pass --exercise). Stand where the camera sees your whole body. Face the camera if you want
    form feedback: the form models (form_models.py) learned from front-view videos.
 2. Click Start (or press S). After a short countdown to get into position, reps are counted live.
    After each rep, the form models judge it (e.g. "squat depth: too shallow"), if they've been
@@ -22,7 +23,9 @@ Press Q or Esc in the preview to quit without recording.
 import argparse
 import json
 import math
+import os
 import queue
+import textwrap
 import threading
 import time
 import urllib.request
@@ -49,6 +52,7 @@ POSE_MODEL_URL = ("https://storage.googleapis.com/mediapipe-models/pose_landmark
                   "pose_landmarker_{0}/float16/latest/pose_landmarker_{0}.task")
 CONNECTIONS = [(c.start, c.end) for c in vision.PoseLandmarksConnections.POSE_LANDMARKS]
 WINDOW = "Rep counter"
+EXERCISE_KEYS = {ord(str(k)): name for k, name in enumerate(EXERCISES, start=1)}   # press 1-5 before Start
 WHITE, BLACK, BLUE, GREEN, RED = (255, 255, 255), (0, 0, 0), (214, 120, 42), (60, 150, 60), (50, 50, 200)  # BGR
 
 
@@ -64,12 +68,23 @@ def text_scale(img):
     return max(0.6, img.shape[0] / 1200)   # bigger text on bigger (e.g. vertical phone) frames
 
 
+def draw_label(img, text, org, scale, thickness):
+    """White text on a darkened box, so it reads on any background. (A thick black outline under thin white
+    text doesn't line up in OpenCV, because letter spacing grows with thickness.)"""
+    (tw, th), base = cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, scale, thickness)
+    pad = max(4, int(8 * scale))
+    x, y = org
+    x0, y0 = max(0, x - pad), max(0, y - th - pad)
+    x1, y1 = min(img.shape[1], x + tw + pad), min(img.shape[0], y + base + pad)
+    box = img[y0:y1, x0:x1]
+    box[:] = (box * 0.35).astype(img.dtype)
+    cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, scale, WHITE, thickness, cv2.LINE_AA)
+
+
 def put_text(img, text, line, size=1.0):
-    """White text with a black outline on the given line (0 = top) of the frame."""
+    """White text on a dark box on the given line (0 = top) of the frame."""
     s = text_scale(img) * size
-    org = (int(15 * text_scale(img)), int((50 + 45 * line) * text_scale(img)))
-    cv2.putText(img, text, org, cv2.FONT_HERSHEY_SIMPLEX, s, BLACK, max(2, int(5 * s)), cv2.LINE_AA)
-    cv2.putText(img, text, org, cv2.FONT_HERSHEY_SIMPLEX, s, WHITE, max(1, int(2 * s)), cv2.LINE_AA)
+    draw_label(img, text, (int(15 * text_scale(img)), int((50 + 45 * line) * text_scale(img))), s, max(1, int(2 * s)))
 
 
 def draw_skeleton(img, landmarks):
@@ -136,11 +151,81 @@ class BackgroundWriter:
         self.writer.release()
 
 
+class LiveCoach:
+    """Coach messages while you work out. Each new issue dictionary goes through feedback.py's gate, retrieval
+    and Claude on its own thread, so the camera never waits for Claude. Needs `pip install sentence-transformers
+    anthropic` and your Claude key in the ANTHROPIC_API_KEY environment variable."""
+
+    COLUMNS = ["time (s)", "rep", "type", "issue", "message"]
+
+    def __init__(self, show_for=6.0):
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            raise SystemExit("--coach needs your Claude key first: export ANTHROPIC_API_KEY=...")
+        try:
+            import anthropic
+            import feedback
+        except ImportError as e:
+            raise SystemExit(f"--coach needs {e.name}: pip install sentence-transformers anthropic")
+        self.feedback, self.show_for = feedback, show_for
+        print("Loading the coach messages (the first run downloads the embedding model)...")
+        self.df, self.embeddings, self.encoder = feedback.load_corpus()
+        self.client = anthropic.Anthropic(timeout=20.0, max_retries=1)
+        self.gate = feedback.FeedbackController()
+        self.dicts = queue.Queue()
+        self.new_message = None   # set by the coach thread, picked up by the drawing code
+        self.shown = None         # (session time it appeared, message) of the message on screen
+        self.log = []             # every message, saved to _coach.csv at the end
+        self.thread = threading.Thread(target=self._run, daemon=True)
+        self.thread.start()
+
+    def add(self, d):
+        """Queue one issue dictionary for the coach thread."""
+        self.dicts.put(d)
+
+    def _run(self):
+        while (d := self.dicts.get()) is not None:
+            decision = self.gate.process(d)
+            if decision is None:
+                continue   # the gate decided to stay quiet
+            try:
+                top3 = self.feedback.retrieve_top3(decision, self.df, self.embeddings, self.encoder)
+                message = self.feedback.make_message(decision, top3, self.client)
+            except Exception as e:   # e.g. no internet or no API credit: keep counting reps without messages
+                print(f"Coach message failed: {e}")
+                continue
+            if message:
+                self.new_message = message
+                self.log.append(dict(zip(self.COLUMNS, [d["t"], d["rep"], decision["action"],
+                                                        decision.get("issue", ""), message])))
+
+    def current(self, session_t):
+        """The message to show now: the newest one, for show_for seconds after it appears."""
+        if self.new_message:
+            self.shown, self.new_message = (session_t, self.new_message), None
+        if self.shown and session_t - self.shown[0] < self.show_for:
+            return self.shown[1]
+        return None
+
+    def finish(self, path):
+        """Wait for messages still being written, then save them all."""
+        self.dicts.put(None)
+        self.thread.join()
+        pd.DataFrame(self.log, columns=self.COLUMNS).to_csv(path, index=False)
+
+
+def draw_coach(img, message, line):
+    """The coach's message in larger text, wrapped so it fits the frame."""
+    for k, part in enumerate(textwrap.wrap(f"Coach: {message}", 40)):
+        put_text(img, part, line + k, 1.1)
+
+
 class Session:
     """Pose detection, rep counting, drawing and recording for one run of the app."""
 
-    def __init__(self, landmarker, train, exercise, output_dir, save_raw, form=None, checkpoint_model=None):
+    def __init__(self, landmarker, train, exercise, output_dir, save_raw, form=None, checkpoint_model=None,
+                 coach=None):
         self.landmarker, self.train, self.exercise, self.form = landmarker, train, exercise, form
+        self.coach, self.dicts_sent = coach, 0
         self.checkpoint_model = checkpoint_model
         self.output_dir, self.save_raw = output_dir, save_raw
         self.counter = self.flagger = self.start_t = self.count_from = None
@@ -172,13 +257,17 @@ class Session:
                     self._judge_rep()
                 if self.flagger:   # compares the pose at each checkpoint with form_reference_rules.csv
                     self.flagger.update(t - self.start_t, points.reshape(-1, 3), visibility)
+                    if self.coach:   # hand each new issue dictionary to the coach
+                        for d in self.flagger.dicts[self.dicts_sent:]:
+                            self.coach.add(d)
+                        self.dicts_sent = len(self.flagger.dicts)
             self._draw_status(out, t, landmarks is not None)
             self._record(frame, out, t)
         self.process_times.append(time.perf_counter() - began)
         return out
 
     def _draw_status(self, img, t, person_seen):
-        put_text(img, f"Reps: {len(self.counter.reps)}", 0, 1.6)
+        put_text(img, f"{self.exercise.replace('_', ' ').title()}: {len(self.counter.reps)} reps", 0, 1.6)
         if t < self.count_from:
             status = f"Get in position: {math.ceil(self.count_from - t)}"
         elif not person_seen:
@@ -207,6 +296,9 @@ class Session:
             worst = form_dict.bad_issues(found)
             verdict = f"{worst[0]['issue']} ({form_dict.level(worst[0])}, {worst[0]['severity']:.2f})" if worst else "good"
             put_text(img, f"Rules, rep {found['rep']} {found['checkpoint']}: {verdict}", line, 0.8)
+        message = self.coach.current(t - self.start_t) if self.coach else None
+        if message:
+            draw_coach(img, message, line + 1)
 
     def _judge_rep(self):
         """Ask the form models about the rep that just finished, and add their answers to it."""
@@ -244,6 +336,9 @@ class Session:
         if self.flagger:
             self.paths["form"] = self.output_dir / f"{base}_form.json"
             self.paths["form checks"] = self.output_dir / f"{base}_form_checks.csv"
+            if self.coach:
+                self.paths["coach"] = self.output_dir / f"{base}_coach.csv"
+        self.dicts_sent = 0
         self.writers = {name: BackgroundWriter(self.paths[name], fps, size) for name in names}
         print(f"Recording started; counting {self.exercise} in {countdown_s:.0f} s")
 
@@ -258,6 +353,9 @@ class Session:
             print(summary.to_string())
         if self.flagger:
             self._save_form_checks()
+        if self.coach and "coach" in self.paths:
+            self.coach.finish(self.paths["coach"])
+            print(f"\n{len(self.coach.log)} coach messages")
         print(f"Processing speed: {1 / np.mean(self.process_times):.0f} frames per second")
         print("Saved:")
         for path in self.paths.values():
@@ -292,8 +390,10 @@ def make_display(frame, session, max_w=1280, max_h=800):
     (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, s, 2)
     cv2.putText(disp, label, (x0 + (bw - tw) // 2, y0 + (bh + th) // 2), cv2.FONT_HERSHEY_SIMPLEX, s, WHITE, 2, cv2.LINE_AA)
     if not session.recording:
-        cv2.putText(disp, "Preview (not recording). Q = quit", (12, dh - 15), cv2.FONT_HERSHEY_SIMPLEX,
-                    0.6, WHITE, 2, cv2.LINE_AA)
+        choices = "   ".join(f"{chr(k)} {name.replace('_', ' ')}" for k, name in EXERCISE_KEYS.items())
+        draw_label(disp, f"Exercise: {session.exercise.replace('_', ' ')}  (press 1-5 to change)", (12, dh - 75), 0.6, 2)
+        draw_label(disp, choices, (12, dh - 45), 0.6, 2)
+        draw_label(disp, "Not recording yet. S = start, Q = quit", (12, dh - 15), 0.6, 2)
     return disp, {action: (x0, y0, x0 + bw, y0 + bh)}
 
 
@@ -308,6 +408,8 @@ def parse_args():
                         "counted an extra rep in one test")
     p.add_argument("--output", default=str(HERE / "Video Output"), help="folder for the saved files")
     p.add_argument("--no-window", action="store_true", help="with --video: run without a window (for automated tests)")
+    p.add_argument("--coach", action="store_true",
+                   help="also show coach messages (feedback.py + Claude); needs the checkpoint model and ANTHROPIC_API_KEY")
     return p.parse_args()
 
 
@@ -337,6 +439,12 @@ def main():
         rules = load_rules().query("exercise == @args.exercise")
         for view, checks in rules.groupby("camera_view")["check"]:
             print(f"Rule checks at each checkpoint, from the {view}: {', '.join(checks.unique())}")
+    coach = None
+    if args.coach:
+        if checkpoint_model is None:
+            print("--coach needs the checkpoint model (the coach reads its rule checks), so no coach messages this run.")
+        else:
+            coach = LiveCoach()
 
     cap = cv2.VideoCapture(args.video if args.video else args.camera)
     if not args.video:
@@ -355,7 +463,7 @@ def main():
     clicks = deque()
     with vision.PoseLandmarker.create_from_options(options) as landmarker:
         session = Session(landmarker, train, args.exercise, Path(args.output), save_raw=camera is not None, form=form,
-                          checkpoint_model=checkpoint_model)
+                          checkpoint_model=checkpoint_model, coach=coach)
         if not args.no_window:
             cv2.namedWindow(WINDOW, cv2.WINDOW_AUTOSIZE)
             cv2.setMouseCallback(WINDOW, lambda event, x, y, *_: clicks.append((x, y))
@@ -383,6 +491,9 @@ def main():
             cv2.imshow(WINDOW, display)
             key = cv2.waitKey(1) & 0xFF
             action = {ord("s"): "start", ord("t"): "terminate", ord("q"): "quit", 27: "quit"}.get(key)
+            if key in EXERCISE_KEYS and not session.recording:   # pick the exercise before Start
+                session.exercise = EXERCISE_KEYS[key]
+                print(f"Exercise: {session.exercise}")
             while clicks:
                 x, y = clicks.popleft()
                 action = next((name for name, (x0, y0, x1, y1) in buttons.items()
